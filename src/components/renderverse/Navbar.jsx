@@ -146,12 +146,6 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/renderverse/token" className="sub-menu-item">
-                  Token
-                </Link>
-              </li>
-
-              <li>
                 <Link to="/renderverse/blog" className="sub-menu-item">
                   Blog
                 </Link>
