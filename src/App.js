@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Footer from "./components/Footer";
+import Navbar from "./components/renderverse/Navbar";
+import Blog from "./pages/renderverse/Blog";
+import Contact from "./pages/renderverse/Contact";
+import Faqs from "./pages/renderverse/Faqs";
+import Features from "./pages/renderverse/Features";
+import Market from "./pages/renderverse/Market";
+import Mission from "./pages/renderverse/Misison";
+import RenderVerse from "./pages/renderverse/RenderVerse";
 
-function App() {
+import { BrowserRouter, } from 'react-router-dom'
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <Navbar />
+        <RenderVerse />
+        <Market />
+        <Mission />
+        <Features />
+        <Blog />
+        <Faqs />
+        <Contact />
+        <Footer />
+      </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;
