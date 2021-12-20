@@ -27,48 +27,6 @@ const Faqs = () => {
         {/*end container*/}
       </section>
       {/*end section*/}
-      <section className="bg-light">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-12">
-              <ul
-                className="list-unstyled sidebar-nav mb-0 text-center"
-                id="navmenu-nav"
-              >
-                <li className="list-inline-item p-4 h6 mb-0 account-menu">
-                  <a href="aboutus.html" className="navbar-link text-dark">
-                    About us
-                  </a>
-                </li>
-                <li className="list-inline-item p-4 h6 mb-0 account-menu">
-                  <a href="career.html" className="navbar-link text-dark">
-                    Career
-                  </a>
-                </li>
-                <li className="list-inline-item p-4 h6 mb-0 account-menu">
-                  <a href="mission.html" className="navbar-link text-dark">
-                    Mission
-                  </a>
-                </li>
-                <li className="list-inline-item p-4 h6 mb-0 account-menu">
-                  <a href="features.html" className="navbar-link text-dark">
-                    Features
-                  </a>
-                </li>
-                <li className="list-inline-item p-4 h6 mb-0 account-menu">
-                  <a href="faqs.html" className="navbar-link text-dark">
-                    FAQs
-                  </a>
-                </li>
-              </ul>
-            </div>
-            {/*end col*/}
-          </div>
-          {/*end row*/}
-        </div>
-        {/*end container*/}
-      </section>
-      {/*end section*/}
       {/* Hero End */}
       {/* Start */}
       <section className="section">

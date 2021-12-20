@@ -12,11 +12,11 @@ const Footer = () => {
                 <div className="row">
                   <div className="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
                     <Link className="logo-footer">
-                      <img src="images/logo-light.png" height={28} alt="" />
+                      <div>MetaBaseCamp</div>
                     </Link>
                     <p className="text-foot mt-4">
-                      With Cryptor Trade, you can be sure your trading skills
-                      are matched with excellent service.
+                      With MetaBaseCamp Trade, you can be sure your trading
+                      skills are matched with excellent service.
                     </p>
                     <ul className="list-unstyled social-icon foot-social-icon mb-0 mt-4">
                       <li className="list-inline-item">
@@ -153,7 +153,7 @@ const Footer = () => {
                   {/*end col*/}
                   <div className="col-lg-4 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                     <h5 className="text-light footer-head">
-                      Start trading with Cryptor
+                      Start trading with MetaBaseCamp
                     </h5>
                     <ul className="list-unstyled footer-list mt-4 mb-2">
                       <li className="list-inline-item mx-1">
@@ -199,7 +199,7 @@ const Footer = () => {
       >
         <div className="offcanvas-header p-4 border-bottom">
           <h6 id="offcanvasRightLabel" className="mb-0">
-            Cryptor
+            MetaBaseCamp
           </h6>
           <button
             type="button"
