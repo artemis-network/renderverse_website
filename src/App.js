@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "./components/Footer";
+import Product from './pages/renderverse/Product'
 import Blog from "./pages/renderverse/Blog";
 import Contact from "./pages/renderverse/Contact";
 import Faqs from "./pages/renderverse/Faqs";
@@ -7,10 +8,41 @@ import Features from "./pages/renderverse/Features";
 import Mission from "./pages/renderverse/Misison";
 import RenderVerse from "./pages/renderverse/RenderVerse";
 import { Element, Link } from "react-scroll";
+import Switch from 'react-switch'
 
 import { BrowserRouter, } from 'react-router-dom'
 
+
+
 const App = () => {
+
+  const theme = localStorage.getItem("theme")
+  if (theme === undefined || theme === null) {
+    localStorage.setItem("theme", "light")
+    localStorage.setItem("check", false)
+  }
+
+
+  function changeTheme() {
+    if (theme === 'light') {
+      localStorage.setItem("check", true)
+      localStorage.setItem('theme', "dark")
+      window.location.reload()
+    } else {
+      localStorage.setItem("check", false)
+      localStorage.setItem('theme', "light")
+      window.location.reload()
+    }
+  }
+
+  useEffect(() => {
+    if (localStorage.getItem('theme') === 'light') {
+      require('./assets/css/style.min.css')
+    } else {
+      require('./assets/css/style-dark.min.css')
+    }
+  }, [])
+
   return (
     <div>
       <BrowserRouter>
@@ -50,6 +82,11 @@ const App = () => {
                     </Link>
                   </li>
                   <li>
+                    <Link to="/product" className="sub-menu-item">
+                      Product
+                    </Link>
+                  </li>
+                  <li>
                     <Link to="/mission" className="sub-menu-item">
                       {" "}
                       Mission
@@ -77,6 +114,10 @@ const App = () => {
                       Contact Us
                     </Link>
                   </li>
+                  <li style={{ marginTop: "1.25rem" }}>
+                    <Switch onChange={changeTheme} checked={JSON.parse(localStorage.getItem("check"))}>
+                    </Switch>
+                  </li>
                 </ul>
                 {/*end navigation menu*/}
               </div>
@@ -91,6 +132,12 @@ const App = () => {
         <Element id="/" name="brand">
           <div id="home">
             <RenderVerse />
+          </div>
+        </Element>
+
+        <Element id="/product" name="product">
+          <div id="product">
+            <Product />
           </div>
         </Element>
 

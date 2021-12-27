@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="col-12">
               <div className="footer-py-100">
                 <div className="row">
-                  <div className="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                  <div className="col-lg-8 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
                     <Link className="logo-footer">
                       <div>MetaBaseCamp</div>
                     </Link>
@@ -55,127 +55,52 @@ const Footer = () => {
                     {/*end icon*/}
                   </div>
                   {/*end col*/}
-                  <div className="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                  <div className="col-lg-4 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                     <h5 className="text-light footer-head">Company</h5>
                     <ul className="list-unstyled footer-list mt-4">
                       <li>
                         <a href="aboutus.html" className="text-foot">
                           <i className="uil uil-angle-right-b me-1" />
-                          About
+                          Home
                         </a>
                       </li>
                       <li>
                         <a href="market-price.html" className="text-foot">
                           <i className="uil uil-angle-right-b me-1" />
-                          Marketplace
+                          Product
                         </a>
                       </li>
                       <li>
                         <a href="token.html" className="text-foot">
                           <i className="uil uil-angle-right-b me-1" />
-                          Sell Token
+                          Mission
                         </a>
                       </li>
                       <li>
                         <a href="team.html" className="text-foot">
                           <i className="uil uil-angle-right-b me-1" />
-                          Team
+                          Features
                         </a>
                       </li>
                       <li>
                         <a href="roadmap.html" className="text-foot">
                           <i className="uil uil-angle-right-b me-1" />
-                          Roadmap
+                          Blog
                         </a>
                       </li>
                       <li>
                         <a href="mission.html" className="text-foot">
                           <i className="uil uil-angle-right-b me-1" />
-                          Mission
+                          FAQ
                         </a>
                       </li>
                       <li>
                         <a href="whitepaper.html" className="text-foot">
                           <i className="uil uil-angle-right-b me-1" />
-                          Whitepaper
-                        </a>
-                      </li>
-                      <li>
-                        <a href="blog.html" className="text-foot">
-                          <i className="uil uil-angle-right-b me-1" />
-                          News
-                        </a>
-                      </li>
-                      <li>
-                        <a href="contact.html" className="text-foot">
-                          <i className="uil uil-angle-right-b me-1" />
                           Contact Us
                         </a>
                       </li>
                     </ul>
-                  </div>
-                  {/*end col*/}
-                  <div className="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                    <h5 className="text-light footer-head">NFT Market</h5>
-                    <ul className="list-unstyled footer-list mt-4">
-                      <li>
-                        <a href="index-nft.html" className="text-foot">
-                          <i className="uil uil-angle-right-b me-1" />
-                          NFTs
-                        </a>
-                      </li>
-                      <li>
-                        <a href="nft-explore.html" className="text-foot">
-                          <i className="uil uil-angle-right-b me-1" />
-                          Explores
-                        </a>
-                      </li>
-                      <li>
-                        <a href="nft-collection.html" className="text-foot">
-                          <i className="uil uil-angle-right-b me-1" />
-                          Collections
-                        </a>
-                      </li>
-                      <li>
-                        <a href="nft-creators.html" className="text-foot">
-                          <i className="uil uil-angle-right-b me-1" />
-                          Creators
-                        </a>
-                      </li>
-                      <li>
-                        <a href="nft-faqs.html" className="text-foot">
-                          <i className="uil uil-angle-right-b me-1" />
-                          How It Works
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  {/*end col*/}
-                  <div className="col-lg-4 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                    <h5 className="text-light footer-head">
-                      Start trading with MetaBaseCamp
-                    </h5>
-                    <ul className="list-unstyled footer-list mt-4 mb-2">
-                      <li className="list-inline-item mx-1">
-                        <Link to="/login" className="btn btn-soft-primary">
-                          Signin
-                        </Link>
-                      </li>
-                      <li className="list-inline-item mx-1">
-                        <Link to="/signup" className="btn btn-primary">
-                          Signup
-                        </Link>
-                      </li>
-                    </ul>
-                    <small className="text-foot d-block">
-                      Institutional Investor?{" "}
-                      <Link className="text-foot fw-medium">Learn More</Link>
-                    </small>
-                    <img
-                      src="images/icon-gradient.png"
-                      className="avatar avatar-medium mt-4"
-                      alt=""
-                    />
                   </div>
                   {/*end col*/}
                 </div>
