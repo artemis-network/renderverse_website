@@ -12,8 +12,6 @@ import Switch from 'react-switch'
 
 import { BrowserRouter, } from 'react-router-dom'
 
-
-
 const App = () => {
 
   const theme = localStorage.getItem("theme")
@@ -23,7 +21,7 @@ const App = () => {
   }
 
 
-  function changeTheme() {
+  function changeTheme(e) {
     if (theme === 'light') {
       localStorage.setItem("check", true)
       localStorage.setItem('theme', "dark")
@@ -37,16 +35,15 @@ const App = () => {
 
   useEffect(() => {
     if (localStorage.getItem('theme') === 'light') {
-      require('./assets/css/style.min.css')
+      require('./assets/css/style.css')
     } else {
-      require('./assets/css/style-dark.min.css')
+      require('./assets/css/style-dark.css')
     }
   }, [])
 
   return (
     <div>
       <BrowserRouter>
-
         <div>
           {/* Navbar STart */}
           <header id="topnav" className="defaultscroll sticky tagline-height">
@@ -88,7 +85,6 @@ const App = () => {
                   </li>
                   <li>
                     <Link to="/mission" className="sub-menu-item">
-                      {" "}
                       Mission
                     </Link>
                   </li>
@@ -102,20 +98,18 @@ const App = () => {
                       Blog
                     </Link>
                   </li>
-
                   <li>
                     <Link to="/faqs" className="sub-menu-item">
                       Faq
                     </Link>
                   </li>
-
                   <li>
                     <Link to="/contact" className="sub-menu-item">
                       Contact Us
                     </Link>
                   </li>
                   <li style={{ marginTop: "1.25rem" }}>
-                    <Switch onChange={changeTheme} checked={JSON.parse(localStorage.getItem("check"))}>
+                    <Switch onChange={(e) => changeTheme(e)} checked={JSON.parse(localStorage.getItem("check"))}>
                     </Switch>
                   </li>
                 </ul>
