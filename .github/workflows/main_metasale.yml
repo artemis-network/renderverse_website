@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'metasale'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_99680059C1634321BF37748FD5062C7A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_003CAB102678404CAD93DBBDBD532EE9 }}
           package: .
