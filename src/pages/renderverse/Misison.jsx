@@ -1,37 +1,62 @@
 import { Link } from "react-router-dom";
 
+import Wave from "react-wavify";
+
 const Mission = () => {
   return (
     <div>
-      <section
-        className="bg-half-170 d-table w-100"
-        style={{ background: 'url("images/bg/market.png") bottom' }}
-      >
-        <div className="bg-overlay bg-gradient-primary opacity-9" />
-        <div className="container">
-          <div className="row justify-content-center mt-5">
-            <div className="col-12">
-              <div className="section-title text-center">
-                <h4 className="title text-white title-dark fw-medium mb-4">
-                  Our Mission
-                </h4>
-                <p className="text-white-50 para-desc mx-auto mb-0">
-                  With Cryptor Trade, you can be sure your trading skills are
-                  matched with excellent service.
-                </p>
-              </div>
-            </div>
-            {/*end col*/}
-          </div>
-          {/*end row*/}
-        </div>
-        {/*end container*/}
-      </section>
-      {/*end section*/}
-
       {/* Hero End */}
       {/* Start */}
-      <section className="section">
+      <section
+        style={{
+          backgroundColor: "#2a2a72",
+          margin: "10rem 0 0 0",
+        }}
+        className="section"
+      >
+        <div
+          style={{
+            position: "relative",
+          }}
+        >
+          <Wave
+            style={{ position: "absolute", bottom: "3rem" }}
+            fill="url(#gradient1)"
+            paused={false}
+            options={{
+              height: 20,
+              amplitude: 10,
+              speed: 0.25,
+              points: 5,
+            }}
+          >
+            <defs>
+              <linearGradient id="gradient1">
+                <stop offset="10%" stopColor="#045de9" />
+                <stop offset="90%" stopColor="#63a4ff" />
+              </linearGradient>
+            </defs>
+          </Wave>
+
+          <Wave
+            style={{ position: "absolute", bottom: "3rem" }}
+            fill="url(#gradient)"
+            options={{
+              height: 25,
+              amplitude: 25,
+              speed: 0.35,
+              points: 3,
+            }}
+          >
+            <defs>
+              <linearGradient id="gradient">
+                <stop offset="100%" stopColor="#2a2a72" />
+                <stop offset="70%" stopColor="#045de9" />
+              </linearGradient>
+            </defs>
+          </Wave>
+        </div>
+
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-7 col-md-6 order-2 order-md-1">
@@ -120,6 +145,25 @@ const Mission = () => {
         </div>
         {/*end container*/}
       </section>
+      <div
+        style={{
+          transform: "rotate(180deg)",
+          background: "#2a2a72",
+          position: "relative",
+        }}
+      >
+        <Wave
+          style={{ position: "absolute", top: "-8rem" }}
+          paused={true}
+          fill="#2a2a72"
+          options={{
+            height: 80,
+            amplitude: 32,
+            speed: 0.75,
+            points: 5,
+          }}
+        />
+      </div>
       {/*end section*/}
       {/* End */}
     </div>

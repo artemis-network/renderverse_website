@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Footer from "./components/Footer";
 import Product from './pages/renderverse/Product'
 import Blog from "./pages/renderverse/Blog";
@@ -8,38 +8,10 @@ import Features from "./pages/renderverse/Features";
 import Mission from "./pages/renderverse/Misison";
 import RenderVerse from "./pages/renderverse/RenderVerse";
 import { Element, Link } from "react-scroll";
-import Switch from 'react-switch'
 
 import { BrowserRouter, } from 'react-router-dom'
 
 const App = () => {
-
-  const theme = localStorage.getItem("theme")
-  if (theme === undefined || theme === null) {
-    localStorage.setItem("theme", "light")
-    localStorage.setItem("check", false)
-  }
-
-
-  function changeTheme(e) {
-    if (theme === 'light') {
-      localStorage.setItem("check", true)
-      localStorage.setItem('theme', "dark")
-      window.location.reload()
-    } else {
-      localStorage.setItem("check", false)
-      localStorage.setItem('theme', "light")
-      window.location.reload()
-    }
-  }
-
-  useEffect(() => {
-    if (localStorage.getItem('theme') === 'light') {
-      require('./assets/css/style.css')
-    } else {
-      require('./assets/css/style-dark.css')
-    }
-  }, [])
 
   return (
     <div>
@@ -50,7 +22,7 @@ const App = () => {
             <div className="container">
               {/* Logo Start*/}
               <Link to="/home" className="logo">
-                <div>MetaBaseCamp</div>
+                <div>Renderverse</div>
               </Link>
               {/* Logo end*/}
               <div className="menu-extras">
@@ -107,10 +79,6 @@ const App = () => {
                     <Link to="/contact" className="sub-menu-item">
                       Contact Us
                     </Link>
-                  </li>
-                  <li style={{ marginTop: "1.25rem" }}>
-                    <Switch onChange={(e) => changeTheme(e)} checked={JSON.parse(localStorage.getItem("check"))}>
-                    </Switch>
                   </li>
                 </ul>
                 {/*end navigation menu*/}

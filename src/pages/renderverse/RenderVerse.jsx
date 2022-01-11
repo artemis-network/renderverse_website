@@ -1,16 +1,23 @@
 import { Link } from "react-router-dom";
+import Telegram from "../../assets/images/telegram-plane.svg";
+import Twitter from "../../assets/images/twitter.svg";
+import Medium from "../../assets/images/medium.svg";
+import Discord from "../../assets/images/icons8-discord.svg";
 
 const MetabaseCamp = () => {
   return (
-    <div>
+    <div
+      className="bg-home bg-black"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        padding: "8rem 0",
+        backgroundImage: 'url("images/bg/bg02.png") !important',
+        backgroundPosition: "center !important",
+      }}
+    >
       {/* Hero Start */}
-      <section
-        className="bg-home bg-black d-flex align-items-center"
-        style={{
-          backgroundImage: 'url("images/bg/bg02.png") !important',
-          backgroundPosition: "center !important",
-        }}
-      >
+      <section className="d-flex align-items-center ">
         <div className="container">
           <div className="row mt-5 align-items-center">
             <div className="col-lg-6 col-md-6 col-12">
@@ -18,7 +25,15 @@ const MetabaseCamp = () => {
                 <span className="badge bg-soft-success rounded-md">
                   Calculator
                 </span>
-                <h4 className="display-5 text-white title-dark fw-medium mt-3 mb-4">
+                <h4
+                  style={{
+                    animationName: "glow",
+                    animationDuration: "1s",
+                    animationIterationCount: "infinite",
+                    animationDirection: "alternate",
+                  }}
+                  className="display-5 text-white title-dark fw-medium mt-3 mb-4"
+                >
                   100% Free Digital Asset Exchange Platform
                 </h4>
                 <p className="text-white-50 para-desc mx-auto mb-0">
@@ -62,8 +77,22 @@ const MetabaseCamp = () => {
       {/*end section*/}
       {/* Hero End */}
       {/* End */}
-      {/* Counter Start */}
-      {/* Counter End */}
+
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          alignContent: "center",
+          columnGap: "5rem",
+          padding: "7rem 0",
+        }}
+      >
+        <img height={50} width={50} src={Twitter} alt="twitter"></img>
+        <img height={50} width={50} src={Telegram} alt="telegram"></img>
+        <img height={50} width={50} src={Medium} alt="medium"></img>
+        <img height={50} width={50} src={Discord} alt="medium"></img>
+      </div>
     </div>
   );
 };

@@ -12,10 +12,10 @@ const Footer = () => {
                 <div className="row">
                   <div className="col-lg-8 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
                     <Link className="logo-footer">
-                      <div>MetaBaseCamp</div>
+                      <div>Renderverse</div>
                     </Link>
                     <p className="text-foot mt-4">
-                      With MetaBaseCamp Trade, you can be sure your trading
+                      With Renderverse Trade, you can be sure your trading
                       skills are matched with excellent service.
                     </p>
                     <ul className="list-unstyled social-icon foot-social-icon mb-0 mt-4">
@@ -124,7 +124,7 @@ const Footer = () => {
       >
         <div className="offcanvas-header p-4 border-bottom">
           <h6 id="offcanvasRightLabel" className="mb-0">
-            MetaBaseCamp
+            Renderverse
           </h6>
           <button
             type="button"

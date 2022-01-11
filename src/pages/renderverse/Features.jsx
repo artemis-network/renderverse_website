@@ -3,33 +3,6 @@ import { Link } from "react-router-dom";
 const Features = () => {
   return (
     <div>
-      {/* Hero Start */}
-      <section
-        className="bg-half-170 d-table w-100"
-        style={{ background: 'url("images/bg/market.png") bottom' }}
-      >
-        <div className="bg-overlay bg-gradient-primary opacity-9" />
-        <div className="container">
-          <div className="row justify-content-center mt-5">
-            <div className="col-12">
-              <div className="section-title text-center">
-                <h4 className="title text-white title-dark fw-medium mb-4">
-                  Features &amp; Services
-                </h4>
-                <p className="text-white-50 para-desc mx-auto mb-0">
-                  With Cryptor Trade, you can be sure your trading skills are
-                  matched with excellent service.
-                </p>
-              </div>
-            </div>
-            {/*end col*/}
-          </div>
-          {/*end row*/}
-        </div>
-        {/*end container*/}
-      </section>
-      {/*end section*/}
-      {/* Hero End */}
       {/* Start */}
       <section className="section">
         <div className="container">
