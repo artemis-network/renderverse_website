@@ -127,13 +127,6 @@ const App = () => {
           </div>
         </Element>
 
-        <Element id="/contact" name="contact">
-          <div id="contact">
-            <Contact />
-          </div>
-        </Element>
-
-        <Footer />
       </BrowserRouter>
     </div>
   );
