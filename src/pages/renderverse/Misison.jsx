@@ -158,7 +158,7 @@ const Mission = () => {
           fill="#2a2a72"
           options={{
             height: 80,
-            amplitude: 32,
+            amplitude: 16,
             speed: 0.75,
             points: 5,
           }}

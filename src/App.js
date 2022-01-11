@@ -10,6 +10,7 @@ import RenderVerse from "./pages/renderverse/RenderVerse";
 import { Element, Link } from "react-scroll";
 
 import { BrowserRouter, } from 'react-router-dom'
+import Action from "./pages/renderverse/Action";
 
 const App = () => {
 
@@ -112,6 +113,7 @@ const App = () => {
         <Element id="/features" name="features">
           <div id="features">
             <Features />
+            <Action />
           </div>
         </Element>
 
