@@ -50,35 +50,35 @@ const Action = () => {
           style={{ borderRadius: "3vh", marginTop: "2rem" }}
           height={320}
           width={180}
-          alt="image"
+          alt="image0"
           src={Action1}
         ></img>
         <img
           style={{ borderRadius: "3vh", marginBottom: "1rem" }}
           height={320}
           width={180}
-          alt="image"
+          alt="image1"
           src={Action1}
         ></img>
         <img
           style={{ borderRadius: "3vh" }}
           height={500}
           width={260}
-          alt="image"
+          alt="image2"
           src={Action1}
         ></img>
         <img
           style={{ borderRadius: "3vh", marginTop: "1rem" }}
           height={320}
           width={180}
-          alt="image"
+          alt="image3"
           src={Action1}
         ></img>
         <img
           style={{ borderRadius: "3vh", marginBottom: "2rem" }}
           height={320}
           width={180}
-          alt="image"
+          alt="image4"
           src={Action1}
         ></img>
       </div>
