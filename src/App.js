@@ -1,14 +1,16 @@
 import React from "react";
+import { Element, Link } from "react-scroll";
+import { BrowserRouter, } from 'react-router-dom'
+
 import Product from './pages/renderverse/Product'
-import Blog from "./pages/renderverse/Blog";
 import Faqs from "./pages/renderverse/Faqs";
 import Features from "./pages/renderverse/Features";
 import Mission from "./pages/renderverse/Misison";
 import RenderVerse from "./pages/renderverse/RenderVerse";
-import { Element, Link } from "react-scroll";
-
-import { BrowserRouter, } from 'react-router-dom'
 import Action from "./pages/renderverse/Action";
+import RoadMap from "./pages/renderverse/RoadMap";
+import Team from "./pages/renderverse/Team";
+import Footer from "./components/Footer";
 
 const App = () => {
 
@@ -50,23 +52,23 @@ const App = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/product" className="sub-menu-item">
-                      Product
-                    </Link>
-                  </li>
-                  <li>
                     <Link to="/mission" className="sub-menu-item">
                       Mission
                     </Link>
                   </li>
                   <li>
-                    <Link to="/features" className="sub-menu-item">
-                      Features
+                    <Link to="/eco-system" className="sub-menu-item">
+                      Eco System
                     </Link>
                   </li>
                   <li>
-                    <Link to="/blog" className="sub-menu-item">
-                      Blog
+                    <Link to="/team" className="sub-menu-item">
+                      Team
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/roadmap" className="sub-menu-item">
+                      Roadmap
                     </Link>
                   </li>
                   <li>
@@ -108,22 +110,35 @@ const App = () => {
           </div>
         </Element>
 
-        <Element id="/features" name="features">
-          <div id="features">
+        <Element id="/eco-system" name="eco-system">
+          <div id="eco-system">
             <Features />
             <Action />
           </div>
         </Element>
 
-        <Element id="/blog" name="blog">
-          <div id="blog">
-            <Blog />
+        <Element id="/team" name="team">
+          <div id="team">
+            <Team />
+          </div>
+        </Element>
+
+
+        <Element id="/roadmap" name="roadmap">
+          <div id="roadmap">
+            <RoadMap />
           </div>
         </Element>
 
         <Element id="/faqs" name="faqs">
           <div id="faqs">
             <Faqs />
+          </div>
+        </Element>
+
+        <Element id="/contact" name="contact">
+          <div id="contact">
+            <Footer />
           </div>
         </Element>
 

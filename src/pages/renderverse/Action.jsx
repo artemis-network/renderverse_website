@@ -15,7 +15,7 @@ const Action = () => {
     >
       <div
         style={{
-          fontSize: "2.5rem",
+          fontSize: "2rem",
           display: "flex",
           justifyContent: "center",
           color: "#0B1118",

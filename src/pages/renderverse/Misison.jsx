@@ -57,11 +57,21 @@ const Mission = () => {
           </Wave>
         </div>
 
+        <div
+          style={{
+            fontSize: "2rem",
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            padding: "0 0 2rem 0",
+          }}
+        >
+          Our Mission & Vision
+        </div>
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-7 col-md-6 order-2 order-md-1">
               <div className="section-title me-lg-5">
-                <h4 className="title mb-3">Our Mission</h4>
                 <p className="text-muted">
                   What's the secret to Cryptor's success? The answer is obvious:
                   Our people. We are proud to have one of the most talented,
@@ -115,7 +125,6 @@ const Mission = () => {
           <div className="row align-items-center">
             <div className="col-lg-7 col-md-6 order-1 order-md-2">
               <div className="section-title ms-lg-5">
-                <h4 className="title mb-3">Our Vision</h4>
                 <p className="text-muted mb-0">
                   Cryptor has a strategic partnership with Ledger, integrating
                   its institutional-grade custody solution, Ledger Vault. We

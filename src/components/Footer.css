@@ -1,0 +1,31 @@
+.basic {
+  font-size: 1.25rem;
+  border: none;
+  outline: none;
+  padding: 1.25rem 2rem;
+  border-radius: 2vw;
+}
+
+.telegram:hover {
+  background-color: #0088cc;
+  color: "white";
+  transition: 0.25s all;
+}
+
+.twitter:hover {
+  background-color: #1da1f2;
+  color: "white";
+  transition: 0.25s all;
+}
+
+.discord:hover {
+  background-color: #5865f2;
+  color: "white";
+  transition: 0.25s all;
+}
+
+.medium:hover {
+  background-color: #92a9bd;
+  color: "white";
+  transition: 0.25s all;
+}

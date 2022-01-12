@@ -32,7 +32,7 @@ const Product = () => {
         style={{
           display: "flex",
           justifyContent: "center",
-          fontSize: "2.5rem",
+          fontSize: "2rem",
         }}
       >
         Featured In

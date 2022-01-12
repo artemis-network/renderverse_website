@@ -2,6 +2,16 @@ const Faqs = () => {
   return (
     <div>
       {/* Start */}
+      <div
+        style={{
+          fontSize: "2rem",
+          display: "flex",
+          justifyContent: "center",
+          padding: "4rem 0 0 0 ",
+        }}
+      >
+        FAQ
+      </div>
       <section className="section">
         <div className="container">
           <div className="row">
