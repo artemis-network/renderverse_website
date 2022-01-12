@@ -3,13 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 import './assets/css/bootstrap.min.css'
-import './assets/css/tiny-slider.css'
 import './assets/css/tobii.min.css'
-// import './assets/css/materialdesignicons.min.css'
 import './assets/css/selectr.min.css'
 import './assets/css/colors/default.css'
 import './assets/css/style-dark.css'
-// import './assets/css/style.css'
+import './assets/css/features.css'
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';

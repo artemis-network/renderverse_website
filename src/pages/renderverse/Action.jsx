@@ -13,74 +13,68 @@ const Action = () => {
         padding: "8rem 0",
       }}
     >
-      <div
-        style={{
-          fontSize: "2rem",
-          display: "flex",
-          justifyContent: "center",
-          color: "#0B1118",
-        }}
-      >
-        See it in action
-      </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          color: "#0B1118",
-        }}
-      >
-        Try it yourself. Invite code: renderverse
-      </div>
-      <div
-        style={{ display: "flex", justifyContent: "center", padding: "1rem" }}
-      >
-        <div className="btn btn-primary btn-lg">Join Renderverse</div>
-      </div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          columnGap: "5rem",
-          justifyContent: "center",
-          padding: "2rem 0",
-        }}
-      >
-        <img
-          style={{ borderRadius: "3vh", marginTop: "2rem" }}
-          height={320}
-          width={180}
-          alt="image0"
-          src={Action1}
-        ></img>
-        <img
-          style={{ borderRadius: "3vh", marginBottom: "1rem" }}
-          height={320}
-          width={180}
-          alt="image1"
-          src={Action1}
-        ></img>
-        <img
-          style={{ borderRadius: "3vh" }}
-          height={500}
-          width={260}
-          alt="image2"
-          src={Action1}
-        ></img>
-        <img
-          style={{ borderRadius: "3vh", marginTop: "1rem" }}
-          height={320}
-          width={180}
-          alt="image3"
-          src={Action1}
-        ></img>
-        <img
-          style={{ borderRadius: "3vh", marginBottom: "2rem" }}
-          height={320}
-          width={180}
-          alt="image4"
-          src={Action1}
-        ></img>
+      <div className="container">
+        <div
+          style={{
+            fontSize: "2rem",
+            display: "flex",
+            justifyContent: "center",
+            color: "#0B1118",
+          }}
+        >
+          See it in action
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            color: "#0B1118",
+          }}
+        >
+          Try it yourself. Invite code: renderverse
+        </div>
+        <div
+          style={{ display: "flex", justifyContent: "center", padding: "1rem" }}
+        >
+          <div className="btn btn-primary btn-lg">Join Renderverse</div>
+        </div>
+        <div className="action_row_1">
+          <img
+            style={{ borderRadius: "3vh", marginTop: "2rem" }}
+            height={320}
+            width={180}
+            alt="image0"
+            src={Action1}
+          ></img>
+          <img
+            style={{ borderRadius: "3vh", marginBottom: "1rem" }}
+            height={320}
+            width={180}
+            alt="image1"
+            src={Action1}
+          ></img>
+          <img
+            style={{ borderRadius: "3vh" }}
+            height={500}
+            width={260}
+            alt="image2"
+            src={Action1}
+          ></img>
+          <img
+            style={{ borderRadius: "3vh", marginTop: "1rem" }}
+            height={320}
+            width={180}
+            alt="image3"
+            src={Action1}
+          ></img>
+          <img
+            style={{ borderRadius: "3vh", marginBottom: "2rem" }}
+            height={320}
+            width={180}
+            alt="image4"
+            src={Action1}
+          ></img>
+        </div>
       </div>
     </div>
   );

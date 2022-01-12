@@ -13,7 +13,7 @@ const Contact = () => {
             <div className="col-12">
               <div className="section-title text-center">
                 <h4 className="title text-white title-dark fw-medium mb-4">
-                  Contact Us
+                  Join the community
                 </h4>
                 <p className="text-white-50 para-desc mx-auto mb-0">
                   With Cryptor Trade, you can be sure your trading skills are

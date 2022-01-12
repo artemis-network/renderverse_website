@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Element, Link } from "react-scroll";
 import { BrowserRouter, } from 'react-router-dom'
 
@@ -11,8 +11,22 @@ import Action from "./pages/renderverse/Action";
 import RoadMap from "./pages/renderverse/RoadMap";
 import Team from "./pages/renderverse/Team";
 import Footer from "./components/Footer";
+import Token from "./pages/renderverse/Token";
+import Background from './assets/final_61debe39bffffc010d375016_931214.mp4'
 
 const App = () => {
+  const video = React.createRef();
+
+  const [reset, setReset] = React.useState(false)
+
+  React.useEffect(() => {
+    setTimeout(() => {
+      video.current.playbackRate = 1.25;
+      video.current.play()
+      setReset(true)
+    }, 2000)
+    setReset(false)
+  }, [reset])
 
   return (
     <div>
@@ -32,7 +46,7 @@ const App = () => {
                   <Link
                     className="navbar-toggle"
                     id="isToggle"
-                    onclick="toggleMenu()"
+                    onClick={() => "toggleMenu()"}
                   >
                     <div className="lines">
                       <span />
@@ -92,9 +106,18 @@ const App = () => {
           {/* Navbar End */}
         </div>
 
+        <video style={{
+          width: "100%",
+          height: "108vh",
+          objectFit: "cover",
+        }} ref={video} loop muted>
+          <source src={Background} type="video/mp4" />
+        </video>
+
+
         <Element id="/" name="brand">
           <div id="home">
-            <RenderVerse />
+            {/* <RenderVerse /> */}
           </div>
         </Element>
 
@@ -116,6 +139,12 @@ const App = () => {
             <Action />
           </div>
         </Element>
+
+
+
+
+        <Token />
+
 
         <Element id="/team" name="team">
           <div id="team">

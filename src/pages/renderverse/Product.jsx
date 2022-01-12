@@ -33,21 +33,17 @@ const Product = () => {
           display: "flex",
           justifyContent: "center",
           fontSize: "2rem",
+          padding: "0 0 4rem 0",
         }}
       >
         Featured In
       </div>
-      <div style={{ display: "flex", flexDirection: "column", rowGap: "4rem" }}>
-        <div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              columnGap: "4rem",
-              padding: "4rem 0 4rem 0",
-              justifyContent: "center",
-            }}
-          >
+      <div
+        className="container"
+        style={{ display: "flex", flexDirection: "column", rowGap: "4rem" }}
+      >
+        <div className="row">
+          <div className="feature_row_1">
             <img height={30} width={160} src={Image1} alt="image1" />
             <img height={30} width={160} src={Image2} alt="image1" />
             <img height={35} width={100} src={Image3} alt="image1" />
@@ -55,14 +51,7 @@ const Product = () => {
             <img height={30} width={160} src={Image5} alt="image1" />
             <img height={30} width={120} src={Image6} alt="image1" />
           </div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              columnGap: "4rem",
-              justifyContent: "center",
-            }}
-          >
+          <div className="feature_row_1">
             <img height={30} width={160} src={Image7} alt="image1" />
             <img height={40} width={150} src={Image8} alt="image1" />
             <img height={30} width={150} src={Image9} alt="image1" />

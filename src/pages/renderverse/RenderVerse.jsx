@@ -4,13 +4,13 @@ import Twitter from "../../assets/images/twitter.svg";
 import Medium from "../../assets/images/medium.svg";
 import Discord from "../../assets/images/icons8-discord.svg";
 
-
 const MetabaseCamp = () => {
   return (
     <div
       className="bg-home bg-black"
       style={{
-        display: "flex",
+        margin: "0",
+        isplay: "flex",
         flexDirection: "column",
         padding: "8rem 0",
         backgroundImage: 'url("images/bg/bg02.png") !important',
@@ -23,9 +23,7 @@ const MetabaseCamp = () => {
           <div className="row mt-5 align-items-center">
             <div className="col-lg-6 col-md-6 col-12">
               <div className="title-heading">
-                <span className="badge bg-soft-success rounded-md">
-                  Calculator
-                </span>
+                <span className="badge bg-soft-success rounded-md">$RNDR</span>
                 <h4
                   style={{
                     animationName: "glow",
@@ -35,11 +33,11 @@ const MetabaseCamp = () => {
                   }}
                   className="display-5 text-white title-dark fw-medium mt-3 mb-4"
                 >
-                  100% Free Digital Asset Exchange Platform
+                  An AR doorway into the Metaverse & NFTs
                 </h4>
                 <p className="text-white-50 para-desc mx-auto mb-0">
-                  With Cryptor Trade, you can be sure your trading skills are
-                  matched with excellent service.
+                  Immerse yourself into the world of Metaverse with our
+                  cross-device Deep-learning powered AR application
                 </p>
                 <div className="mt-4 pt-2">
                   <Link className="btn btn-primary m-1">

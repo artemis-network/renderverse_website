@@ -1,110 +1,86 @@
+import TinySlider from "tiny-slider-react";
+
+const imgs = [
+  {
+    text: "cool",
+  },
+  {
+    text: "cool",
+  },
+  {
+    text: "cool",
+  },
+  {
+    text: "cool",
+  },
+
+  {
+    text: "cool",
+  },
+];
+
+const settings = {
+  controls: false,
+  mouseDrag: true,
+  loop: true,
+  rewind: true,
+  autoplay: true,
+  autoplayButtonOutput: false,
+  autoplayTimeout: 3000,
+  nav: false,
+  speed: 400,
+  gutter: 12,
+  responsive: {
+    992: {
+      items: 4,
+    },
+
+    767: {
+      items: 2,
+    },
+
+    320: {
+      items: 1,
+    },
+  },
+};
+
 const RoadMap = () => {
   return (
-    <div
-      style={{
-        backgroundImage:
-          "linear-gradient(to right top, #959b9b, #a7acac, #b8bdbd, #cbcfcf, #dde1e1, #dde1e1, #dde1e1, #dde1e1, #cbcfcf, #b8bdbd, #a7acac, #959b9b)",
-      }}
-    >
+    <div style={{ padding: "8rem 0", background: "white" }}>
       <div
         style={{
           fontSize: "2rem",
           display: "flex",
+          flexDirection: "row",
           justifyContent: "center",
+          padding: "0 0 4rem 0",
           color: "#0B1118",
-          padding: "8rem 0 0 0 ",
         }}
       >
-        Road Map
+        Roadmap
       </div>
-      {/* Start */}
-      <section
-        className="section"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "column",
-          rowGap: "1rem",
-        }}
-      >
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="tiny-four-item tiny-timeline">
-                <div className="tiny-slide text-center">
-                  <div className="card pt-4 border-0 feature key-feature feature-primary item-box">
-                    <div className="icon text-center rounded-pill mx-auto mb-3 fs-5">
-                      <i className="uil uil-pen" />
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12">
+            <TinySlider className="tiny-timeline" settings={settings}>
+              {imgs.map((img, index) => {
+                return (
+                  <div key={index} className="tiny-slide text-center">
+                    <div className="card pt-4 border-0 feature key-feature feature-primary item-box">
+                      <div className="icon text-center rounded-pill mx-auto mb-3 fs-5">
+                        <i className="uil uil-pen"></i>
+                      </div>
+                      <p className="text-muted mb-0">January, 2019</p>
+                      <h6 className="mb-0 mt-1">Planning</h6>
                     </div>
-                    <p className="text-black mb-0">January, 2019</p>
-                    <h6 className="mb-0 mt-1 text-black">Planning</h6>
                   </div>
-                </div>
-                <div className="tiny-slide text-center">
-                  <div className="card pt-4 border-0 feature key-feature feature-primary item-box">
-                    <div className="icon text-center rounded-pill mx-auto mb-3 fs-5">
-                      <i className="uil uil-bitcoin" />
-                    </div>
-                    <p className="text-black mb-0">February, 2019</p>
-                    <h6 className="mb-0 mt-1 text-black">Blockchain Starts</h6>
-                  </div>
-                </div>
-                <div className="tiny-slide text-center">
-                  <div className="card pt-4 border-0 feature key-feature feature-primary item-box">
-                    <div className="icon text-center rounded-pill mx-auto mb-3 fs-5">
-                      <i className="uil uil-clipboard-blank" />
-                    </div>
-                    <p className="text-black mb-0">March, 2019</p>
-                    <h6 className="mb-0 mt-1 text-black">Expanded Licensing</h6>
-                  </div>
-                </div>
-                <div className="tiny-slide text-center">
-                  <div className="card p-4 border-0 feature key-feature feature-light bg-primary item-box">
-                    <div className="icon text-center rounded-pill mx-auto mb-3 fs-5">
-                      <i className="uil uil-money-insert" />
-                    </div>
-                    <p className="text-black -50 mb-0">April, 2019</p>
-                    <h6 className="text-light title-dark mb-0 mt-1">
-                      Token Sale
-                    </h6>
-                  </div>
-                </div>
-                <div className="tiny-slide text-center">
-                  <div className="card pt-4 border-0 feature key-feature feature-primary item-box">
-                    <div className="icon text-center rounded-pill mx-auto mb-3 fs-5">
-                      <i className="uil uil-airplay" />
-                    </div>
-                    <p className="text-black mb-0">May, 2019</p>
-                    <h6 className="mb-0 mt-1 text-black">Project Launch</h6>
-                  </div>
-                </div>
-                <div className="tiny-slide text-center">
-                  <div className="card pt-4 border-0 feature key-feature feature-primary item-box">
-                    <div className="icon text-center rounded-pill mx-auto mb-3 fs-5">
-                      <i className="uil uil-euro-circle" />
-                    </div>
-                    <p className="text-black mb-0">June, 2019</p>
-                    <h6 className="mb-0 mt-1 text-black">Tier 5 sold</h6>
-                  </div>
-                </div>
-                <div className="tiny-slide text-center">
-                  <div className="card pt-4 border-0 feature key-feature feature-primary item-box">
-                    <div className="icon text-center rounded-pill mx-auto mb-3 fs-5">
-                      <i className="uil uil-desktop" />
-                    </div>
-                    <p className="text-black mb-0">December, 2019</p>
-                    <h6 className="mb-0 mt-1 text-black">Project Live</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/*end col*/}
+                );
+              })}
+            </TinySlider>
           </div>
-          {/*end row*/}
         </div>
-        {/*end container*/}
-      </section>
-      {/*end section*/}
+      </div>
     </div>
   );
 };
