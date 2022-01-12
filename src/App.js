@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Element, Link } from "react-scroll";
 import { BrowserRouter, } from 'react-router-dom'
 
@@ -24,9 +24,9 @@ const App = () => {
       video.current.playbackRate = 1.25;
       video.current.play()
       setReset(true)
-    }, 2000)
+    }, 4000)
     setReset(false)
-  }, [reset])
+  }, [reset, video])
 
   return (
     <div>
@@ -117,7 +117,7 @@ const App = () => {
 
         <Element id="/" name="brand">
           <div id="home">
-            {/* <RenderVerse /> */}
+            <RenderVerse />
           </div>
         </Element>
 
