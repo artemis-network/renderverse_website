@@ -1,0 +1,16 @@
+.desk_view {
+  display: flex;
+}
+
+.mobile_view {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .desk_view {
+    display: none;
+  }
+  .mobile_view {
+    display: flex;
+  }
+}

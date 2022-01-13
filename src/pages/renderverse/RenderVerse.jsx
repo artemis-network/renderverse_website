@@ -15,7 +15,7 @@ const MetabaseCamp = () => {
       <section className="d-flex align-items-center ">
         <div className="container">
           <div className="row mt-5 align-items-center">
-            <div className="col-lg-6 col-md-6 col-12">
+            <div className="col-lg-12 col-md-12 col-12">
               <div className="title-heading">
                 <span className="badge bg-soft-success rounded-md">$RNDR</span>
                 <h4
@@ -33,7 +33,10 @@ const MetabaseCamp = () => {
                   Immerse yourself into the world of Metaverse with our
                   cross-device Deep-learning powered AR application
                 </p>
-                <div className="mt-4 pt-2">
+                <div
+                  style={{ display: "flex", justifyContent: "center" }}
+                  className="mt-4 pt-2 align-items-center"
+                >
                   <Link className="btn btn-primary m-1">
                     <i className="uil uil-apple" /> App Store
                   </Link>
@@ -42,24 +45,6 @@ const MetabaseCamp = () => {
                   </Link>
                 </div>
               </div>
-            </div>
-            {/*end col*/}
-            <div className="col-lg-5 offset-lg-1 col-md-6 col-12">
-              {/* <div className="card border-0 bg-light shadow rounded p-4 overflow-hidden">
-                <img
-                  src="images/illustration/profit.svg"
-                  className="img-fluid"
-                  alt=""
-                />
-                <div className="mt-4 pt-2">
-                  <h5 className="text-center mb-0">
-                    Live Cryptocurrency Calculator
-                  </h5>
-                  <div className="calculator-block mt-4">
-                    <div className="calculator-body"></div>
-                  </div>
-                </div>
-              </div> */}
             </div>
             {/*end col*/}
           </div>
