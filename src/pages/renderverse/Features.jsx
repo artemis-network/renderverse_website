@@ -1,6 +1,6 @@
 const Features = () => {
   return (
-    <div>
+    <div style={{ background: "#0b1118" }}>
       {/* Start */}
       <section className="section">
         <div className="container mt-100 mt-60">

@@ -14,7 +14,13 @@ import Wave from "react-wavify";
 
 const Product = () => {
   return (
-    <section style={{ padding: "0  0 5rem 0" }}>
+    <div
+      style={{
+        padding: "0  0 12rem 0",
+        background: "#0b1118",
+        position: "relative",
+      }}
+    >
       <div style={{ position: "relative", height: "12vh" }}>
         <Wave
           style={{ position: "absolute", top: "-5rem" }}
@@ -60,7 +66,7 @@ const Product = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

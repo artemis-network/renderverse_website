@@ -5,12 +5,9 @@ import Wave from "react-wavify";
 const Mission = () => {
   return (
     <div>
-      {/* Hero End */}
-      {/* Start */}
       <section
         style={{
           backgroundColor: "#2a2a72",
-          margin: "10rem 0 0 0",
         }}
         className="section"
       >
@@ -25,7 +22,7 @@ const Mission = () => {
             paused={false}
             options={{
               height: 20,
-              amplitude: 10,
+              amplitude: 20,
               speed: 0.25,
               points: 5,
             }}
@@ -43,7 +40,7 @@ const Mission = () => {
             fill="url(#gradient)"
             options={{
               height: 25,
-              amplitude: 25,
+              amplitude: 20,
               speed: 0.35,
               points: 3,
             }}

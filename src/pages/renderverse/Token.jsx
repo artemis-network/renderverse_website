@@ -72,7 +72,7 @@ const Token = () => {
   }, []);
 
   return (
-    <div className="section">
+    <div className="section" style={{ background: "#0b1118" }}>
       <div className="container">
         <div
           style={{

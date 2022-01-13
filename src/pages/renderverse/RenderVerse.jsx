@@ -7,14 +7,8 @@ import Discord from "../../assets/images/icons8-discord.svg";
 const MetabaseCamp = () => {
   return (
     <div
-      className="bg-home bg-black"
       style={{
-        margin: "0",
-        isplay: "flex",
-        flexDirection: "column",
-        padding: "8rem 0",
-        backgroundImage: 'url("images/bg/bg02.png") !important',
-        backgroundPosition: "center !important",
+        padding: "10rem 0 0 0",
       }}
     >
       {/* Hero Start */}
@@ -51,7 +45,7 @@ const MetabaseCamp = () => {
             </div>
             {/*end col*/}
             <div className="col-lg-5 offset-lg-1 col-md-6 col-12">
-              <div className="card border-0 bg-light shadow rounded p-4 overflow-hidden">
+              {/* <div className="card border-0 bg-light shadow rounded p-4 overflow-hidden">
                 <img
                   src="images/illustration/profit.svg"
                   className="img-fluid"
@@ -65,7 +59,7 @@ const MetabaseCamp = () => {
                     <div className="calculator-body"></div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
             {/*end col*/}
           </div>

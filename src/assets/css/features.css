@@ -78,3 +78,23 @@
     column-gap: 0.35rem;
   }
 }
+
+@media screen and (max-width: 512px) {
+  .feature_row_1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    row-gap: 4rem;
+    width: 60%;
+    margin: auto auto;
+  }
+
+  .action_row_1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1rem;
+    padding: 1rem;
+    row-gap: 4rem;
+    align-items: center;
+  }
+}

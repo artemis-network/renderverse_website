@@ -17,16 +17,11 @@ import Background from './assets/final_61debe39bffffc010d375016_931214.mp4'
 const App = () => {
   const video = React.createRef();
 
-  const [reset, setReset] = React.useState(false)
 
   React.useEffect(() => {
-    setTimeout(() => {
-      video.current.playbackRate = 1.25;
-      video.current.play()
-      setReset(true)
-    }, 4000)
-    setReset(false)
-  }, [reset, video])
+    video.current.playbackRate = 1.25;
+    video.current.play()
+  }, [video])
 
   return (
     <div>
@@ -110,6 +105,12 @@ const App = () => {
           width: "100%",
           height: "108vh",
           objectFit: "cover",
+          position: "fixed",
+          left: 0,
+          right: 0,
+          top: 0,
+          bottom: 0,
+          zIndex: -1
         }} ref={video} loop muted>
           <source src={Background} type="video/mp4" />
         </video>

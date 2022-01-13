@@ -1,6 +1,6 @@
 const Team = () => {
   return (
-    <div>
+    <div style={{ background: "#0b1118" }}>
       <div
         style={{
           fontSize: "2rem",
