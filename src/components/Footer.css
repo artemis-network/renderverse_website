@@ -78,6 +78,11 @@ hr {
   width: 70%;
 }
 
+.socials_l {
+  height: 50px;
+  width: 50px;
+}
+
 .footer_content_links {
   display: flex;
   flex-direction: row;
@@ -168,6 +173,11 @@ hr {
     justify-content: center;
     padding: 2rem;
     row-gap: 1rem;
+  }
+
+  .socials_l {
+    height: 25px;
+    width: 25px;
   }
 }
 

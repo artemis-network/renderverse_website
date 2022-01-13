@@ -77,14 +77,14 @@ const MetabaseCamp = () => {
           flexDirection: "row",
           justifyContent: "center",
           alignContent: "center",
-          columnGap: "5rem",
+          columnGap: "3rem",
           padding: "7rem 0",
         }}
       >
-        <img height={50} width={50} src={Twitter} alt="twitter"></img>
-        <img height={50} width={50} src={Telegram} alt="telegram"></img>
-        <img height={50} width={50} src={Medium} alt="medium"></img>
-        <img height={50} width={50} src={Discord} alt="medium"></img>
+        <img className="socials_l" src={Twitter} alt="twitter"></img>
+        <img className="socials_l" src={Telegram} alt="telegram"></img>
+        <img className="socials_l" src={Medium} alt="medium"></img>
+        <img className="socials_l" src={Discord} alt="medium"></img>
       </div>
     </div>
   );
