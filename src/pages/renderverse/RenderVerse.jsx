@@ -8,8 +8,12 @@ const MetabaseCamp = () => {
   return (
     <div
       style={{
-        padding: "10rem 0 0 0",
         height: "108vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "column",
+        margin: "4rem 0",
       }}
     >
       {/* Hero Start */}
