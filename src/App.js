@@ -103,7 +103,7 @@ const App = () => {
 
         <video style={{
           width: "100%",
-          height: "100%",
+          height: "108vh",
           objectFit: "cover",
           position: "fixed",
           left: 0,

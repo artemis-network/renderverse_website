@@ -9,6 +9,7 @@ const MetabaseCamp = () => {
     <div
       style={{
         padding: "10rem 0 0 0",
+        height: "108vh",
       }}
     >
       {/* Hero Start */}
