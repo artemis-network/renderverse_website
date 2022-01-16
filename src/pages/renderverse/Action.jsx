@@ -49,6 +49,7 @@ const Action = () => {
             fontSize: "2rem",
             display: "flex",
             justifyContent: "center",
+            alignSelf: "center",
             color: "#0B1118",
           }}
         >
@@ -87,42 +88,16 @@ const Action = () => {
         </div>
 
         <div className="desk_view">
-          <div className="action_row_1">
-            <img
-              style={{ borderRadius: "3vh", marginTop: "2rem" }}
-              height={320}
-              width={180}
-              alt="image0"
-              src={Action1}
-            ></img>
-            <img
-              style={{ borderRadius: "3vh", marginBottom: "1rem" }}
-              height={320}
-              width={180}
-              alt="image1"
-              src={Action1}
-            ></img>
-            <img
-              style={{ borderRadius: "3vh" }}
-              height={500}
-              width={260}
-              alt="image2"
-              src={Action1}
-            ></img>
-            <img
-              style={{ borderRadius: "3vh", marginTop: "1rem" }}
-              height={320}
-              width={180}
-              alt="image3"
-              src={Action1}
-            ></img>
-            <img
-              style={{ borderRadius: "3vh", marginBottom: "2rem" }}
-              height={320}
-              width={180}
-              alt="image4"
-              src={Action1}
-            ></img>
+          <div className="row">
+            <div className="col-lg-12 col-md-12 col-12">
+              <img
+                style={{ borderRadius: "3vh", margin: "4rem 0" }}
+                height={520}
+                width={320}
+                alt="image4"
+                src={Action1}
+              ></img>
+            </div>
           </div>
         </div>
       </div>

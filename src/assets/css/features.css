@@ -7,35 +7,28 @@
 }
 
 .action_row_1 {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr;
   column-gap: 5rem;
-  justify-content: center;
   padding: 2rem;
-  align-items: center;
+  align-self: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 1366px) {
   .feature_row_1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 2rem;
     row-gap: 4rem;
     column-gap: 4rem;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
   }
 
   .action_row_1 {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 2rem;
     row-gap: 4rem;
-    column-gap: 4rem;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
+    align-self: center; */
   }
 }
 
@@ -45,21 +38,17 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
     row-gap: 4rem;
-    column-gap: 4rem;
     justify-content: center;
     align-items: center;
     align-self: center;
   }
 
   .action_row_1 {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
     row-gap: 4rem;
     column-gap: 4rem;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
+    align-self: center; */
   }
 }
 
@@ -72,10 +61,10 @@
   }
 
   .action_row_1 {
-    margin: 1rem;
+    /* margin: 1rem;
     padding: 1rem;
     row-gap: 2rem;
-    column-gap: 0.35rem;
+    column-gap: 0.35rem; */
   }
 }
 
@@ -90,17 +79,18 @@
   }
 
   .action_row_1 {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr;
     margin: 1rem;
     padding: 1rem;
     row-gap: 4rem;
-    align-items: center;
+    align-items: center; */
   }
 }
 
 .desk_view {
   display: flex;
+  justify-content: center;
 }
 
 .mobile_view {

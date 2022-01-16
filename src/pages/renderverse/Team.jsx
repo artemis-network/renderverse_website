@@ -47,13 +47,14 @@ const settings = {
 
 const Team = () => {
   return (
-    <div style={{ background: "#0b1118" }}>
+    <div style={{ background: "white" }}>
       <div
         style={{
           fontSize: "2rem",
           display: "flex",
           justifyContent: "center",
           padding: "4rem 0 0 0 ",
+          color: "#0b111a",
         }}
       >
         Our Team

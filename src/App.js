@@ -11,8 +11,8 @@ import Action from "./pages/renderverse/Action";
 import RoadMap from "./pages/renderverse/RoadMap";
 import Team from "./pages/renderverse/Team";
 import Footer from "./components/Footer";
-import Token from "./pages/renderverse/Token";
 import Background from './assets/final_61debe39bffffc010d375016_931214.mp4'
+import Disrupting from "./pages/renderverse/Disrupting";
 
 const App = () => {
   const video = React.createRef();
@@ -124,7 +124,7 @@ const App = () => {
 
         <Element id="/product" name="product">
           <div id="product">
-            <Product />
+            <Product title={"Featured In"} />
           </div>
         </Element>
 
@@ -138,18 +138,7 @@ const App = () => {
           <div id="eco-system">
             <Features />
             <Action />
-          </div>
-        </Element>
-
-
-
-
-        <Token />
-
-
-        <Element id="/team" name="team">
-          <div id="team">
-            <Team />
+            <Disrupting />
           </div>
         </Element>
 
@@ -157,6 +146,13 @@ const App = () => {
         <Element id="/roadmap" name="roadmap">
           <div id="roadmap">
             <RoadMap />
+            <Product title={"Advisors and Backer"} />
+          </div>
+        </Element>
+
+        <Element id="/team" name="team">
+          <div id="team">
+            <Team />
           </div>
         </Element>
 
@@ -170,7 +166,9 @@ const App = () => {
           <div id="contact">
             <Footer />
           </div>
+
         </Element>
+
 
       </BrowserRouter>
     </div>

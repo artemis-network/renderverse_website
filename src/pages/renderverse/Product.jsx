@@ -12,7 +12,7 @@ import Image10 from "../../assets/images/cryptoadventure_press.png";
 import Image11 from "../../assets/images/8848_press.png";
 import Wave from "react-wavify";
 
-const Product = () => {
+const Product = (props) => {
   return (
     <div
       style={{
@@ -42,7 +42,7 @@ const Product = () => {
           padding: "0 0 4rem 0",
         }}
       >
-        Featured In
+        {props.title}
       </div>
       <div
         className="container"
