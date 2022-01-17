@@ -1,50 +1,3 @@
-import TinySlider from "tiny-slider-react";
-
-const imgs = [
-  {
-    text: "cool",
-  },
-  {
-    text: "cool",
-  },
-  {
-    text: "cool",
-  },
-  {
-    text: "cool",
-  },
-
-  {
-    text: "cool",
-  },
-];
-
-const settings = {
-  controls: false,
-  mouseDrag: true,
-  loop: true,
-  rewind: true,
-  autoplay: true,
-  autoplayButtonOutput: false,
-  autoplayTimeout: 3000,
-  nav: false,
-  speed: 400,
-  gutter: 12,
-  responsive: {
-    992: {
-      items: 4,
-    },
-
-    767: {
-      items: 2,
-    },
-
-    320: {
-      items: 1,
-    },
-  },
-};
-
 const RoadMap = () => {
   return (
     <div style={{ padding: "8rem 0", background: "white" }}>
@@ -58,26 +11,153 @@ const RoadMap = () => {
           color: "#0B1118",
         }}
       >
-        Roadmap
+        Our Goals
       </div>
-      <div className="container">
-        <div className="row">
-          <div className="col-md-12">
-            <TinySlider className="tiny-timeline" settings={settings}>
-              {imgs.map((img, index) => {
-                return (
-                  <div key={index} className="tiny-slide text-center">
-                    <div className="card pt-4 border-0 feature key-feature feature-primary item-box">
-                      <div className="icon text-center rounded-pill mx-auto mb-3 fs-5">
-                        <i className="uil uil-pen"></i>
-                      </div>
-                      <p className="text-muted mb-0">January, 2019</p>
-                      <h6 className="mb-0 mt-1">Planning</h6>
-                    </div>
-                  </div>
-                );
-              })}
-            </TinySlider>
+      <div className="container ">
+        <div className="row justify-content-center bg-black p-3 rounded-top">
+          <div className="col-lg-4 col-md-4 justify-content-center col-12">
+            <h2 className="text-center my-4">Q3 2021</h2>
+            <div className="hide_border">
+              <h4 className="my-2">Pure tokenomics baseline</h4>
+              <div className="row mx-4">
+                <div
+                  className="p-3 bg-white my-2 "
+                  style={{ borderRadius: "2vh", border: "2px solid gray" }}
+                >
+                  Set of lending-borrowing contracts
+                </div>
+              </div>
+              <div className="row mx-4">
+                <div
+                  className="p-3  bg-white my-2 "
+                  style={{ borderRadius: "2vh", border: "2px solid gray" }}
+                >
+                  $UFI Pool
+                </div>
+              </div>
+              <div className="row mx-4">
+                <div
+                  className="p-3 bg-white my-2 "
+                  style={{ borderRadius: "2vh", border: "2px solid gray" }}
+                >
+                  $UFI Dex Integration
+                </div>
+              </div>
+              <div className="row mx-4">
+                <div
+                  className="p-3 bg-white my-2"
+                  style={{ borderRadius: "2vh", border: "2px solid gray" }}
+                >
+                  Farming
+                </div>
+              </div>
+              <h4 className="my-2">PureFi Protocol</h4>
+              <div className="row mx-4">
+                <div
+                  className="bg-white p-3 my-2"
+                  style={{ borderRadius: "2vh", border: "2px solid gray" }}
+                >
+                  Verifiable Credentials Standards and document formats for:
+                  <ul>
+                    <li>AML</li>
+                    <li>KYC • Other Meta Standards</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-4 col-md-4 justify-content-center col-12">
+            <h2 className="text-center my-4">Q4 2021</h2>
+            <div className="hide_border">
+              <h4 className="my-2">Integration with DEXs</h4>
+              <div className="row mx-4">
+                <div
+                  className="p-3 bg-white my-2"
+                  style={{ borderRadius: "2vh", border: "2px solid gray" }}
+                >
+                  DEX integration KIT
+                </div>
+              </div>
+              <div className="row mx-4">
+                <div
+                  className="p-3 bg-white my-2"
+                  style={{ borderRadius: "2vh", border: "2px solid gray" }}
+                >
+                  Circuit
+                  <ul>
+                    <li>AML </li>
+                    <li>KYC</li>
+                    <li>Other</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="row mx-4">
+                <div
+                  className="p-3 bg-white my-2 "
+                  style={{ borderRadius: "2vh", border: "2px solid gray" }}
+                >
+                  ZK-SNARK setup procedure (Public event)
+                </div>
+              </div>
+              <div className="row mx-4">
+                <div
+                  className="p-3 bg-white my-2 "
+                  style={{ borderRadius: "2vh", border: "2px solid gray" }}
+                >
+                  Intermediate validation contract for EVM compatible
+                  blockchains
+                </div>
+              </div>
+
+              <div className="row mx-4">
+                <div
+                  className="p-3 bg-white my-2"
+                  style={{ borderRadius: "2vh", border: "2px solid gray" }}
+                >
+                  Intermediate smart contract for CosmWasm
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-4 col-md-4 justify-content-center col-12">
+            <h2 className="text-center my-4">Q1 2021</h2>
+            <h4>Issuers SDK</h4>
+            <div>
+              <div className="row mx-4">
+                <div
+                  className="p-3 bg-white my-2"
+                  style={{ borderRadius: "2vh", border: "2px solid gray" }}
+                >
+                  $UFI staking
+                </div>
+              </div>
+              <div className="row mx-4">
+                <div
+                  className="p-3 bg-white my-2 "
+                  style={{ borderRadius: "2vh", border: "2px solid gray" }}
+                >
+                  Onboarding procedure
+                </div>
+              </div>
+              <div className="row mx-4">
+                <div
+                  className="p-3 bg-white my-2"
+                  style={{ borderRadius: "2vh", border: "2px solid gray" }}
+                >
+                  External reference API
+                </div>
+              </div>
+              <div className="row mx-4">
+                <div
+                  className="p-3 bg-white my-2"
+                  style={{ borderRadius: "2vh", border: "2px solid gray" }}
+                >
+                  Farming
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

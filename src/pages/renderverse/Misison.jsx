@@ -7,7 +7,7 @@ const Mission = () => {
     <div>
       <section
         style={{
-          backgroundColor: "#2a2a72",
+          backgroundColor: "#F1F1F1",
         }}
         className="section"
       >
@@ -61,13 +61,28 @@ const Mission = () => {
             flexDirection: "row",
             justifyContent: "center",
             padding: "0 0 2rem 0",
+            color: "#0b1118",
           }}
         >
-          Our Mission & Vision
+          What is Renderverse?
         </div>
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-7 col-md-6 order-2 order-md-1">
+              <div className="my-4">
+                <div
+                  className="text-black"
+                  style={{ fontSize: ".9rem", fontWeight: "bold" }}
+                >
+                  OUR MISSION
+                </div>
+                <div
+                  className="text-black"
+                  style={{ fontSize: "2rem", fontWeight: "bold" }}
+                >
+                  OUR TAG LINE
+                </div>
+              </div>
               <div className="section-title me-lg-5">
                 <p className="text-muted">
                   What's the secret to Cryptor's success? The answer is obvious:
@@ -98,11 +113,6 @@ const Mission = () => {
                     Cryptor coins and earn Triple Yield.
                   </li>
                 </ul>
-                <div className="mt-4">
-                  <Link className="btn btn-soft-primary">
-                    <i className="uil uil-wallet" /> Go to wallet
-                  </Link>
-                </div>
               </div>
             </div>
             {/*end col*/}

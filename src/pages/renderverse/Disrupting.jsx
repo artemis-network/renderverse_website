@@ -14,6 +14,7 @@ const Disrupting = () => {
             <img
               style={{ borderRadius: "2rem", padding: "2rem" }}
               src={Placeholder}
+              height={200}
               alt="cool"
             />
             <div
@@ -37,6 +38,7 @@ const Disrupting = () => {
             <img
               style={{ borderRadius: "2rem", padding: "2rem" }}
               src={Placeholder}
+              height={200}
               alt="cool"
             />
             <div
@@ -61,6 +63,8 @@ const Disrupting = () => {
             <img
               style={{ borderRadius: "2rem", padding: "2rem" }}
               src={Placeholder}
+              height={200}
+              width={200}
               alt="cool"
             />
             <div

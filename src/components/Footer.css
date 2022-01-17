@@ -205,3 +205,13 @@ hr {
     row-gap: 1rem;
   }
 }
+
+.hide_border {
+  border-right: 2px dashed white;
+}
+
+@media screen and (max-width: 768px) {
+  .hide_border {
+    border: none;
+  }
+}
