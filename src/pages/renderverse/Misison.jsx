@@ -1,5 +1,3 @@
-import Wave from "react-wavify";
-
 const Mission = () => {
   return (
     <div>
