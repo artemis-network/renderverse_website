@@ -20,64 +20,55 @@ const Mission = () => {
             display: "flex",
             flexDirection: "row",
             justifyContent: "center",
-            padding: "5rem 0 2rem 0",
+            padding: "4rem 0 2rem 0",
+            marginTop: "3rem",
           }}
         >
           What is Renderverse?
         </div>
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-7 col-md-6 order-2 order-md-1">
+            <div className="col-lg-6 col-md-6 order-2 order-md-1">
               <div className="my-4">
-                <div style={{ fontSize: ".9rem", fontWeight: "bold" }}>
+                <div style={{ fontSize: ".8rem", fontWeight: "bold" }}>
                   OUR MISSION
                 </div>
-                <div style={{ fontSize: "2rem", fontWeight: "bold" }}>
-                  OUR TAG LINE
+                <div style={{ fontSize: "1.5rem", fontWeight: "bold" }}>
+                  Empowering every person on the planet to step into the world
+                  of Metaverse and NFT's with next-gen rendering technology
+                  powered by AI and ML
                 </div>
               </div>
-              <div className="section-title me-lg-5">
-                <p className="text-muted">
-                  What's the secret to Cryptor's success? The answer is obvious:
-                  Our people. We are proud to have one of the most talented,
-                  hardworking and passionate teams the world has to offer.
-                  Interested in joining our team?
-                </p>
-                <ul className="list-unstyled text-muted mb-0">
-                  <li className="mb-0">
-                    <span className="text-primary h5 me-2">
-                      <i className="uil uil-check-circle align-middle" />
-                    </span>
-                    <span className="fw-medium">Cryptor Wallet.</span> Your
-                    Keys, Your Crypto.
-                  </li>
-                  <li className="mb-0">
-                    <span className="text-primary h5 me-2">
-                      <i className="uil uil-check-circle align-middle" />
-                    </span>
-                    <span className="fw-medium">Cryptor Earn.</span> No lock-up
-                    period and stable returns.
-                  </li>
-                  <li className="mb-0">
-                    <span className="text-primary h5 me-2">
-                      <i className="uil uil-check-circle align-middle" />
-                    </span>
-                    <span className="fw-medium">Cryptor Swap.</span> Swap
-                    Cryptor coins and earn Triple Yield.
-                  </li>
-                </ul>
-              </div>
             </div>
-            {/*end col*/}
-            <div className="col-lg-5 col-md-6 order-1 order-md-2 mt-4 mt-sm-0 pt-2 pt-sm-0">
-              <img
-                src="images/illustration/bitcoin_miner.svg"
-                className="img-fluid"
-                alt=""
-              />
+
+            <div className="col-lg-6 col-md-6 order-2 order-md-1">
+              <div className="my-4 mx-4"></div>
             </div>
             {/*end col*/}
           </div>
+
+          <div className="row" style={{ margin: "4rem 0" }}></div>
+
+          <div className="row align-items-center">
+            <div className="col-lg-6 col-md-6 order-2 order-md-1">
+              <div className="my-4"></div>
+            </div>
+
+            <div className="col-lg-6 col-md-6 order-2 order-md-1">
+              <div className="my-4 mx-4">
+                <div style={{ fontSize: ".8rem", fontWeight: "bold" }}>
+                  OUR PRODUCT
+                </div>
+                <div style={{ fontSize: "1.5rem", fontWeight: "bold" }}>
+                  A cross-device Deep learning-based Augmented Reality
+                  application that scans surrounding objects and mints NFTs in
+                  Metaverse
+                </div>
+              </div>
+            </div>
+            {/*end col*/}
+          </div>
+
           {/*end row*/}
         </div>
         {/*end container*/}

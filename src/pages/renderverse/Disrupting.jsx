@@ -2,9 +2,15 @@ import Placeholder from "../../assets/images/medium.svg";
 
 const Disrupting = () => {
   return (
-    <div className="section" style={{ background: "#0b1118" }}>
+    <div
+      className="section"
+      style={{
+        background:
+          "linear-gradient(180deg, rgba(253,250,246,1) 0%, rgba(85,117,113,1) 15%)",
+      }}
+    >
       <div className="container">
-        <h1 className="font-weight-bold px-4">Brokoli is disrupting </h1>
+        <h1 className="font-weight-bold px-4">Renderverse is disrupting </h1>
         <h1 className="font-weight-bold px-4">a $40 trillion industry</h1>
         <div className="row justify-content-md-center my-4">
           <div
