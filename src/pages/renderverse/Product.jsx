@@ -16,7 +16,6 @@ const Product = (props) => {
   return (
     <div
       style={{
-        padding: "0  0 12rem 0",
         background: "#0b1118",
         position: "relative",
       }}
@@ -39,7 +38,6 @@ const Product = (props) => {
           display: "flex",
           justifyContent: "center",
           fontSize: "2rem",
-          padding: "0 0 4rem 0",
         }}
       >
         {props.title}

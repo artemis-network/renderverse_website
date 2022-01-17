@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import Wave from "react-wavify";
 
 const Mission = () => {
@@ -7,7 +5,8 @@ const Mission = () => {
     <div>
       <section
         style={{
-          backgroundColor: "#F1F1F1",
+          background:
+            "linear-gradient(180deg, rgba(11,17,24,1) 0%, rgba(154,6,128,1) 100%)",
         }}
         className="section"
       >
@@ -15,44 +14,7 @@ const Mission = () => {
           style={{
             position: "relative",
           }}
-        >
-          <Wave
-            style={{ position: "absolute", bottom: "3rem" }}
-            fill="url(#gradient1)"
-            paused={false}
-            options={{
-              height: 20,
-              amplitude: 20,
-              speed: 0.25,
-              points: 5,
-            }}
-          >
-            <defs>
-              <linearGradient id="gradient1">
-                <stop offset="10%" stopColor="#045de9" />
-                <stop offset="90%" stopColor="#63a4ff" />
-              </linearGradient>
-            </defs>
-          </Wave>
-
-          <Wave
-            style={{ position: "absolute", bottom: "3rem" }}
-            fill="url(#gradient)"
-            options={{
-              height: 25,
-              amplitude: 20,
-              speed: 0.35,
-              points: 3,
-            }}
-          >
-            <defs>
-              <linearGradient id="gradient">
-                <stop offset="100%" stopColor="#2a2a72" />
-                <stop offset="70%" stopColor="#045de9" />
-              </linearGradient>
-            </defs>
-          </Wave>
-        </div>
+        ></div>
 
         <div
           style={{
@@ -60,8 +22,7 @@ const Mission = () => {
             display: "flex",
             flexDirection: "row",
             justifyContent: "center",
-            padding: "0 0 2rem 0",
-            color: "#0b1118",
+            padding: "5rem 0 2rem 0",
           }}
         >
           What is Renderverse?
@@ -70,16 +31,10 @@ const Mission = () => {
           <div className="row align-items-center">
             <div className="col-lg-7 col-md-6 order-2 order-md-1">
               <div className="my-4">
-                <div
-                  className="text-black"
-                  style={{ fontSize: ".9rem", fontWeight: "bold" }}
-                >
+                <div style={{ fontSize: ".9rem", fontWeight: "bold" }}>
                   OUR MISSION
                 </div>
-                <div
-                  className="text-black"
-                  style={{ fontSize: "2rem", fontWeight: "bold" }}
-                >
+                <div style={{ fontSize: "2rem", fontWeight: "bold" }}>
                   OUR TAG LINE
                 </div>
               </div>
@@ -128,58 +83,7 @@ const Mission = () => {
           {/*end row*/}
         </div>
         {/*end container*/}
-        <div className="container mt-100 mt-60">
-          <div className="row align-items-center">
-            <div className="col-lg-7 col-md-6 order-1 order-md-2">
-              <div className="section-title ms-lg-5">
-                <p className="text-muted mb-0">
-                  Cryptor has a strategic partnership with Ledger, integrating
-                  its institutional-grade custody solution, Ledger Vault. We
-                  also leverage hardware security modules (HSM) and
-                  multi-signature technologies. Cryptor has secured a total of
-                  USD 360M in cold storage insurance against physical damage or
-                  destruction, and third-party theft.
-                </p>
-                <div className="mt-4">
-                  <Link className="btn btn-soft-primary">
-                    <i className="uil uil-arrow-growth" /> See Positions
-                  </Link>
-                </div>
-              </div>
-            </div>
-            {/*end col*/}
-            <div className="col-lg-5 col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
-              <img
-                src="images/illustration/isometric_btc.svg"
-                className="img-fluid"
-                alt=""
-              />
-            </div>
-            {/*end col*/}
-          </div>
-          {/*end row*/}
-        </div>
-        {/*end container*/}
       </section>
-      <div
-        style={{
-          transform: "rotate(180deg)",
-          background: "#2a2a72",
-          position: "relative",
-        }}
-      >
-        <Wave
-          style={{ position: "absolute", top: "-8rem" }}
-          paused={true}
-          fill="#2a2a72"
-          options={{
-            height: 80,
-            amplitude: 16,
-            speed: 0.75,
-            points: 5,
-          }}
-        />
-      </div>
       {/*end section*/}
       {/* End */}
     </div>

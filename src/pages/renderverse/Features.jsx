@@ -1,6 +1,11 @@
 const Features = () => {
   return (
-    <div style={{ background: "#0b1118" }}>
+    <div
+      style={{
+        background:
+          "linear-gradient(180deg, rgba(154,6,128,1) 0%, rgba(11,17,24,1) 35%)",
+      }}
+    >
       {/* Start */}
       <section className="section">
         <div className="container mt-100 mt-60">
