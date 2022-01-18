@@ -30,7 +30,7 @@ const MetabaseCamp = () => {
                   className="text-white-50 text-center para-desc mx-auto mb-0"
                   style={{ fontWeight: "bold" }}
                 >
-                  Immerse yourself into the world of Metaverse
+                  Immerse yourself into the world of Renderverse
                 </p>
                 <div
                   style={{ display: "flex", justifyContent: "center" }}

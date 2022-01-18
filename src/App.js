@@ -138,6 +138,7 @@ const App = () => {
             <Features />
             <Action />
             <Disrupting />
+            <div style={{ height: "100vh", background: "linear-gradient(to bottom, #557571, #2b5f68, #004861, #002f56, #111341)" }}></div>
           </div>
         </Element>
 

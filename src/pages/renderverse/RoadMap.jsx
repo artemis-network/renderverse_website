@@ -2,7 +2,7 @@ const RoadMap = () => {
   return (
     <div
       className="section"
-      style={{ padding: "8rem 0", background: "#FAF3F3" }}
+      style={{ padding: "8rem 0", background: "#121342" }}
     >
       <div
         style={{
@@ -11,57 +11,79 @@ const RoadMap = () => {
           flexDirection: "row",
           justifyContent: "center",
           padding: "0 0 4rem 0",
-          color: "#0B1118",
+          color: "#02ffd1",
         }}
       >
         Our Goals
       </div>
       <div
         className="container"
-        style={{ background: "#0b1118", borderRadius: "2vh" }}
+        style={{ background: "#121342", borderRadius: "2vh" }}
       >
         <div className="row justify-content-center p-3 rounded-top">
           <div className="col-lg-4 col-md-4 justify-content-center col-12">
-            <h2 className="text-center my-4 text-muted">Q3 2021</h2>
+            <h2 className="text-center my-4 road_map_text_colors">Q3 2021</h2>
             <div className="hide_border">
-              <h4 className="my-2 text-muted">Pure tokenomics baseline</h4>
+              <h4 className="my-2 road_map_text_colors">
+                Pure tokenomics baseline
+              </h4>
               <div className="row mx-4">
                 <div
-                  className="p-3 bg-white my-2 "
-                  style={{ borderRadius: "2vh", border: "2px solid gray" }}
+                  className="p-3 my-2 "
+                  style={{
+                    borderRadius: "2vh",
+                    border: "2px solid #0b1118",
+                    background: "#171b56",
+                  }}
                 >
                   Set of lending-borrowing contracts
                 </div>
               </div>
               <div className="row mx-4">
                 <div
-                  className="p-3  bg-white my-2 "
-                  style={{ borderRadius: "2vh", border: "2px solid gray" }}
+                  className="p-3  my-2 "
+                  style={{
+                    borderRadius: "2vh",
+                    border: "2px solid #0b1118",
+                    background: "#171b56",
+                  }}
                 >
                   $UFI Pool
                 </div>
               </div>
               <div className="row mx-4">
                 <div
-                  className="p-3 bg-white my-2 "
-                  style={{ borderRadius: "2vh", border: "2px solid gray" }}
+                  className="p-3 my-2 "
+                  style={{
+                    borderRadius: "2vh",
+                    border: "2px solid #0b1118",
+                    background: "#171b56",
+                  }}
                 >
                   $UFI Dex Integration
                 </div>
               </div>
               <div className="row mx-4">
                 <div
-                  className="p-3 bg-white my-2"
-                  style={{ borderRadius: "2vh", border: "2px solid gray" }}
+                  className="p-3 my-2"
+                  style={{
+                    borderRadius: "2vh",
+                    border: "2px solid #0b1118",
+                    background: "#171b56",
+                  }}
                 >
                   Farming
                 </div>
               </div>
-              <h4 className="my-2 text-muted">PureFi Protocol</h4>
+              <h4 className="my-2 road_map_text_colors">PureFi Protocol</h4>
               <div className="row mx-4">
                 <div
-                  className="bg-white p-3 my-2"
-                  style={{ borderRadius: "2vh", border: "2px solid gray" }}
+                  className="p-3"
+                  style={{
+                    borderRadius: "2vh",
+                    border: "2px solid #0b1118",
+                    background: "#171b56",
+                  }}
                 >
                   Verifiable Credentials Standards and document formats for:
                   <ul>
@@ -74,21 +96,31 @@ const RoadMap = () => {
           </div>
 
           <div className="col-lg-4 col-md-4 justify-content-center col-12">
-            <h2 className="text-center my-4 text-muted">Q4 2021</h2>
+            <h2 className="text-center my-4 road_map_text_colors">Q4 2021</h2>
             <div className="hide_border">
-              <h4 className="my-2 text-muted">Integration with DEXs</h4>
+              <h4 className="my-2 road_map_text_colors">
+                Integration with DEXs
+              </h4>
               <div className="row mx-4">
                 <div
-                  className="p-3 bg-white my-2"
-                  style={{ borderRadius: "2vh", border: "2px solid gray" }}
+                  className="p-3 my-2"
+                  style={{
+                    borderRadius: "2vh",
+                    border: "2px solid #0b1118",
+                    background: "#171b56",
+                  }}
                 >
                   DEX integration KIT
                 </div>
               </div>
               <div className="row mx-4">
                 <div
-                  className="p-3 bg-white my-2"
-                  style={{ borderRadius: "2vh", border: "2px solid gray" }}
+                  className="p-3 my-2"
+                  style={{
+                    borderRadius: "2vh",
+                    border: "2px solid #0b1118",
+                    background: "#171b56",
+                  }}
                 >
                   Circuit
                   <ul>
@@ -100,16 +132,24 @@ const RoadMap = () => {
               </div>
               <div className="row mx-4">
                 <div
-                  className="p-3 bg-white my-2 "
-                  style={{ borderRadius: "2vh", border: "2px solid gray" }}
+                  className="p-3 my-2 "
+                  style={{
+                    borderRadius: "2vh",
+                    border: "2px solid #0b1118",
+                    background: "#171b56",
+                  }}
                 >
                   ZK-SNARK setup procedure (Public event)
                 </div>
               </div>
               <div className="row mx-4">
                 <div
-                  className="p-3 bg-white my-2 "
-                  style={{ borderRadius: "2vh", border: "2px solid gray" }}
+                  className="p-3 my-2 "
+                  style={{
+                    borderRadius: "2vh",
+                    border: "2px solid #0b1118",
+                    background: "#171b56",
+                  }}
                 >
                   Intermediate validation contract for EVM compatible
                   blockchains
@@ -118,8 +158,12 @@ const RoadMap = () => {
 
               <div className="row mx-4">
                 <div
-                  className="p-3 bg-white my-2"
-                  style={{ borderRadius: "2vh", border: "2px solid gray" }}
+                  className="p-3 my-2"
+                  style={{
+                    borderRadius: "2vh",
+                    border: "2px solid #0b1118",
+                    background: "#171b56",
+                  }}
                 >
                   Intermediate smart contract for CosmWasm
                 </div>
@@ -128,37 +172,53 @@ const RoadMap = () => {
           </div>
 
           <div className="col-lg-4 col-md-4 justify-content-center col-12">
-            <h2 className="text-center my-4 text-muted">Q1 2021</h2>
-            <h4 className="text-muted">Issuers SDK</h4>
+            <h2 className="text-center my-4 road_map_text_colors">Q1 2021</h2>
+            <h4 className="road_map_text_colors">Issuers SDK</h4>
             <div>
               <div className="row mx-4">
                 <div
-                  className="p-3 bg-white my-2"
-                  style={{ borderRadius: "2vh", border: "2px solid gray" }}
+                  className="p-3 my-2"
+                  style={{
+                    borderRadius: "2vh",
+                    border: "2px solid #0b1118",
+                    background: "#171b56",
+                  }}
                 >
                   $UFI staking
                 </div>
               </div>
               <div className="row mx-4">
                 <div
-                  className="p-3 bg-white my-2 "
-                  style={{ borderRadius: "2vh", border: "2px solid gray" }}
+                  className="p-3 my-2 "
+                  style={{
+                    borderRadius: "2vh",
+                    border: "2px solid #0b1118",
+                    background: "#171b56",
+                  }}
                 >
                   Onboarding procedure
                 </div>
               </div>
               <div className="row mx-4">
                 <div
-                  className="p-3 bg-white my-2"
-                  style={{ borderRadius: "2vh", border: "2px solid gray" }}
+                  className="p-3 my-2"
+                  style={{
+                    borderRadius: "2vh",
+                    border: "2px solid #0b1118",
+                    background: "#171b56",
+                  }}
                 >
                   External reference API
                 </div>
               </div>
               <div className="row mx-4">
                 <div
-                  className="p-3 bg-white my-2"
-                  style={{ borderRadius: "2vh", border: "2px solid gray" }}
+                  className="p-3 my-2"
+                  style={{
+                    borderRadius: "2vh",
+                    border: "2px solid #0b1118",
+                    background: "#171b56",
+                  }}
                 >
                   Farming
                 </div>

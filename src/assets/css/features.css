@@ -1,3 +1,7 @@
+.road_map_text_colors {
+  color: #02ffd1;
+}
+
 .feature_row_1 {
   display: flex;
   column-gap: 2rem;
