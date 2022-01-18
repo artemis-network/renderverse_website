@@ -123,7 +123,7 @@ const App = () => {
 
         <Element id="/product" name="product">
           <div id="product">
-            <Product title={"Featured In"} />
+            <Product title={"Featured In"} isFeatured={true} />
           </div>
         </Element>
 
@@ -155,7 +155,7 @@ const App = () => {
         </Element>
 
 
-        <Product title={"Advisors and Backer"} />
+        <Product title={"Advisors and Backer"} isFeatured={false} />
         <Element id="/contact" name="contact">
           <div id="contact">
             <Footer />

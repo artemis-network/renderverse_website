@@ -64,17 +64,18 @@ const Product = (props) => {
           </div>
         </div>
       </div>
-
-      <Wave
-        paused={false}
-        fill="#FFFFFF"
-        options={{
-          height: 25,
-          amplitude: 25,
-          speed: 0.35,
-          points: 3,
-        }}
-      />
+      {props.isFeatured ? (
+        <Wave
+          paused={false}
+          fill="#FFFFFF"
+          options={{
+            height: 25,
+            amplitude: 25,
+            speed: 0.35,
+            points: 3,
+          }}
+        />
+      ) : null}
     </div>
   );
 };
