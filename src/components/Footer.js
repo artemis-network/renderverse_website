@@ -69,8 +69,8 @@ const Footer = () => {
             </div>
             <div className='p-2' style={{ textAlign: "center", fontSize: "1.25rem", color: "#0b1118" }}>Support and Feedback</div>
             <div className='p-2' style={{ color: "#0b1118", textAlign: 'center' }}>Read about new features, collaborations and news of the week in our blog on Medium.</div>
-            <div className='container m-2'>
-              <div className='row justify-content-center p-2'>
+            <div className='container'>
+              <div className='row justify-content-center p-2 mb-2'>
                 <button className='btn btn-outline-primary'>
                   <span >
                     <img src={Medium} height={30} alt="medium" />

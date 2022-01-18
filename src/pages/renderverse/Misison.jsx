@@ -2,11 +2,11 @@ const Mission = () => {
   return (
     <div>
       <section
+        className="section"
         style={{
           background:
-            "linear-gradient(180deg, rgba(11,17,24,1) 0%, rgba(154,6,128,1) 100%)",
+            "linear-gradient(180deg, rgba(11,17,24,1) 0%, rgba(81,107,235,1) 100%)",
         }}
-        className="section"
       >
         <div
           style={{
@@ -20,8 +20,7 @@ const Mission = () => {
             display: "flex",
             flexDirection: "row",
             justifyContent: "center",
-            padding: "4rem 0 2rem 0",
-            marginTop: "3rem",
+            padding: "10rem 0 2rem 0",
           }}
         >
           What is Renderverse?
