@@ -43,8 +43,6 @@ const Footer = () => {
 
         </div>
 
-
-        <div style={{ height: "30vh" }}></div>
         <div className='container py-6'>
           <div className='row justify-content-center'>
             <div className='col-lg-3 col-md-4 col-12 my-4'>

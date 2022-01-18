@@ -5,11 +5,10 @@ const Features = () => {
       <section
         className="section"
         style={{
-          background:
-            "linear-gradient(180deg, rgba(107,130,238,1) 0%, rgba(214,229,250,1) 100%)",
+          background: "#0b1118",
         }}
       >
-        <div className="container mt-100 mt-60">
+        <div className="container">
           <div className="row justify-content-center">
             <div className="col-12">
               <div className="section-title text-center mb-4 pb-2">

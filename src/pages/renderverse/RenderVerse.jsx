@@ -23,20 +23,14 @@ const MetabaseCamp = () => {
             <div className="col-lg-12 col-md-12 col-12">
               <div className="title-heading">
                 <span className="badge bg-soft-success rounded-md">$RNDR</span>
-                <h4
-                  style={{
-                    animationName: "glow",
-                    animationDuration: "1s",
-                    animationIterationCount: "infinite",
-                    animationDirection: "alternate",
-                  }}
-                  className="display-5 text-white title-dark fw-medium mt-3 mb-4"
-                >
+                <h4 className="glow-text display-5 text-white title-dark fw-medium mt-3 mb-4">
                   An AR doorway into the Metaverse & NFTs
                 </h4>
-                <p className="text-white-50 para-desc mx-auto mb-0">
-                  Immerse yourself into the world of Metaverse with our
-                  cross-device Deep-learning powered AR application
+                <p
+                  className="text-white-50 text-center para-desc mx-auto mb-0"
+                  style={{ fontWeight: "bold" }}
+                >
+                  Immerse yourself into the world of Metaverse
                 </p>
                 <div
                   style={{ display: "flex", justifyContent: "center" }}

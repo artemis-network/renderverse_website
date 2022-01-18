@@ -24,7 +24,7 @@ const Product = (props) => {
         <Wave
           style={{ position: "absolute", top: "-5rem" }}
           paused={true}
-          fill="#0B1118"
+          fill="#0b1118"
           options={{
             height: 25,
             amplitude: 25,
@@ -64,6 +64,17 @@ const Product = (props) => {
           </div>
         </div>
       </div>
+
+      <Wave
+        paused={false}
+        fill="#FFFFFF"
+        options={{
+          height: 25,
+          amplitude: 25,
+          speed: 0.35,
+          points: 3,
+        }}
+      />
     </div>
   );
 };

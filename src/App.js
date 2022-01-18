@@ -3,7 +3,6 @@ import { Element, Link } from "react-scroll";
 import { BrowserRouter, } from 'react-router-dom'
 
 import Product from './pages/renderverse/Product'
-import Faqs from "./pages/renderverse/Faqs";
 import Features from "./pages/renderverse/Features";
 import Mission from "./pages/renderverse/Misison";
 import RenderVerse from "./pages/renderverse/RenderVerse";
@@ -146,7 +145,6 @@ const App = () => {
         <Element id="/roadmap" name="roadmap">
           <div id="roadmap">
             <RoadMap />
-            <Product title={"Advisors and Backer"} />
           </div>
         </Element>
 
@@ -156,12 +154,8 @@ const App = () => {
           </div>
         </Element>
 
-        <Element id="/faqs" name="faqs">
-          <div id="faqs">
-            <Faqs />
-          </div>
-        </Element>
 
+        <Product title={"Advisors and Backer"} />
         <Element id="/contact" name="contact">
           <div id="contact">
             <Footer />

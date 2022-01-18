@@ -4,8 +4,8 @@ const Mission = () => {
       <section
         className="section"
         style={{
-          background:
-            "linear-gradient(180deg, rgba(11,17,24,1) 0%, rgba(107,130,238,1) 100%)",
+          background: "#ffffff",
+          padding: "0 0 4rem 0",
         }}
       >
         <div
@@ -14,29 +14,51 @@ const Mission = () => {
           }}
         ></div>
 
-        <div
+        {/* <div
           style={{
             fontSize: "2rem",
             display: "flex",
             flexDirection: "row",
             justifyContent: "center",
-            padding: "10rem 0 2rem 0",
+            color: "#0b1118",
           }}
         >
           What is Renderverse?
-        </div>
+        </div> */}
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-6 order-2 order-md-1">
-              <div className="my-4">
-                <div style={{ fontSize: ".8rem", fontWeight: "bold" }}>
-                  OUR MISSION
+              <div style={{ display: "flex", padding: "1rem 0" }}>
+                <div
+                  style={{
+                    fontSize: "1.35rem",
+                    padding: ".25rem .5rem",
+                  }}
+                  className="text-muted"
+                >
+                  OUR
                 </div>
-                <div style={{ fontSize: "1.5rem", fontWeight: "bold" }}>
-                  Empowering every person on the planet to step into the world
-                  of Metaverse and NFT's with next-gen rendering technology
-                  powered by AI and ML
+                <div
+                  style={{
+                    color: "#ffffff",
+                    fontSize: "1.35rem",
+                    fontWeight: "bold",
+                    padding: ".25rem .5rem",
+                    background: "#E20880",
+                  }}
+                >
+                  MISSION
                 </div>
+              </div>
+              <div
+                style={{
+                  fontSize: "1.25rem",
+                  color: "#0b1118",
+                }}
+              >
+                Empowering every person on the planet to step into the world of
+                Metaverse and NFT's with next-gen rendering technology powered
+                by AI and ML
               </div>
             </div>
 
@@ -55,10 +77,41 @@ const Mission = () => {
 
             <div className="col-lg-6 col-md-6 order-2 order-md-1">
               <div className="my-4 mx-4">
-                <div style={{ fontSize: ".8rem", fontWeight: "bold" }}>
-                  OUR PRODUCT
+                <div
+                  style={{
+                    display: "flex",
+                    padding: "1rem 0",
+                    justifyContent: "flex-end",
+                  }}
+                >
+                  <div
+                    style={{
+                      fontSize: "1.35rem",
+                      padding: ".25rem .5rem",
+                      textAlign: "left",
+                    }}
+                    className="text-muted"
+                  >
+                    OUR
+                  </div>
+                  <div
+                    style={{
+                      color: "#ffffff",
+                      fontSize: "1.35rem",
+                      fontWeight: "bold",
+                      padding: ".25rem .5rem",
+                      background: "#674C9F",
+                    }}
+                  >
+                    PRODUCT
+                  </div>
                 </div>
-                <div style={{ fontSize: "1.5rem", fontWeight: "bold" }}>
+                <div
+                  style={{
+                    fontSize: "1.25rem",
+                    color: "#0b1118",
+                  }}
+                >
                   A cross-device Deep learning-based Augmented Reality
                   application that scans surrounding objects and mints NFTs in
                   Metaverse
