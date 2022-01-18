@@ -6,7 +6,7 @@ const Features = () => {
         className="section"
         style={{
           background:
-            "linear-gradient(360deg, rgba(11,17,24,1) 85%, rgba(81,107,235,1) 100%)",
+            "linear-gradient(180deg, rgba(107,130,238,1) 0%, rgba(214,229,250,1) 100%)",
         }}
       >
         <div className="container mt-100 mt-60">
@@ -24,7 +24,7 @@ const Features = () => {
             <div className="col-lg-8 col-md-8 col-12 mt-4 pt-2">
               <div className="row">
                 <div className="col-lg-6 col-md-6 col-12 mt-4 pt-2">
-                  <div className="feature feature-primary feature-clean rounded p-4 mx-2">
+                  <div className="feature feature-primary feature-clean bg-light rounded p-4 mx-2">
                     <div className="icons text-center">
                       <i className="uil uil-shield-check d-block rounded h3 mb-0" />
                     </div>
@@ -90,7 +90,7 @@ const Features = () => {
                 </div>
                 {/*end col*/}
                 <div className="col-lg-6 col-md-6 col-12 mt-4 pt-2">
-                  <div className="feature feature-primary feature-clean rounded p-4 mx-2">
+                  <div className="feature feature-primary feature-clean bg-light rounded p-4 mx-2">
                     <div className="icons text-center">
                       <i className="uil uil-money-bill d-block rounded h3 mb-0" />
                     </div>

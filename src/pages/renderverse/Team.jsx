@@ -1,51 +1,19 @@
-import TinySlider from "tiny-slider-react";
-
-const imgs = [
-  {
-    text: "cool",
-  },
-  {
-    text: "cool",
-  },
-  {
-    text: "cool",
-  },
-  {
-    text: "cool",
-  },
-
-  {
-    text: "cool",
-  },
-];
-
-const settings = {
-  controls: false,
-  mouseDrag: true,
-  loop: true,
-  rewind: true,
-  autoplay: true,
-  autoplayButtonOutput: false,
-  autoplayTimeout: 3000,
-  nav: false,
-  speed: 400,
-  gutter: 12,
-  responsive: {
-    992: {
-      items: 4,
-    },
-
-    767: {
-      items: 2,
-    },
-
-    320: {
-      items: 1,
-    },
-  },
-};
-
 const Team = () => {
+  const coreTeam = [
+    { name: "Praneeth Nagu" },
+    { name: "Chakravardhan Reddy" },
+    { name: "Akash Madduru" },
+    { name: "Praneeth Nagu" },
+  ];
+
+  const advisors = [
+    { name: "Praneeth Nagu" },
+    { name: "Chakravardhan Reddy" },
+    { name: "Akash Madduru" },
+  ];
+
+  const backers = [{ name: "Praneeth Nagu" }, { name: "Praneeth Nagu" }];
+
   return (
     <div style={{ background: "white" }}>
       <div
@@ -59,73 +27,122 @@ const Team = () => {
       >
         Our Team
       </div>
-
-      <section className="section mobile_view">
+      <section className="section">
         <div className="container">
-          <div className="row">
-            <TinySlider className="tiny-timeline" settings={settings}>
-              {imgs.map((img, index) => {
-                return (
-                  <div className="card text-center team border-0 shadow rounded overflow-hidden">
-                    <img
-                      src="images/client/01.jpg"
-                      className="img-fluid"
-                      alt=""
-                    />
-                    <div className="card-body py-3 content">
-                      <h5 className="mb-0">Calvin Carlo</h5>
-                      <h6 className="text-muted mb-0">Founder / C.E.O</h6>
-                    </div>
-                    <ul className="list-unstyled team-social mb-0">
-                      <li>
-                        <a
-                          href="mailto:contact@example.com"
-                          className="btn btn-icon btn-pills btn-soft-primary"
-                        >
-                          <i data-feather="facebook" className="icons" />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                );
-              })}
-            </TinySlider>
-          </div>
-        </div>
-      </section>
-
-      <section className="section desk_view">
-        <div className="container">
-          <div className="row">
-            {imgs.map((img, index) => {
+          <div className="row justify-content-center my-5">
+            {coreTeam.map((person, index) => {
               return (
-                <div className="col-lg-3 col-md-6 col-12 my-2">
-                  <div className="card text-center team border-0 shadow rounded overflow-hidden">
+                <div key={index} className="col-lg-3 col-md-3 col-12">
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      flexDirection: "column",
+                    }}
+                  >
                     <img
+                      style={{
+                        borderRadius: "12rem",
+                        display: "flex",
+                        alignSelf: "center",
+                      }}
                       src="images/client/01.jpg"
-                      className="img-fluid"
                       alt=""
+                      width={200}
                     />
-                    <div className="card-body py-3 content">
-                      <h5 className="mb-0">Calvin Carlo</h5>
-                      <h6 className="text-muted mb-0">Founder / C.E.O</h6>
+                    <div className="py-4">
+                      <h6 className="mb-0 text-muted text-center">
+                        {person.name}
+                      </h6>
+                      <h6
+                        className="text-muted mb-0 text-center"
+                        style={{ fontWeight: "bold" }}
+                      >
+                        Founder / C.E.O
+                      </h6>
                     </div>
-                    <ul className="list-unstyled team-social mb-0">
-                      <li>
-                        <a
-                          href="mailto:contact@example.com"
-                          className="btn btn-icon btn-pills btn-soft-primary"
-                        >
-                          <i data-feather="facebook" className="icons" />
-                        </a>
-                      </li>
-                    </ul>
                   </div>
                 </div>
               );
             })}
           </div>
           {/*end row*/}
+
+          <div className="row justify-content-center my-5">
+            {advisors.map((person, index) => {
+              return (
+                <div key={index} className="col-lg-4 col-md-4 col-12">
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      flexDirection: "column",
+                    }}
+                  >
+                    <img
+                      style={{
+                        borderRadius: "12rem",
+                        display: "flex",
+                        alignSelf: "center",
+                      }}
+                      src="images/client/01.jpg"
+                      alt=""
+                      width={200}
+                    />
+                    <div className="py-4">
+                      <h6 className="mb-0 text-muted text-center">
+                        {person.name}
+                      </h6>
+                      <h6
+                        className="text-muted mb-0 text-center"
+                        style={{ fontWeight: "bold" }}
+                      >
+                        Founder / C.E.O
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="row justify-content-center my-5">
+            {backers.map((person, index) => {
+              return (
+                <div key={index} className="col-lg-6 col-md-6 col-12">
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      flexDirection: "column",
+                    }}
+                  >
+                    <img
+                      style={{
+                        borderRadius: "12rem",
+                        display: "flex",
+                        alignSelf: "center",
+                      }}
+                      src="images/client/01.jpg"
+                      alt=""
+                      width={200}
+                    />
+                    <div className="py-4">
+                      <h6 className="mb-0 text-muted text-center">
+                        {person.name}
+                      </h6>
+                      <h6
+                        className="text-muted mb-0 text-center"
+                        style={{ fontWeight: "bold" }}
+                      >
+                        Founder / C.E.O
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
         {/*end container*/}
       </section>

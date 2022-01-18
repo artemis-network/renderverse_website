@@ -1,6 +1,6 @@
 const RoadMap = () => {
   return (
-    <div style={{ padding: "8rem 0", background: "white" }}>
+    <div style={{ padding: "8rem 0", background: "#FAF3F3" }}>
       <div
         style={{
           fontSize: "2rem",

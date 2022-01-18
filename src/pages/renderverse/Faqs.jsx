@@ -1,6 +1,6 @@
 const Faqs = () => {
   return (
-    <div style={{ background: "#0b1118" }}>
+    <div style={{ background: "#0b1118" }} className="section">
       {/* Start */}
       <div
         style={{

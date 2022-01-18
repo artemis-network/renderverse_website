@@ -5,7 +5,7 @@ const Mission = () => {
         className="section"
         style={{
           background:
-            "linear-gradient(180deg, rgba(11,17,24,1) 0%, rgba(81,107,235,1) 100%)",
+            "linear-gradient(180deg, rgba(11,17,24,1) 0%, rgba(107,130,238,1) 100%)",
         }}
       >
         <div
