@@ -1,5 +1,3 @@
-import Box from "../../components/Globe";
-
 const Features = () => {
   return (
     <div>
