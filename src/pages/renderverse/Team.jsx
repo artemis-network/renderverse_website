@@ -48,7 +48,7 @@ const Team = () => {
                       }}
                       src="images/client/01.jpg"
                       alt=""
-                      width={200}
+                      width={150}
                     />
                     <div className="py-4">
                       <h6 className="mb-0 text-muted text-center">
@@ -87,7 +87,7 @@ const Team = () => {
                       }}
                       src="images/client/01.jpg"
                       alt=""
-                      width={200}
+                      width={150}
                     />
                     <div className="py-4">
                       <h6 className="mb-0 text-muted text-center">
@@ -125,7 +125,7 @@ const Team = () => {
                       }}
                       src="images/client/01.jpg"
                       alt=""
-                      width={200}
+                      width={150}
                     />
                     <div className="py-4">
                       <h6 className="mb-0 text-muted text-center">

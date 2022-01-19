@@ -35,7 +35,7 @@ const Footer = () => {
                   <div style={{ color: "#0b1118", fontSize: ".9rem", padding: ".5rem 1rem" }}>By entering your email, you agree to get our emails.</div>
                 </div>
                 <div className='col-lg-3 col-md-9 col-12'>
-                  <button style={{ borderRadius: "5vh" }} className="btn btn-secondary">Submit</button>
+                  <button style={{ borderRadius: "5vh", }} className="btn btn-secondary ">Submit</button>
                   <div style={{ fontSize: ".9rem", padding: ".5rem 1rem" }}>Hidden</div>
                 </div>
               </div>
@@ -48,10 +48,10 @@ const Footer = () => {
           <div className='row justify-content-center'>
             <div className='col-lg-3 col-md-4 col-12 my-4'>
               <div className='p-2' style={{ display: "flex", justifyContent: "center" }}>
-                <img src={Support} height={100} width={100} alt="cool" />
+                <img src={Blog} height={100} width={100} alt="cool" />
               </div>
-              <div className='p-2' style={{ textAlign: "center", fontSize: "1.25rem", color: "#0b1118" }}>Support and Feedback</div>
-              <div className='p-2' style={{ color: "#0b1118", textAlign: 'center' }}>Ask questions, give feedbacks and proposals. We are flexible and all time improving our services with your help.</div>
+              <div className='p-2' style={{ textAlign: "center", fontSize: "1.25rem", color: "#0b1118" }}>Blog</div>
+              <div className='p-2' style={{ color: "#0b1118", textAlign: 'center' }}>Be the first to know about sales, new projects and collections, features and upcoming events.</div>
               <div className='container'>
                 <div className='row justify-content-center p-2'>
                   <div className='col-6' style={{ justifyContent: "center", display: "flex" }}>
@@ -76,8 +76,8 @@ const Footer = () => {
               <div className='p-2' style={{ display: "flex", justifyContent: "center" }}>
                 <img src={Blog} height={100} width={100} alt="cool" />
               </div>
-              <div className='p-2' style={{ textAlign: "center", fontSize: "1.25rem", color: "#0b1118" }}>Support and Feedback</div>
-              <div className='p-2' style={{ color: "#0b1118", textAlign: 'center' }}>Read about new features, collaborations and news of the week in our blog on Medium.</div>
+              <div className='p-2' style={{ textAlign: "center", fontSize: "1.25rem", color: "#0b1118" }}>Blog</div>
+              <div className='p-2' style={{ color: "#0b1118", textAlign: 'center' }}>Be the first to know about sales, new projects and collections, features and upcoming events.</div>
               <div className='container'>
                 <div className='row justify-content-center p-2 mb-2'>
                   <button className='btn btn-outline-primary'>
@@ -92,7 +92,7 @@ const Footer = () => {
 
             <div className='col-lg-3 col-md-4 col-12 my-4'>
               <div className='p-2' style={{ display: "flex", justifyContent: "center" }}>
-                <img src={Speaker} height={100} width={100} alt="cool" />
+                <img src={Blog} height={100} width={100} alt="cool" />
               </div>
               <div className='p-2' style={{ textAlign: "center", fontSize: "1.25rem", color: "#0b1118" }}>Blog</div>
               <div className='p-2' style={{ color: "#0b1118", textAlign: 'center' }}>Be the first to know about sales, new projects and collections, features and upcoming events.</div>
