@@ -1,0 +1,32 @@
+.trust_img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.trust img {
+  width: 20rem;
+}
+
+.headline {
+  font-size: 3rem;
+  font-family: var(--font-style);
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(2, 246, 203, 1);
+}
+
+.sub_line {
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(2, 246, 203, 1);
+}
+
+.sub_trust {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-count: 2;
+  font-size: 1rem;
+}

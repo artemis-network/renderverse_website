@@ -108,10 +108,13 @@ hr {
   border-right: 2px dashed white;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
   .hide_border {
     border: none;
   }
+}
+
+@media screen and (max-width: 768px) {
   .socials_l {
     height: 25px;
     width: 25px;

@@ -10,8 +10,9 @@ import Action from "./pages/renderverse/Action";
 import RoadMap from "./pages/renderverse/RoadMap";
 import Team from "./pages/renderverse/Team";
 import Footer from "./components/Footer";
-import Background from './assets/Green - 88883_1.mp4'
+import Background from './assets/Green - 88883_1 (1).mp4'
 import Disrupting from "./pages/renderverse/Disrupting";
+import HightLight from "./pages/renderverse/Highlight";
 
 const App = () => {
   const video = React.createRef();
@@ -121,14 +122,9 @@ const App = () => {
           </div>
         </Element>
 
-        <Element id="/product" name="product">
-          <div id="product">
-            <Product title={"Featured In"} isFeatured={true} />
-          </div>
-        </Element>
-
         <Element id="/mission" name="mission">
           <div id="mission">
+            <Product title={"Featured In"} isFeatured={true} />
             <Mission />
           </div>
         </Element>
@@ -138,7 +134,8 @@ const App = () => {
             <Features />
             <Action />
             <Disrupting />
-            <div style={{ height: "100vh", background: "linear-gradient(to bottom, #557571, #2b5f68, #004861, #002f56, #111341)" }}></div>
+            <HightLight />
+            {/* <div style={{ height: "100vh", background: "linear-gradient(to bottom, #557571, #2b5f68, #004861, #002f56, #111341)" }}></div> */}
           </div>
         </Element>
 

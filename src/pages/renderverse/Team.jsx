@@ -1,9 +1,34 @@
+import Akash from "../../assets/images/akash.jpeg";
+import Praneeth from "../../assets/images/praneeth.jpeg";
+import Chakri from "../../assets/images/chakri.jpeg";
+
+import LinkedIn from "../../assets/images/linkedin (1).svg";
+import Mail from "../../assets/images/mail (1).svg";
+import Twitter from "../../assets/images/twitter (4).svg";
+
 const Team = () => {
   const coreTeam = [
-    { name: "Praneeth Nagu" },
-    { name: "Chakravardhan Reddy" },
-    { name: "Akash Madduru" },
-    { name: "Praneeth Nagu" },
+    {
+      name: "Praneeth Nagu",
+      role: "Founder / Marketing Lead",
+      links: [],
+      img: Praneeth,
+    },
+    {
+      name: "Chakravardhan Reddy",
+      role: "Co-Founder / Project Lead",
+      links: [],
+      img: Chakri,
+    },
+    {
+      name: "Akash Madduru",
+      role: "Product / Dev Lead",
+      links: [],
+      img: Akash,
+    },
+    {
+      //  name: "Praneeth Nagu"
+    },
   ];
 
   const advisors = [
@@ -37,6 +62,19 @@ const Team = () => {
                     style={{
                       display: "flex",
                       justifyContent: "center",
+                      alignItems: "center",
+                      margin: "1rem 0",
+                      columnGap: "1rem",
+                    }}
+                  >
+                    <img src={Twitter} height={40} width={40} alt="im1"></img>
+                    <img src={LinkedIn} height={40} width={40} alt="im1"></img>
+                    <img src={Mail} height={40} width={40} alt="im1"></img>
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
                       flexDirection: "column",
                     }}
                   >
@@ -46,7 +84,7 @@ const Team = () => {
                         display: "flex",
                         alignSelf: "center",
                       }}
-                      src="images/client/01.jpg"
+                      src={person.img}
                       alt=""
                       width={150}
                     />
@@ -58,7 +96,7 @@ const Team = () => {
                         className="text-muted mb-0 text-center"
                         style={{ fontWeight: "bold" }}
                       >
-                        Founder / C.E.O
+                        {person.role}
                       </h6>
                     </div>
                   </div>
