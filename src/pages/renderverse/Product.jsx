@@ -22,7 +22,7 @@ const Product = (props) => {
     >
       <div style={{ position: "relative", height: "12vh" }}>
         <Wave
-          style={{ position: "absolute", top: "-5rem" }}
+          style={{ position: "absolute", top: "-5rem", zIndex: 100 }}
           paused={true}
           fill="#0b1118"
           options={{

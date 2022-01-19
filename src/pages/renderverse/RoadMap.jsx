@@ -34,6 +34,8 @@ const RoadMap = () => {
                     borderRadius: "2vh",
                     border: "2px solid #0b1118",
                     background: "#171b56",
+                    boxShadow:
+                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
                   Set of lending-borrowing contracts
@@ -46,6 +48,8 @@ const RoadMap = () => {
                     borderRadius: "2vh",
                     border: "2px solid #0b1118",
                     background: "#171b56",
+                    boxShadow:
+                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
                   $UFI Pool
@@ -58,6 +62,8 @@ const RoadMap = () => {
                     borderRadius: "2vh",
                     border: "2px solid #0b1118",
                     background: "#171b56",
+                    boxShadow:
+                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
                   $UFI Dex Integration
@@ -70,6 +76,8 @@ const RoadMap = () => {
                     borderRadius: "2vh",
                     border: "2px solid #0b1118",
                     background: "#171b56",
+                    boxShadow:
+                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
                   Farming
@@ -83,6 +91,8 @@ const RoadMap = () => {
                     borderRadius: "2vh",
                     border: "2px solid #0b1118",
                     background: "#171b56",
+                    boxShadow:
+                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
                   Verifiable Credentials Standards and document formats for:
@@ -108,6 +118,8 @@ const RoadMap = () => {
                     borderRadius: "2vh",
                     border: "2px solid #0b1118",
                     background: "#171b56",
+                    boxShadow:
+                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
                   DEX integration KIT
@@ -120,6 +132,8 @@ const RoadMap = () => {
                     borderRadius: "2vh",
                     border: "2px solid #0b1118",
                     background: "#171b56",
+                    boxShadow:
+                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
                   Circuit
@@ -137,6 +151,8 @@ const RoadMap = () => {
                     borderRadius: "2vh",
                     border: "2px solid #0b1118",
                     background: "#171b56",
+                    boxShadow:
+                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
                   ZK-SNARK setup procedure (Public event)
@@ -149,6 +165,8 @@ const RoadMap = () => {
                     borderRadius: "2vh",
                     border: "2px solid #0b1118",
                     background: "#171b56",
+                    boxShadow:
+                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
                   Intermediate validation contract for EVM compatible
@@ -163,6 +181,8 @@ const RoadMap = () => {
                     borderRadius: "2vh",
                     border: "2px solid #0b1118",
                     background: "#171b56",
+                    boxShadow:
+                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
                   Intermediate smart contract for CosmWasm
@@ -182,6 +202,8 @@ const RoadMap = () => {
                     borderRadius: "2vh",
                     border: "2px solid #0b1118",
                     background: "#171b56",
+                    boxShadow:
+                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
                   $UFI staking
@@ -194,6 +216,8 @@ const RoadMap = () => {
                     borderRadius: "2vh",
                     border: "2px solid #0b1118",
                     background: "#171b56",
+                    boxShadow:
+                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
                   Onboarding procedure
@@ -206,6 +230,8 @@ const RoadMap = () => {
                     borderRadius: "2vh",
                     border: "2px solid #0b1118",
                     background: "#171b56",
+                    boxShadow:
+                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
                   External reference API
@@ -218,6 +244,8 @@ const RoadMap = () => {
                     borderRadius: "2vh",
                     border: "2px solid #0b1118",
                     background: "#171b56",
+                    boxShadow:
+                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
                   Farming

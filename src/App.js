@@ -35,7 +35,7 @@ const App = () => {
               </Link>
               {/* Logo end*/}
               <div className="menu-extras">
-                <div className="menu-item">
+                <div classNamde="menu-item">
                   {/* Mobile menu toggle*/}
                   <Link
                     className="navbar-toggle"
@@ -102,14 +102,14 @@ const App = () => {
 
         <video style={{
           width: "100%",
-          height: "108vh",
+          height: "120vh",
           objectFit: "cover",
-          position: "fixed",
+          position: "absolute",
           left: 0,
           right: 0,
           top: 0,
           bottom: 0,
-          zIndex: -1
+          zIndex: 1
         }} ref={video} loop muted>
           <source src={Background} type="video/mp4" />
         </video>
