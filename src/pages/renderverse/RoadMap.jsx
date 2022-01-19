@@ -21,7 +21,7 @@ const RoadMap = () => {
         style={{ background: "#121342", borderRadius: "2vh" }}
       >
         <div className="row justify-content-center p-3 rounded-top">
-          <div className="col-lg-4 col-md-4 justify-content-center col-12">
+          <div className="col-lg-4 col-md-12 justify-content-center col-12">
             <h2 className="text-center my-4 road_map_text_colors">Q3 2021</h2>
             <div className="hide_border">
               <h4 className="my-2 road_map_text_colors">
@@ -105,7 +105,7 @@ const RoadMap = () => {
             </div>
           </div>
 
-          <div className="col-lg-4 col-md-4 justify-content-center col-12">
+          <div className="col-lg-4 col-md-12 justify-content-center col-12">
             <h2 className="text-center my-4 road_map_text_colors">Q4 2021</h2>
             <div className="hide_border">
               <h4 className="my-2 road_map_text_colors">
@@ -191,7 +191,7 @@ const RoadMap = () => {
             </div>
           </div>
 
-          <div className="col-lg-4 col-md-4 justify-content-center col-12">
+          <div className="col-lg-4 col-md-12 justify-content-center col-12">
             <h2 className="text-center my-4 road_map_text_colors">Q1 2021</h2>
             <h4 className="road_map_text_colors">Issuers SDK</h4>
             <div>

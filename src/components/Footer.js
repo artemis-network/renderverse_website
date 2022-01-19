@@ -1,7 +1,5 @@
 import './Footer.css'
-import Support from '../assets/images/support.svg'
 import Blog from '../assets/images/blog.svg'
-import Speaker from '../assets/images/loudspeaker.svg'
 
 import Medium from '../assets/images/medium (2).svg'
 import Discord from '../assets/images/discord (2).svg'
