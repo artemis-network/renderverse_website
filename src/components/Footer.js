@@ -11,7 +11,7 @@ import Twitter from '../assets/images/twitter (2).svg'
 const Footer = () => {
   return (
     <div>
-      <div style={{ display: "flex", height: "15vh", background: "#0b1118" }}></div>
+      <div style={{ display: "flex", height: "16vh", background: "#0b1118" }}></div>
       <footer style={{ backgroundColor: "white" }} >
         <div className='container'>
           <div className="row justify-content-center" style={{
@@ -19,7 +19,8 @@ const Footer = () => {
             background: "white",
             padding: "4rem",
             borderRadius: "4vh",
-            transform: "translateY(-50%)"
+            height: "100%",
+            transform: "translateY(-30%)"
           }}>
             <div className='col-lg-3 col-md-3 col-12' style={{ display: "flex", justifyContent: 'center', flexDirection: "column", alignItems: 'center' }}>
               <div style={{ color: "#0B1118", fontSize: "3rem" }}>Join</div>
@@ -29,11 +30,11 @@ const Footer = () => {
               className='col-lg-9 col-md-9 col-md-12'
             >
               <div className='row' style={{ display: "flex", justifyContent: 'center', alignItems: 'center', margin: "auto auto", height: "12vh" }}>
-                <div className='col-9' >
+                <div className='col-lg-9 col-md-9 col-12' >
                   <input className='form-control' style={{ padding: "1rem", fontSize: "1rem", background: "white", borderRadius: "4vh" }} placeholder="Enter your email" />
                   <div style={{ color: "#0b1118", fontSize: ".9rem", padding: ".5rem 1rem" }}>By entering your email, you agree to get our emails.</div>
                 </div>
-                <div className='col-3'>
+                <div className='col-lg-3 col-md-9 col-12'>
                   <button style={{ borderRadius: "5vh" }} className="btn btn-secondary">Submit</button>
                   <div style={{ fontSize: ".9rem", padding: ".5rem 1rem" }}>Hidden</div>
                 </div>

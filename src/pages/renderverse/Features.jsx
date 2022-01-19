@@ -95,7 +95,6 @@ const Features = () => {
                     </div>
                     <div className="content mt-4">
                       <a href="features.html" className="text-dark h5 title">
-                        {" "}
                         RENDERSTORE
                       </a>
                       <p className="text-muted mt-3 mb-0">

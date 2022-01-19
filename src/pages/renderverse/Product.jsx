@@ -38,6 +38,7 @@ const Product = (props) => {
           display: "flex",
           justifyContent: "center",
           fontSize: "2rem",
+          margin: "0 0 5rem 0",
         }}
       >
         {props.title}
