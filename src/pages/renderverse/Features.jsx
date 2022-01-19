@@ -1,3 +1,5 @@
+import Box from "../../components/Globe";
+
 const Features = () => {
   return (
     <div>
@@ -114,13 +116,7 @@ const Features = () => {
               </div>
             </div>
 
-            <div
-              className="col-lg-4 col-md-4 col-12 mt-4 pt-2"
-              style={{
-                display: "flex",
-                justifyContent: "center",
-              }}
-            ></div>
+            <div className="col-lg-4 col-md-4 col-12 mt-4 pt-2"></div>
           </div>
         </div>
         {/*end row*/}

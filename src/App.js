@@ -110,7 +110,7 @@ const App = () => {
           top: 0,
           bottom: 0,
           zIndex: 1
-        }} ref={video} loop muted>
+        }} ref={video} loop muted playsinline>
           <source src={Background} type="video/mp4" />
         </video>
 
