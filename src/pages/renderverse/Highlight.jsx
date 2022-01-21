@@ -12,9 +12,10 @@ const HightLight = () => {
   useEffect(() => {
     if (splitRef) {
       let split_res = Splitting({ by: "chars" });
-      setLines(split_res[1].chars);
+      setLines(split_res[0].chars);
       console.log(lines);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [splitRef]);
 
   return (

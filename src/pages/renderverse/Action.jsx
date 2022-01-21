@@ -1,12 +1,7 @@
 import Action1 from "../../assets/images/d30570a4482c615969784003790d46fa.jpeg";
 import Wave from "react-wavify";
-import Splitting from "https://cdn.skypack.dev/splitting";
-import { useRef } from "react";
 
 const Action = () => {
-  const target = useRef();
-  const results = Splitting({ target: target.current, by: "chars" });
-
   return (
     <div>
       <div
@@ -42,8 +37,6 @@ const Action = () => {
         >
           <div className="container">
             <div
-              data-splitting
-              ref={target}
               style={{
                 fontSize: "2rem",
                 display: "flex",
