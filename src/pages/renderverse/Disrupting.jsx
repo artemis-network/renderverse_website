@@ -9,8 +9,8 @@ const Disrupting = () => {
       }}
     >
       <div className="container">
-        <h1 className="font-weight-bold px-4">Renderverse is disrupting </h1>
-        <h1 className="font-weight-bold px-4">a $40 trillion industry</h1>
+        <h1 className="font-weight-bold px-4">Renderverse is disrupting a</h1>
+        <h1 className="font-weight-bold px-4">$800 billion industry</h1>
         <div className="row justify-content-md-center my-4">
           <div className="col-lg-4 md-col-4 col-12 my-4">
             <img
@@ -28,7 +28,7 @@ const Disrupting = () => {
             />
             <div className="mx-2 my-4">
               <div style={{ fontSize: "2rem", fontWeight: "bold" }}>
-                $250 Million
+                $220 Billion
               </div>
               <div
                 style={{
@@ -36,11 +36,11 @@ const Disrupting = () => {
                   fontWeight: "bold",
                 }}
               >
-                Gamming
+                Gaming
               </div>
               <div style={{ textAlign: "left" }}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laborum, possimus voluptates explicabo dolores sunt impedit.
+                RenderPlay aims to develop, contribute and support GameFI with
+                P2E games.
               </div>
             </div>
           </div>
@@ -61,7 +61,7 @@ const Disrupting = () => {
             />
             <div className="px-2 my-4">
               <div style={{ fontSize: "2rem", fontWeight: "bold" }}>
-                $250 Million
+                $80 Billion
               </div>
               <div
                 style={{
@@ -69,11 +69,11 @@ const Disrupting = () => {
                   fontWeight: "bold",
                 }}
               >
-                Metaverse
+                Metaverse and NFT’s
               </div>
               <div style={{ textAlign: "left" }}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laborum, possimus voluptates explicabo dolores sunt impedit.
+                We bring people one step closer to the realm of metaverse and
+                NFTs with RenderScan and RenderMarket.
               </div>
             </div>
           </div>
@@ -93,7 +93,7 @@ const Disrupting = () => {
             />
             <div className="px-2 my-4">
               <div style={{ fontSize: "2rem", fontWeight: "bold" }}>
-                $250 Million
+                $500 billion
               </div>
               <div
                 style={{
@@ -101,11 +101,10 @@ const Disrupting = () => {
                   fontWeight: "bold",
                 }}
               >
-                NFT Market Place
+                E-commerce Merchandise
               </div>
               <div style={{ textAlign: "left" }}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laborum, possimus voluptates explicabo dolores sunt impedit.
+                Shop from a wide range of merchandise with RenderStore
               </div>
             </div>
           </div>

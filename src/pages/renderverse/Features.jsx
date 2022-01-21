@@ -32,8 +32,8 @@ const Features = () => {
                         RENDERFI
                       </a>
                       <p className="text-muted mt-3 mb-0">
-                        DeFI, staking and farming to earn passive yield on your
-                        $RNDV tokens
+                        Earn passive yield on your $RNDV tokens with our DEFI
+                        platform
                       </p>
                       <div className="mt-2">
                         <a href="features.html" className="link">
@@ -54,8 +54,8 @@ const Features = () => {
                         RENDERMARKET
                       </a>
                       <p className="text-muted mt-3 mb-0">
-                        An NFT marketplace where users can buy, sell and mint
-                        their NFT's using RNDV tokens
+                        An NFT Marketplace to mint and trade your NFTs using
+                        $RNDV tokens
                       </p>
                       <div className="mt-2">
                         <a href="features.html" className="link">
@@ -76,8 +76,8 @@ const Features = () => {
                         RENDERPLAY
                       </a>
                       <p className="text-muted mt-3 mb-0">
-                        Online multiplayer p2p gaming powered by Render gamming
-                        engine
+                        Form a team, battle with RenderApes and earn $RNDV on
+                        our online P2E gaming platform
                       </p>
                       <div className="mt-2">
                         <a href="features.html" className="link">
@@ -98,8 +98,7 @@ const Features = () => {
                         RENDERSTORE
                       </a>
                       <p className="text-muted mt-3 mb-0">
-                        Shop your favorite Merchandise in our Online stores and
-                        physical outlets
+                        Shop your favourite merchandise on our e-commerce store.
                       </p>
                       <div className="mt-2">
                         <a href="features.html" className="link">

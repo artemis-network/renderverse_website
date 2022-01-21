@@ -3,7 +3,7 @@ import Praneeth from "../../assets/images/praneeth.jpeg";
 import Chakri from "../../assets/images/chakri.jpeg";
 
 import LinkedIn from "../../assets/images/linkedin (1).svg";
-import Mail from "../../assets/images/mail (1).svg";
+import Mail from "../../assets/images/mail (2).svg";
 import Twitter from "../../assets/images/twitter (4).svg";
 
 const Team = () => {
@@ -63,13 +63,13 @@ const Team = () => {
                       display: "flex",
                       justifyContent: "center",
                       alignItems: "center",
+                      columnGap: ".25rem",
                       margin: "1rem 0",
-                      columnGap: "1rem",
                     }}
                   >
                     <img src={Twitter} height={40} width={40} alt="im1"></img>
                     <img src={LinkedIn} height={40} width={40} alt="im1"></img>
-                    <img src={Mail} height={40} width={40} alt="im1"></img>
+                    <img src={Mail} height={35} width={35} alt="im1"></img>
                   </div>
                   <div
                     style={{

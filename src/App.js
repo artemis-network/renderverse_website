@@ -10,7 +10,8 @@ import Action from "./pages/renderverse/Action";
 import RoadMap from "./pages/renderverse/RoadMap";
 import Team from "./pages/renderverse/Team";
 import Footer from "./components/Footer";
-import Background from './assets/Green - 88883_1 (1).mp4'
+
+import Background from './assets/final_61e8f8c6dd5a10008696540e_607430.mp4'
 import Disrupting from "./pages/renderverse/Disrupting";
 import HightLight from "./pages/renderverse/Highlight";
 
@@ -78,16 +79,6 @@ const App = () => {
                   <li>
                     <Link to="/roadmap" className="sub-menu-item">
                       Roadmap
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/faqs" className="sub-menu-item">
-                      Faq
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/contact" className="sub-menu-item">
-                      Contact Us
                     </Link>
                   </li>
                 </ul>

@@ -14,21 +14,16 @@ const Mission = () => {
           }}
         ></div>
 
-        {/* <div
-          style={{
-            fontSize: "2rem",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            color: "#0b1118",
-          }}
-        >
-          What is Renderverse?
-        </div> */}
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-6 order-2 order-md-1">
-              <div style={{ display: "flex", padding: "1rem 0" }}>
+              <div
+                style={{
+                  display: "flex",
+                  padding: "1rem 0",
+                  transform: "translateX(-2%)",
+                }}
+              >
                 <div
                   style={{
                     fontSize: "1.35rem",
@@ -58,7 +53,9 @@ const Mission = () => {
               >
                 Empowering every person on the planet to step into the world of
                 Metaverse and NFT's with next-gen rendering technology powered
-                by AI and ML
+                by AI. We strive to deliver the highest quality and value
+                possible through simple, easy, and relevant solutions with a
+                determination to succeed
               </div>
             </div>
 
@@ -112,9 +109,12 @@ const Mission = () => {
                     color: "#0b1118",
                   }}
                 >
-                  A cross-device Deep learning-based Augmented Reality
-                  application that scans surrounding objects and mints NFTs in
-                  Metaverse
+                  With our unique AI-powered application and $RNDV at the heart
+                  of its economy, Project Renderverse is conquering the
+                  metaverse by storm. Our state-of-the-art models enable users
+                  to transform real-world items into high-quality NFTs. Users
+                  can exchange NFTs, purchase merchandise, and play P2E games on
+                  Renderverse ecosystem.
                 </div>
               </div>
             </div>

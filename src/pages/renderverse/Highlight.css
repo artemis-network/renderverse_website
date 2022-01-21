@@ -1,32 +1,128 @@
-.trust_img {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
+
+/* .headline {
+  overflow: hidden;
+  perspective: 1000px;
+  scroll-snap-align: start;
 }
 
-.trust img {
-  width: 20rem;
-}
-
-.headline {
+.sub_text {
   font-size: 3rem;
-  font-family: var(--font-style);
-  font-weight: bold;
-  color: #ffffff;
-  text-shadow: 1px 1px 3px rgba(2, 246, 203, 1);
-}
-
-.sub_line {
-  color: #ffffff;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(2, 246, 203, 1);
-}
-
-.sub_trust {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-count: 2;
-  font-size: 1rem;
+}
+
+.sub_text_center {
+  display: block;
+}
+
+.char {
+  animation-delay: calc(var(--char-index) * 0.025s);
+  animation-direction: linear;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-name: twirl;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  display: inline-block;
+  position: relative;
+  transform-origin: 50% 100%;
+  z-index: 1;
+} */
+/* 
+@keyframes twirl {
+  2.5% {
+    transform: rotateY(1turn);
+  }
+  5% {
+    transform: rotateY(2turn);
+  }
+  10% {
+    transform: rotateY(3turn);
+  }
+  20% {
+    transform: rotateY(4turn);
+  }
+  40% {
+    transform: rotateY(5turn);
+  }
+  70%,
+  100% {
+    transform: rotateY(6turn);
+  }
+} */
+
+.high > span {
+  line-height: 1;
+  font-size: clamp(
+    var(--fluid-type-min, 1rem),
+    calc(1rem + var(--fluid-type-target, 3vw)),
+    var(--fluid-type-max, 1.3rem)
+  );
+  display: block;
+}
+.main {
+  --fluid-type-min: 8rem;
+  --fluid-type-max: 10rem;
+  --fluid-type-target: 20vw;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 0.7;
+  font-family: "Roboto", sans-serif;
+  margin-left: -0.06ch;
+}
+.main .char {
+  cursor: zoom-in;
+  transform-origin: center bottom;
+  transition: transform 400ms cubic-bezier(0.4, 0, 0.7, 1.8), color 400ms ease;
+  color: var(--color);
+  box-shadow: none;
+}
+.main .char:nth-child(3),
+.main .char:nth-child(4) {
+  letter-spacing: 0.02ch;
+}
+.main .char:hover {
+  transform: scale(1.4);
+  transition-duration: 200ms;
+  text-shadow: 0px 0px 3px black, 0px 0px 20px var(--color);
+  z-index: 1;
+}
+.main .char:nth-child(1):hover {
+  --color: #ffd300;
+}
+.main .char:nth-child(2):hover {
+  --color: #de38c8;
+}
+.main .char:nth-child(3):hover {
+  --color: #8b5fda;
+}
+.main .char:nth-child(4):hover {
+  --color: #86bbd8;
+}
+.main .char:nth-child(5):hover {
+  --color: #d3f6db;
+}
+.main .char:nth-child(6):hover {
+  --color: #eb9486;
+}
+.main .char:nth-child(7):hover {
+  --color: #de38c8;
+}
+
+.main .char:nth-child(8):hover {
+  --color: #8b5fda;
+}
+
+.main .char:nth-child(9):hover {
+  --color: #86bbd8;
+}
+
+.main .char:nth-child(10):hover {
+  --color: #d3f6db;
+}
+
+.main .char:nth-child(11):hover {
+  --color: #eb9486;
 }

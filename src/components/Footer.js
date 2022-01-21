@@ -48,8 +48,8 @@ const Footer = () => {
               <div className='p-2' style={{ display: "flex", justifyContent: "center" }}>
                 <img src={Blog} height={100} width={100} alt="cool" />
               </div>
-              <div className='p-2' style={{ textAlign: "center", fontSize: "1.25rem", color: "#0b1118" }}>Blog</div>
-              <div className='p-2' style={{ color: "#0b1118", textAlign: 'center' }}>Be the first to know about sales, new projects and collections, features and upcoming events.</div>
+              <div className='p-2' style={{ textAlign: "center", fontSize: "1.25rem", color: "#0b1118" }}>Support and Feedback</div>
+              <div className='p-2' style={{ color: "#0b1118", textAlign: 'center' }}>Ask questions and give feedback, We are adaptable and always strive to improve our services with your assistance.</div>
               <div className='container'>
                 <div className='row justify-content-center p-2'>
                   <div className='col-6' style={{ justifyContent: "center", display: "flex" }}>
@@ -75,7 +75,7 @@ const Footer = () => {
                 <img src={Blog} height={100} width={100} alt="cool" />
               </div>
               <div className='p-2' style={{ textAlign: "center", fontSize: "1.25rem", color: "#0b1118" }}>Blog</div>
-              <div className='p-2' style={{ color: "#0b1118", textAlign: 'center' }}>Be the first to know about sales, new projects and collections, features and upcoming events.</div>
+              <div className='p-2' style={{ color: "#0b1118", textAlign: 'center' }}> In our Medium blog, you can learn about new features, partnerships, and monthly updates.</div>
               <div className='container'>
                 <div className='row justify-content-center p-2 mb-2'>
                   <button className='btn btn-outline-primary'>
@@ -92,8 +92,8 @@ const Footer = () => {
               <div className='p-2' style={{ display: "flex", justifyContent: "center" }}>
                 <img src={Blog} height={100} width={100} alt="cool" />
               </div>
-              <div className='p-2' style={{ textAlign: "center", fontSize: "1.25rem", color: "#0b1118" }}>Blog</div>
-              <div className='p-2' style={{ color: "#0b1118", textAlign: 'center' }}>Be the first to know about sales, new projects and collections, features and upcoming events.</div>
+              <div className='p-2' style={{ textAlign: "center", fontSize: "1.25rem", color: "#0b1118" }}>Annoucements</div>
+              <div className='p-2' style={{ color: "#0b1118", textAlign: 'center' }}>Stay connected with our marketing team and be the first to know about upcoming events, progress and updates.</div>
               <div className='container'>
                 <div className='row justify-content-center p-2'>
                   <div className='col-6' style={{ justifyContent: "center", display: "flex" }}>
