@@ -3,7 +3,7 @@ import { Element, Link } from "react-scroll";
 import { BrowserRouter, } from 'react-router-dom'
 
 import Product from './pages/renderverse/Product'
-import Features from "./pages/renderverse/Features";
+import EcoSystem from "./pages/renderverse/EcoSystem";
 import Mission from "./pages/renderverse/Misison";
 import RenderVerse from "./pages/renderverse/RenderVerse";
 import Action from "./pages/renderverse/Action";
@@ -11,13 +11,20 @@ import RoadMap from "./pages/renderverse/RoadMap";
 import Team from "./pages/renderverse/Team";
 import Footer from "./components/Footer";
 
-import Background from './assets/final_61e8f8c6dd5a10008696540e_607430.mp4'
+import Background from './assets/videos/final_61ee52b87014ce0044ebb6b7_54591.mp4'
 import Disrupting from "./pages/renderverse/Disrupting";
 import HightLight from "./pages/renderverse/Highlight";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const App = () => {
   const video = React.createRef();
 
+
+  React.useEffect(() => {
+    AOS.init({});
+  }, [])
 
   React.useEffect(() => {
     video.current.playbackRate = 1.25;
@@ -72,13 +79,13 @@ const App = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/team" className="sub-menu-item">
-                      Team
+                    <Link to="/roadmap" className="sub-menu-item">
+                      Roadmap
                     </Link>
                   </li>
                   <li>
-                    <Link to="/roadmap" className="sub-menu-item">
-                      Roadmap
+                    <Link to="/team" className="sub-menu-item">
+                      Team
                     </Link>
                   </li>
                 </ul>
@@ -122,7 +129,7 @@ const App = () => {
 
         <Element id="/eco-system" name="eco-system">
           <div id="eco-system">
-            <Features />
+            <EcoSystem />
             <Action />
             <Disrupting />
             <HightLight />

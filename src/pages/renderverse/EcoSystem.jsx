@@ -22,7 +22,12 @@ const Features = () => {
           <div className="row">
             <div className="col-lg-8 col-md-8 col-12 mt-4 pt-2">
               <div className="row">
-                <div className="col-lg-6 col-md-6 col-12 mt-4 pt-2">
+                <div
+                  data-aos="fade-down"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                  className="col-lg-6 col-md-6 col-12 mt-4 pt-2"
+                >
                   <div className="feature feature-primary feature-clean bg-light rounded p-4 mx-2">
                     <div className="icons text-center">
                       <i className="uil uil-shield-check d-block rounded h3 mb-0" />
@@ -44,7 +49,12 @@ const Features = () => {
                   </div>
                 </div>
                 {/*end col*/}
-                <div className="col-lg-6 col-md-6 col-12 mt-4 pt-2">
+                <div
+                  data-aos="fade-down"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                  className="col-lg-6 col-md-6 col-12 mt-4 pt-2"
+                >
                   <div className="feature feature-primary feature-clean bg-light rounded p-4 mx-2">
                     <div className="icons text-center">
                       <i className="uil uil-stopwatch-slash d-block rounded h3 mb-0" />
@@ -66,7 +76,12 @@ const Features = () => {
                   </div>
                 </div>
                 {/*end col*/}
-                <div className="col-lg-6 col-md-6 col-12 mt-4 pt-2">
+                <div
+                  data-aos="fade-down"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                  className="col-lg-6 col-md-6 col-12 mt-4 pt-2"
+                >
                   <div className="feature feature-primary feature-clean bg-light rounded p-4 mx-2">
                     <div className="icons text-center">
                       <i className="uil uil-exclamation-octagon d-block rounded h3 mb-0" />
@@ -88,7 +103,12 @@ const Features = () => {
                   </div>
                 </div>
                 {/*end col*/}
-                <div className="col-lg-6 col-md-6 col-12 mt-4 pt-2">
+                <div
+                  data-aos="fade-down"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                  className="col-lg-6 col-md-6 col-12 mt-4 pt-2"
+                >
                   <div className="feature feature-primary feature-clean bg-light rounded p-4 mx-2">
                     <div className="icons text-center">
                       <i className="uil uil-money-bill d-block rounded h3 mb-0" />

@@ -63,16 +63,16 @@
   display: block;
 }
 .main {
-  --fluid-type-min: 8rem;
-  --fluid-type-max: 10rem;
+  --fluid-type-min: 11.8rem;
+  --fluid-type-max: 11.8rem;
   --fluid-type-target: 20vw;
   font-weight: 400;
   font-style: normal;
   line-height: 0.7;
-  font-family: "Roboto", sans-serif;
   margin-left: -0.06ch;
 }
 .main .char {
+  font-family: Aceir-Noir;
   cursor: zoom-in;
   transform-origin: center bottom;
   transition: transform 400ms cubic-bezier(0.4, 0, 0.7, 1.8), color 400ms ease;

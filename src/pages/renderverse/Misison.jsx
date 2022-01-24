@@ -16,7 +16,12 @@ const Mission = () => {
 
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6 col-md-6 order-2 order-md-1">
+            <div
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              className="col-lg-6 col-md-6 order-2 order-md-1"
+            >
               <div
                 style={{
                   display: "flex",
@@ -59,7 +64,12 @@ const Mission = () => {
               </div>
             </div>
 
-            <div className="col-lg-6 col-md-6 order-2 order-md-1">
+            <div
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              className="col-lg-6 col-md-6 order-2 order-md-1"
+            >
               <div className="my-4 mx-4"></div>
             </div>
             {/*end col*/}
@@ -68,11 +78,21 @@ const Mission = () => {
           <div className="row" style={{ margin: "4rem 0" }}></div>
 
           <div className="row align-items-center">
-            <div className="col-lg-6 col-md-6 order-2 order-md-1">
+            <div
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              className="col-lg-6 col-md-6 order-2 order-md-1"
+            >
               <div className="my-4"></div>
             </div>
 
-            <div className="col-lg-6 col-md-6 order-2 order-md-1">
+            <div
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              className="col-lg-6 col-md-6 order-2 order-md-1"
+            >
               <div className="my-4 mx-4">
                 <div
                   style={{

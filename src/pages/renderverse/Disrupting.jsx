@@ -12,7 +12,12 @@ const Disrupting = () => {
         <h1 className="font-weight-bold px-4">Renderverse is disrupting a</h1>
         <h1 className="font-weight-bold px-4">$800 billion industry</h1>
         <div className="row justify-content-md-center my-4">
-          <div className="col-lg-4 md-col-4 col-12 my-4">
+          <div
+            data-aos="zoom-in-up"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            className="col-lg-4 md-col-4 col-12 my-4"
+          >
             <img
               style={{
                 background: "#313133",
@@ -45,7 +50,12 @@ const Disrupting = () => {
             </div>
           </div>
 
-          <div className="col-lg-4 md-col-4 col-12 my-4">
+          <div
+            data-aos="zoom-in-up"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            className="col-lg-4 md-col-4 col-12 my-4"
+          >
             <img
               style={{
                 background: "#313133",
@@ -77,7 +87,12 @@ const Disrupting = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 md-col-4 col-12 my-4">
+          <div
+            data-aos="zoom-in-up"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            className="col-lg-4 md-col-4 col-12 my-4"
+          >
             <img
               style={{
                 background: "#313133",

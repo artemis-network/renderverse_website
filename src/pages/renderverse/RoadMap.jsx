@@ -37,6 +37,9 @@ const RoadMap = () => {
                     boxShadow:
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
                 >
                   Set of lending-borrowing contracts
                 </div>
@@ -51,6 +54,9 @@ const RoadMap = () => {
                     boxShadow:
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
                 >
                   $UFI Pool
                 </div>
@@ -65,6 +71,9 @@ const RoadMap = () => {
                     boxShadow:
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
                 >
                   $UFI Dex Integration
                 </div>
@@ -79,6 +88,9 @@ const RoadMap = () => {
                     boxShadow:
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
                 >
                   Farming
                 </div>
@@ -94,6 +106,9 @@ const RoadMap = () => {
                     boxShadow:
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
                 >
                   Verifiable Credentials Standards and document formats for:
                   <ul>
@@ -121,6 +136,9 @@ const RoadMap = () => {
                     boxShadow:
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
                 >
                   DEX integration KIT
                 </div>
@@ -135,6 +153,9 @@ const RoadMap = () => {
                     boxShadow:
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
                 >
                   Circuit
                   <ul>
@@ -154,6 +175,9 @@ const RoadMap = () => {
                     boxShadow:
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
                 >
                   ZK-SNARK setup procedure (Public event)
                 </div>
@@ -168,6 +192,9 @@ const RoadMap = () => {
                     boxShadow:
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
                 >
                   Intermediate validation contract for EVM compatible
                   blockchains
@@ -184,6 +211,9 @@ const RoadMap = () => {
                     boxShadow:
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
                 >
                   Intermediate smart contract for CosmWasm
                 </div>
@@ -205,6 +235,9 @@ const RoadMap = () => {
                     boxShadow:
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
                 >
                   $UFI staking
                 </div>
@@ -219,6 +252,9 @@ const RoadMap = () => {
                     boxShadow:
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
                 >
                   Onboarding procedure
                 </div>
@@ -233,6 +269,9 @@ const RoadMap = () => {
                     boxShadow:
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
                 >
                   External reference API
                 </div>
@@ -247,6 +286,9 @@ const RoadMap = () => {
                     boxShadow:
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
                 >
                   Farming
                 </div>

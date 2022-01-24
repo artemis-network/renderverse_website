@@ -48,7 +48,12 @@ const Product = (props) => {
         style={{ display: "flex", flexDirection: "column", rowGap: "4rem" }}
       >
         <div className="row">
-          <div className="feature_row_1">
+          <div
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            className="feature_row_1"
+          >
             <img
               height={30}
               width={160}
@@ -80,7 +85,12 @@ const Product = (props) => {
             />
             <img height={30} width={120} src={Image6} alt="image1" />
           </div>
-          <div className="feature_row_1">
+          <div
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            className="feature_row_1"
+          >
             <img
               height={30}
               width={160}

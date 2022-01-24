@@ -23,15 +23,15 @@ const MetabaseCamp = () => {
             <div className="col-lg-12 col-md-12 col-12">
               <div className="title-heading">
                 <span className="badge bg-soft-success rounded-md">$RNDR</span>
-                <h4
+                <div
                   style={{
-                    padding: "1rem 2rem",
+                    // padding: "1rem 2rem",
                     borderRadius: "4vh",
                   }}
-                  className="glow-text display-5 mt-3 mb-4"
+                  className="glow-text display-5"
                 >
                   An AR doorway into the Metaverse & NFTs
-                </h4>
+                </div>
                 <div
                   style={{ display: "flex", justifyContent: "center" }}
                   className="mt-4 pt-2 align-items-center"
@@ -64,6 +64,9 @@ const MetabaseCamp = () => {
           columnGap: "3rem",
           padding: "7rem 0 3rem 0",
         }}
+        data-aos="zoom-in-up"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
       >
         <img className="socials_l" src={Twitter} alt="twitter"></img>
         <img className="socials_l" src={Telegram} alt="telegram"></img>

@@ -12,14 +12,16 @@ const Footer = () => {
       <div style={{ display: "flex", height: "16vh", background: "#0b1118" }}></div>
       <footer style={{ backgroundColor: "white" }} >
         <div className='container'>
-          <div className="row justify-content-center" style={{
-            boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
-            background: "white",
-            padding: "4rem",
-            borderRadius: "4vh",
-            height: "100%",
-            transform: "translateY(-30%)"
-          }}>
+          <div
+            className="row justify-content-center" style={{
+              boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
+              background: "white",
+              padding: "4rem",
+              borderRadius: "4vh",
+              height: "100%",
+              transform: "translateY(-30%)",
+              margin: "0 0 5rem 0"
+            }}>
             <div className='col-lg-3 col-md-3 col-12' style={{ display: "flex", justifyContent: 'center', flexDirection: "column", alignItems: 'center' }}>
               <div style={{ color: "#0B1118", fontSize: "3rem" }}>Join</div>
               <p style={{ color: "#0B1118" }}>The Community</p>
@@ -44,7 +46,12 @@ const Footer = () => {
 
         <div className='container py-6'>
           <div className='row justify-content-center'>
-            <div className='col-lg-3 col-md-4 col-12 my-4'>
+            <div
+              data-aos="flip-left"
+              data-aos-duration="400"
+              data-aos-offset="700"
+              data-aos-easing="ease-in-sine"
+              className='col-lg-3 col-md-4 col-12 my-4'>
               <div className='p-2' style={{ display: "flex", justifyContent: "center" }}>
                 <img src={Blog} height={100} width={100} alt="cool" />
               </div>
@@ -70,7 +77,13 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className='col-lg-3 col-md-4 col-12 my-4'>
+            <div
+
+              data-aos="flip-left"
+              data-aos-duration="600"
+              data-aos-offset="700"
+              data-aos-easing="ease-in-sine"
+              className='col-lg-3 col-md-4 col-12 my-4'>
               <div className='p-2' style={{ display: "flex", justifyContent: "center" }}>
                 <img src={Blog} height={100} width={100} alt="cool" />
               </div>
@@ -88,7 +101,13 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className='col-lg-3 col-md-4 col-12 my-4'>
+            <div
+
+              data-aos="flip-left"
+              data-aos-duration="800"
+              data-aos-offset="700"
+              data-aos-easing="ease-in-sine"
+              className='col-lg-3 col-md-4 col-12 my-4'>
               <div className='p-2' style={{ display: "flex", justifyContent: "center" }}>
                 <img src={Blog} height={100} width={100} alt="cool" />
               </div>

@@ -25,21 +25,39 @@ const HightLight = () => {
           "linear-gradient(to bottom, #557571, #2b5f68, #004861, #002f56, #111341)",
       }}
     >
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "column",
-          rowGap: "2rem",
-          fontSize: "3.6rem",
-          textAlign: "center",
-        }}
-        className="high"
-      >
-        <span class="intro">Become a RENDEREAPE with </span>
-        <span class="main" aria-label="RENDERVERSE" data-splitting>
-          RENDERVERSE
-        </span>
+      <div className="container">
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+            rowGap: "0rem",
+            textAlign: "left",
+          }}
+          className="high"
+        >
+          <span
+            style={{
+              fontStyle: "Cabin Condensed",
+              fontWeight: "bold",
+              fontSize: "3rem",
+              transform: "translateY(2rem)",
+            }}
+            class="intro"
+          >
+            BECOME A RENDEREAPE WITH{" "}
+          </span>
+          <span
+            data-aos="zoom-out"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            class="main"
+            aria-label="RENDERVERSE"
+            data-splitting
+          >
+            RENDERVERSE
+          </span>
+        </div>
       </div>
     </div>
   );

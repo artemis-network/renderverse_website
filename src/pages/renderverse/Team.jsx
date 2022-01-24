@@ -54,7 +54,12 @@ const Team = () => {
       </div>
       <section className="section">
         <div className="container">
-          <div className="row justify-content-center my-5">
+          <div
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            className="row justify-content-center my-5"
+          >
             {coreTeam.map((person, index) => {
               return (
                 <div key={index} className="col-lg-3 col-md-3 col-12">
@@ -106,7 +111,12 @@ const Team = () => {
           </div>
           {/*end row*/}
 
-          <div className="row justify-content-center my-5">
+          <div
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            className="row justify-content-center my-5"
+          >
             {advisors.map((person, index) => {
               return (
                 <div key={index} className="col-lg-4 col-md-4 col-12">
@@ -144,7 +154,12 @@ const Team = () => {
             })}
           </div>
 
-          <div className="row justify-content-center my-5">
+          <div
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            className="row justify-content-center my-5"
+          >
             {backers.map((person, index) => {
               return (
                 <div key={index} className="col-lg-6 col-md-6 col-12">
