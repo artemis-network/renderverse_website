@@ -26,7 +26,7 @@ const Home = () => {
       <div>
         <header id="topnav" className="defaultscroll sticky tagline-height">
           <div className="container">
-            <Link to="/home" className="logo">
+            <Link to="/" className="logo">
               <div>Renderverse</div>
             </Link>
             <div className="menu-extras">
@@ -47,27 +47,27 @@ const Home = () => {
             <div id="navigation">
               <ul className="navigation-menu nav-right nav-light">
                 <li>
-                  <Link to="/home" className="sub-menu-item">
+                  <Link to="/" className="sub-menu-item">
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link to="/home/mission" className="sub-menu-item">
+                  <Link to="/mission" className="sub-menu-item">
                     Mission
                   </Link>
                 </li>
                 <li>
-                  <Link to="/home/eco-system" className="sub-menu-item">
+                  <Link to="/eco-system" className="sub-menu-item">
                     Eco System
                   </Link>
                 </li>
                 <li>
-                  <Link to="/home/roadmap" className="sub-menu-item">
+                  <Link to="/roadmap" className="sub-menu-item">
                     Roadmap
                   </Link>
                 </li>
                 <li>
-                  <Link to="/home/team" className="sub-menu-item">
+                  <Link to="/team" className="sub-menu-item">
                     Team
                   </Link>
                 </li>
@@ -96,18 +96,18 @@ const Home = () => {
       >
         <source src={Background} type="video/mp4" />
       </video>
-      <Element id="/home" name="brand">
+      <Element id="/" name="brand">
         <div id="home">
           <RenderVerse />
         </div>
       </Element>
-      <Element id="/home/mission" name="mission">
+      <Element id="/mission" name="mission">
         <div id="mission">
           <Product title={"Featured In"} isFeatured={true} />
           <Mission />
         </div>
       </Element>
-      <Element id="/home/eco-system" name="eco-system">
+      <Element id="/eco-system" name="eco-system">
         <div id="eco-system">
           <EcoSystem />
           <Action />
@@ -115,18 +115,18 @@ const Home = () => {
           <HightLight />
         </div>
       </Element>
-      <Element id="/home/roadmap" name="roadmap">
+      <Element id="/roadmap" name="roadmap">
         <div id="roadmap">
           <RoadMap />
         </div>
       </Element>
-      <Element id="/home/team" name="team">
+      <Element id="/team" name="team">
         <div id="team">
           <Team />
         </div>
       </Element>
       <Product title={"Advisors and Backer"} isFeatured={false} />
-      <Element id="/home/contact" name="contact">
+      <Element id="/contact" name="contact">
         <div id="contact">
           <Footer />
         </div>

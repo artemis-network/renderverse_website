@@ -8,7 +8,7 @@ const Token = () => {
       <div>
         <header id="topnav" className="defaultscroll sticky tagline-height">
           <div className="container">
-            <Link to="/home" className="logo">
+            <Link to="/" className="logo">
               <div>Renderverse</div>
             </Link>
             <div className="menu-extras">
