@@ -1,0 +1,31 @@
+.mario-title {
+  font-weight: 700;
+  font-size: 6vw;
+  font-size: calc(100vw / var(--char-total));
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes underline {
+  from {
+    transform: scaleX(0);
+  }
+}
+
+.mario-title .word {
+  display: inline-block;
+  animation: slide-up 1.25s cubic-bezier(0.5, 0.2, 0, 1);
+  animation-fill-mode: both;
+  animation-delay: calc(0.5s + (0.1s * var(--word-index)));
+  animation-duration: 2s;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(125%);
+  }
+}
+
+.splitting-mark {
+  color: #fff !important;
+}

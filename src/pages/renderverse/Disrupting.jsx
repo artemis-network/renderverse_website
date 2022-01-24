@@ -15,6 +15,7 @@ const Disrupting = () => {
           <div
             data-aos="zoom-in-up"
             data-aos-offset="300"
+            data-aos-duration="400"
             data-aos-easing="ease-in-sine"
             className="col-lg-4 md-col-4 col-12 my-4"
           >
@@ -53,6 +54,7 @@ const Disrupting = () => {
           <div
             data-aos="zoom-in-up"
             data-aos-offset="300"
+            data-aos-duration="400"
             data-aos-easing="ease-in-sine"
             className="col-lg-4 md-col-4 col-12 my-4"
           >
@@ -90,6 +92,7 @@ const Disrupting = () => {
           <div
             data-aos="zoom-in-up"
             data-aos-offset="300"
+            data-aos-duration="400"
             data-aos-easing="ease-in-sine"
             className="col-lg-4 md-col-4 col-12 my-4"
           >

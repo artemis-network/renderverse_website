@@ -3,8 +3,9 @@ import Twitter from "../../assets/images/twitter.svg";
 import Medium from "../../assets/images/medium.svg";
 import Discord from "../../assets/images/icons8-discord.svg";
 import ScrollDown from "../../assets/images/down-arrow (1).svg";
+import "./Renderverse.css";
 
-const MetabaseCamp = () => {
+const Renderverse = () => {
   return (
     <div
       style={{
@@ -24,11 +25,12 @@ const MetabaseCamp = () => {
               <div className="title-heading">
                 <span className="badge bg-soft-success rounded-md">$RNDR</span>
                 <div
+                  data-splitting
                   style={{
                     // padding: "1rem 2rem",
-                    borderRadius: "4vh",
+                    borderRadius: "3vh",
                   }}
-                  className="glow-text display-5"
+                  className="glow-text mario-title display-5"
                 >
                   An AR doorway into the Metaverse & NFTs
                 </div>
@@ -85,6 +87,7 @@ const MetabaseCamp = () => {
           boxShadow: "1px 1px 12px rgba(0,0,0,0.25)",
           position: "relative",
         }}
+        data-splitting
       >
         Immerse yourself into the world of Renderverse
         <span
@@ -102,4 +105,4 @@ const MetabaseCamp = () => {
   );
 };
 
-export default MetabaseCamp;
+export default Renderverse;

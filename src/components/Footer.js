@@ -80,7 +80,7 @@ const Footer = () => {
             <div
 
               data-aos="flip-left"
-              data-aos-duration="600"
+              data-aos-duration="400"
               data-aos-offset="700"
               data-aos-easing="ease-in-sine"
               className='col-lg-3 col-md-4 col-12 my-4'>
@@ -104,7 +104,7 @@ const Footer = () => {
             <div
 
               data-aos="flip-left"
-              data-aos-duration="800"
+              data-aos-duration="400"
               data-aos-offset="700"
               data-aos-easing="ease-in-sine"
               className='col-lg-3 col-md-4 col-12 my-4'>

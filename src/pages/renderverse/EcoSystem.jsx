@@ -26,6 +26,7 @@ const Features = () => {
                   data-aos="fade-down"
                   data-aos-offset="300"
                   data-aos-easing="ease-in-sine"
+                  data-aos-once="true"
                   className="col-lg-6 col-md-6 col-12 mt-4 pt-2"
                 >
                   <div className="feature feature-primary feature-clean bg-light rounded p-4 mx-2">
@@ -53,6 +54,7 @@ const Features = () => {
                   data-aos="fade-down"
                   data-aos-offset="300"
                   data-aos-easing="ease-in-sine"
+                  data-aos-once="true"
                   className="col-lg-6 col-md-6 col-12 mt-4 pt-2"
                 >
                   <div className="feature feature-primary feature-clean bg-light rounded p-4 mx-2">
@@ -80,6 +82,7 @@ const Features = () => {
                   data-aos="fade-down"
                   data-aos-offset="300"
                   data-aos-easing="ease-in-sine"
+                  data-aos-once="true"
                   className="col-lg-6 col-md-6 col-12 mt-4 pt-2"
                 >
                   <div className="feature feature-primary feature-clean bg-light rounded p-4 mx-2">
@@ -107,6 +110,7 @@ const Features = () => {
                   data-aos="fade-down"
                   data-aos-offset="300"
                   data-aos-easing="ease-in-sine"
+                  data-aos-once="true"
                   className="col-lg-6 col-md-6 col-12 mt-4 pt-2"
                 >
                   <div className="feature feature-primary feature-clean bg-light rounded p-4 mx-2">

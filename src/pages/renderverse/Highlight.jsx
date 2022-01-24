@@ -1,22 +1,14 @@
 import "./Highlight.css";
-
-import React, { useState, useRef, useEffect } from "react";
+import { useEffect } from "react";
 
 import "splitting/dist/splitting.css";
 import "splitting/dist/splitting-cells.css";
 import Splitting from "splitting";
 
 const HightLight = () => {
-  const [lines, setLines] = useState([]);
-  const splitRef = useRef(null);
   useEffect(() => {
-    if (splitRef) {
-      let split_res = Splitting({ by: "chars" });
-      setLines(split_res[0].chars);
-      console.log(lines);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [splitRef]);
+    Splitting({ by: "chars" });
+  }, []);
 
   return (
     <div
@@ -38,14 +30,16 @@ const HightLight = () => {
         >
           <span
             style={{
-              fontStyle: "Cabin Condensed",
               fontWeight: "bold",
-              fontSize: "3rem",
+              fontSize: "2rem",
               transform: "translateY(2rem)",
             }}
-            class="intro"
           >
-            BECOME A RENDEREAPE WITH{" "}
+            BECOME A{" "}
+            <span style={{ fontSize: "5rem" }} className="jump" data-splitting>
+              RENDEREAPE
+            </span>{" "}
+            WITH{" "}
           </span>
           <span
             data-aos="zoom-out"
@@ -53,6 +47,7 @@ const HightLight = () => {
             data-aos-easing="ease-in-sine"
             class="main"
             aria-label="RENDERVERSE"
+            data-aos-once="true"
             data-splitting
           >
             RENDERVERSE

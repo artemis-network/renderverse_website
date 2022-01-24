@@ -125,7 +125,7 @@ hr {
 }
 
 .glow-text {
-  text-shadow: 2px 2px 12px white, -1px -1px 2px white;
+  text-shadow: 2px 2px 12px rgba(255, 255, 255, 0.3), -1px -1px 2px white;
   animation: glow 2s infinite;
 }
 
