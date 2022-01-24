@@ -49,7 +49,6 @@ const Footer = () => {
             <div
               data-aos="flip-left"
               data-aos-duration="400"
-              data-aos-offset="700"
               data-aos-easing="ease-in-sine"
               className='col-lg-3 col-md-4 col-12 my-4'>
               <div className='p-2' style={{ display: "flex", justifyContent: "center" }}>
@@ -81,7 +80,6 @@ const Footer = () => {
 
               data-aos="flip-left"
               data-aos-duration="400"
-              data-aos-offset="700"
               data-aos-easing="ease-in-sine"
               className='col-lg-3 col-md-4 col-12 my-4'>
               <div className='p-2' style={{ display: "flex", justifyContent: "center" }}>
@@ -105,7 +103,6 @@ const Footer = () => {
 
               data-aos="flip-left"
               data-aos-duration="400"
-              data-aos-offset="700"
               data-aos-easing="ease-in-sine"
               className='col-lg-3 col-md-4 col-12 my-4'>
               <div className='p-2' style={{ display: "flex", justifyContent: "center" }}>
