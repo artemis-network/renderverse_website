@@ -146,7 +146,7 @@
 }
 
 .bg-img {
-  background: url("../../assets/images/MicrosoftTeams-image\ \(1\).png");
+  background: url("../../../assets/images/MicrosoftTeams-image\ \(1\).png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -159,4 +159,27 @@
   background-color: rgba(22, 22, 22, 0.7);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.sub-text-title {
+  font-weight: bold;
+  background: white;
+  color: #0b1118;
+  padding: 1rem 2rem 0.75rem 2rem;
+  border-radius: 4vh;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .sub-text-title {
+    font-weight: bold;
+    background: white;
+    color: #0b1118;
+    padding: 0.25rem 1rem 0.5rem 1rem;
+    border-radius: 4vh;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25);
+    position: relative;
+    font-size: 0.9rem;
+  }
 }

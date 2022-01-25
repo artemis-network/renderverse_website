@@ -5,9 +5,9 @@ import { Route, Switch } from "react-router";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Token from "./pages/renderverse/Token";
 
-import Home from './pages/renderverse/Home'
+import Token from "./pages/Token/Token";
+import Home from './pages/Home/Home'
 
 const App = () => {
 

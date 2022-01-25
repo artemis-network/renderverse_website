@@ -1,10 +1,9 @@
 import './Footer.css'
-import Blog from '../assets/images/blog.svg'
-
-import Medium from '../assets/images/medium (2).svg'
-import Discord from '../assets/images/discord (2).svg'
-import Telegram from '../assets/images/telegram (1).svg'
-import Twitter from '../assets/images/twitter (2).svg'
+import Blog from '../../assets/images/blog.svg'
+import Medium from '../../assets/images/medium (2).svg'
+import Discord from '../../assets/images/discord (2).svg'
+import Telegram from '../../assets/images/telegram (1).svg'
+import Twitter from '../../assets/images/twitter (2).svg'
 
 const Footer = () => {
   return (
@@ -12,31 +11,51 @@ const Footer = () => {
       <div style={{ display: "flex", height: "16vh", background: "#0b1118" }}></div>
       <footer style={{ backgroundColor: "white" }} >
         <div className='container'>
-          <div
-            className="row justify-content-center" style={{
-              boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
-              background: "white",
-              padding: "4rem",
-              borderRadius: "4vh",
-              height: "100%",
-              transform: "translateY(-30%)",
-              margin: "0 0 5rem 0"
-            }}>
-            <div className='col-lg-3 col-md-3 col-12' style={{ display: "flex", justifyContent: 'center', flexDirection: "column", alignItems: 'center' }}>
-              <div style={{ color: "#0B1118", fontSize: "3rem" }}>Join</div>
-              <p style={{ color: "#0B1118" }}>The Community</p>
+          <div className='mobile-view ' >
+            <div style={{ display: 'flex', flexDirection: "column", justifyContent: 'center', rowGap: "1rem", maring: "4rem 0", padding: "5rem 0" }}>
+              <div>
+                <div style={{ color: "#0B1118", fontSize: "3rem" }}>Join</div>
+                <p style={{ color: "#0B1118" }}>The Community</p>
+              </div>
+              <div>
+                <input className='form-control' style={{ padding: "1rem", fontSize: "1rem", background: "white", borderRadius: "4vh" }} placeholder="Enter your email" />
+                <div style={{ color: "#0b1118", fontSize: ".9rem", padding: ".5rem 1rem" }}>By entering your email, you agree to get our emails.</div>
+              </div>
+
+              <div style={{ display: 'flex', flexDirection: "column", justifyContent: 'center' }}>
+                <button style={{ borderRadius: "5vh", }} className="btn btn-secondary ">Submit</button>
+              </div>
             </div>
+          </div>
+
+
+          <div className='desk-view'>
             <div
-              className='col-lg-9 col-md-9 col-md-12'
-            >
-              <div className='row' style={{ display: "flex", justifyContent: 'center', alignItems: 'center', margin: "auto auto", height: "12vh" }}>
-                <div className='col-lg-9 col-md-9 col-12' >
-                  <input className='form-control' style={{ padding: "1rem", fontSize: "1rem", background: "white", borderRadius: "4vh" }} placeholder="Enter your email" />
-                  <div style={{ color: "#0b1118", fontSize: ".9rem", padding: ".5rem 1rem" }}>By entering your email, you agree to get our emails.</div>
-                </div>
-                <div className='col-lg-3 col-md-9 col-12'>
-                  <button style={{ borderRadius: "5vh", }} className="btn btn-secondary ">Submit</button>
-                  <div style={{ fontSize: ".9rem", padding: ".5rem 1rem" }}>Hidden</div>
+              className="row justify-content-center " style={{
+                boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
+                background: "white",
+                padding: "4rem",
+                borderRadius: "4vh",
+                height: "100%",
+                transform: "translateY(-30%)",
+                margin: "0 0 5rem 0"
+              }}>
+              <div className='col-lg-3 col-md-3 col-12' style={{ display: "flex", justifyContent: 'center', flexDirection: "column", alignItems: 'center' }}>
+                <div style={{ color: "#0B1118", fontSize: "3rem" }}>Join</div>
+                <p style={{ color: "#0B1118" }}>The Community</p>
+              </div>
+              <div
+                className='col-lg-9 col-md-9 col-md-12'
+              >
+                <div className='row' style={{ display: "flex", justifyContent: 'center', alignItems: 'center', margin: "auto auto", height: "12vh" }}>
+                  <div className='col-lg-9 col-md-9 col-12' >
+                    <input className='form-control' style={{ padding: "1rem", fontSize: "1rem", background: "white", borderRadius: "4vh" }} placeholder="Enter your email" />
+                    <div style={{ color: "#0b1118", fontSize: ".9rem", padding: ".5rem 1rem" }}>By entering your email, you agree to get our emails.</div>
+                  </div>
+                  <div className='col-lg-3 col-md-9 col-12'>
+                    <button style={{ borderRadius: "5vh", }} className="btn btn-secondary ">Submit</button>
+                    <div style={{ fontSize: ".9rem", padding: ".5rem 1rem" }}>Hidden</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -100,7 +119,6 @@ const Footer = () => {
             </div>
 
             <div
-
               data-aos="flip-left"
               data-aos-duration="400"
               data-aos-easing="ease-in-sine"

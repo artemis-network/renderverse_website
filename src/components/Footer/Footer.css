@@ -1,3 +1,12 @@
+.mobile-view {
+  display: none;
+}
+
+.desk-view {
+  display: flex;
+  justify-content: center;
+}
+
 .telegram:hover {
   background-color: #0088cc;
   color: "white";
@@ -23,6 +32,8 @@
 .socials_l {
   height: 50px;
   width: 50px;
+  display: flex;
+  align-self: center;
 }
 
 .footer_but_links {
@@ -86,6 +97,14 @@ hr {
     padding: 2rem;
     row-gap: 1rem;
   }
+  .mobile-view {
+    display: flex;
+    justify-content: center;
+  }
+
+  .desk-view {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -104,16 +123,6 @@ hr {
   }
 }
 
-.hide_border {
-  border-right: 2px dashed white;
-}
-
-@media screen and (max-width: 990px) {
-  .hide_border {
-    border: none;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .socials_l {
     height: 25px;
@@ -122,15 +131,7 @@ hr {
   .foot-box {
     transform: "translateY(20%)";
   }
-}
-
-.glow-text {
-  text-shadow: 2px 2px 12px rgba(255, 255, 255, 0.3), -1px -1px 2px white;
-  animation: glow 2s infinite;
-}
-
-@keyframes glow {
-  25% {
-    text-shadow: 1px 1px 2px white, -1px -1px 1px white;
+  .footer_end_l {
+    padding: 2rem 0;
   }
 }

@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
 import Wave from "react-wavify";
-import Footer from "../../components/Footer";
+import Footer from "../../components/Footer/Footer";
+import { Link } from "react-router-dom";
 
 const Token = () => {
   return (

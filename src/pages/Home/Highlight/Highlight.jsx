@@ -32,7 +32,6 @@ const HightLight = () => {
             style={{
               fontWeight: "bold",
               fontSize: "2rem",
-              transform: "translateY(2rem)",
             }}
           >
             BECOME A{" "}

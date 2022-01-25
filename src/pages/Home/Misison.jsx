@@ -19,6 +19,7 @@ const Mission = () => {
             <div
               data-aos="fade-right"
               data-aos-offset="300"
+              data-aos-once={true}
               data-aos-easing="ease-in-sine"
               className="col-lg-6 col-md-6 order-2 order-md-1"
             >
@@ -67,6 +68,7 @@ const Mission = () => {
             <div
               data-aos="fade-left"
               data-aos-offset="300"
+              data-aos-once={true}
               data-aos-easing="ease-in-sine"
               className="col-lg-6 col-md-6 order-2 order-md-1"
             >
@@ -81,6 +83,7 @@ const Mission = () => {
             <div
               data-aos="fade-right"
               data-aos-offset="300"
+              data-aos-once={true}
               data-aos-easing="ease-in-sine"
               className="col-lg-6 col-md-6 order-2 order-md-1"
             >
@@ -90,6 +93,7 @@ const Mission = () => {
             <div
               data-aos="fade-left"
               data-aos-offset="300"
+              data-aos-once={true}
               data-aos-easing="ease-in-sine"
               className="col-lg-6 col-md-6 order-2 order-md-1"
             >

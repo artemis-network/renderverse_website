@@ -1,16 +1,19 @@
-import Image1 from "../../assets/images/cointelegraph_press.png";
-import Image2 from "../../assets/images/investing_press.png";
-import Image3 from "../../assets/images/yahoo_press.png";
-import Image4 from "../../assets/images/coindesk_press.png";
-import Image5 from "../../assets/images/dailycoin_press.png";
-import Image6 from "../../assets/images/odaily_press.png";
+import Image1 from "../../../assets/images/cointelegraph_press.png";
+import Image2 from "../../../assets/images/investing_press.png";
+import Image3 from "../../../assets/images/yahoo_press.png";
+import Image4 from "../../../assets/images/coindesk_press.png";
+import Image5 from "../../../assets/images/dailycoin_press.png";
+import Image6 from "../../../assets/images/odaily_press.png";
 
-import Image7 from "../../assets/images/coinrivet_press.png";
-import Image8 from "../../assets/images/cryptobriefing_press.png";
-import Image9 from "../../assets/images/blockonomi_press.png";
-import Image10 from "../../assets/images/cryptoadventure_press.png";
-import Image11 from "../../assets/images/8848_press.png";
+import Image7 from "../../../assets/images/coinrivet_press.png";
+import Image8 from "../../../assets/images/cryptobriefing_press.png";
+import Image9 from "../../../assets/images/blockonomi_press.png";
+import Image10 from "../../../assets/images/cryptoadventure_press.png";
+import Image11 from "../../../assets/images/8848_press.png";
+
 import Wave from "react-wavify";
+
+import "./FeaturedIn.css";
 
 const Product = (props) => {
   return (

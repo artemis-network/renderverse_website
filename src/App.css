@@ -1,40 +1,5 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.road_map_text_colors {
+  color: #02ffd1;
 }
 
 @keyframes glow {
@@ -46,6 +11,40 @@
   }
 }
 
-.section {
-  border: none;
+.hide_border {
+  border-right: 2px dashed white;
+}
+
+@media screen and (max-width: 990px) {
+  .hide_border {
+    border: none;
+  }
+}
+.glow-text {
+  text-shadow: 2px 2px 12px rgba(255, 255, 255, 0.3), -1px -1px 2px white;
+  animation: glow 2s infinite;
+}
+
+@keyframes glow {
+  25% {
+    text-shadow: 1px 1px 2px white, -1px -1px 1px white;
+  }
+}
+
+.desk_view {
+  display: flex;
+  justify-content: center;
+}
+
+.mobile_view {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .desk_view {
+    display: none;
+  }
+  .mobile_view {
+    display: flex;
+  }
 }
