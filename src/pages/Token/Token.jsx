@@ -12,6 +12,7 @@ const Token = () => {
   useEffect(() => {
     setText({ text: testimonials[0].testimonial });
     setCurr(0);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const updateTestmonial = (index) => {
