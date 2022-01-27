@@ -47,7 +47,7 @@ const Home = () => {
 
       <Element id="/contact" name="contact">
         <FeaturedIn title={"Advisors and Backer"} isFeatured={false} />
-        <Footer />
+        <Footer animation={"flip-left"} duration={400} ease={"linear"} />
       </Element>
     </div>
   );

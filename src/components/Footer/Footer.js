@@ -5,7 +5,7 @@ import Discord from '../../assets/images/discord (2).svg'
 import Telegram from '../../assets/images/telegram (1).svg'
 import Twitter from '../../assets/images/twitter (2).svg'
 
-const Footer = () => {
+const Footer = (props) => {
   return (
     <div>
       <div style={{ display: "flex", height: "16vh", background: "#0b1118" }}></div>
@@ -66,9 +66,9 @@ const Footer = () => {
         <div className='container py-6'>
           <div className='row justify-content-center'>
             <div
-              data-aos="flip-left"
-              data-aos-duration="400"
-              data-aos-easing="ease-in-sine"
+              data-aos={props.animation}
+              data-aos-duration={props.duration}
+              data-aos-easing={props.ease}
               className='col-lg-3 col-md-4 col-12 my-4'>
               <div className='p-2' style={{ display: "flex", justifyContent: "center" }}>
                 <img src={Blog} height={100} width={100} alt="cool" />
@@ -96,10 +96,9 @@ const Footer = () => {
             </div>
 
             <div
-
-              data-aos="flip-left"
-              data-aos-duration="400"
-              data-aos-easing="ease-in-sine"
+              data-aos={props.animation}
+              data-aos-duration={props.duration}
+              data-aos-easing={props.ease}
               className='col-lg-3 col-md-4 col-12 my-4'>
               <div className='p-2' style={{ display: "flex", justifyContent: "center" }}>
                 <img src={Blog} height={100} width={100} alt="cool" />
@@ -119,9 +118,9 @@ const Footer = () => {
             </div>
 
             <div
-              data-aos="flip-left"
-              data-aos-duration="400"
-              data-aos-easing="ease-in-sine"
+              data-aos={props.animation}
+              data-aos-duration={props.duration}
+              data-aos-easing={props.ease}
               className='col-lg-3 col-md-4 col-12 my-4'>
               <div className='p-2' style={{ display: "flex", justifyContent: "center" }}>
                 <img src={Blog} height={100} width={100} alt="cool" />
