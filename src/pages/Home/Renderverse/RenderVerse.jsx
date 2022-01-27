@@ -18,7 +18,7 @@ const Renderverse = () => {
   }, [video]);
 
   return (
-    <div style={{ height: "100vh" }} className="section">
+    <div style={{ height: "110vh" }} className="section">
       <video
         style={{
           width: "100%",
@@ -59,7 +59,7 @@ const Renderverse = () => {
         </div>
 
         <div style={{ display: "flex", justifyContent: "center" }}>
-          <Link to="/token" className="btn btn-primary m-1">
+          <Link to="/token-launch" className="btn btn-primary m-1">
             <i className="uil uil-bitcoin-circle" /> Token Launch
           </Link>
           <Link to="/white-paper" className="btn btn-secondary m-1">

@@ -28,14 +28,9 @@ const HightLight = () => {
           }}
           className="high"
         >
-          <span
-            style={{
-              fontWeight: "bold",
-              fontSize: "2rem",
-            }}
-          >
+          <span className="general_text">
             BECOME A{" "}
-            <span style={{ fontSize: "5rem" }} className="jump" data-splitting>
+            <span className="jump" data-splitting>
               RENDEREAPE
             </span>{" "}
             WITH{" "}

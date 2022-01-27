@@ -20,7 +20,7 @@ const App = () => {
       <BrowserRouter>
         <Switch>
           <Route component={Home} exact path={"/"} />
-          <Route component={Token} exact path={"/token"} />
+          <Route component={Token} exact path={"/token-launch"} />
         </Switch>
       </BrowserRouter>
     </div>

@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
 
-.high > span {
+.high > .main {
   line-height: 1;
   font-size: clamp(
     var(--fluid-type-min, 1rem),
-    calc(1rem + var(--fluid-type-target, 3vw)),
-    var(--fluid-type-max, 1.3rem)
+    calc(1rem + var(--fluid-type-target, 1vw)),
+    var(--fluid-type-max, 1rem)
   );
-  display: block;
+  display: inline;
 }
 .main {
-  --fluid-type-min: 6rem;
+  --fluid-type-min: 4rem;
   --fluid-type-max: 13.2rem;
-  --fluid-type-target: 20vw;
+  --fluid-type-target: 12vw;
   font-weight: 400;
   font-style: normal;
   line-height: 0.7;
@@ -149,7 +149,7 @@
   background: url("../../../assets/images/MicrosoftTeams-image\ \(1\).png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 116vh;
   width: 100vw;
 }
 
@@ -181,5 +181,32 @@
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25);
     position: relative;
     font-size: 0.9rem;
+  }
+}
+
+.jump {
+  font-size: 5rem;
+  font-weight: bold;
+}
+.general_text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+  .jump {
+    font-size: 3rem;
+  }
+  .general_text {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .jump {
+    font-size: 1.75rem;
+  }
+  .general_text {
+    font-size: 0.95rem;
   }
 }

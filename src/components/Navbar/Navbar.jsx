@@ -35,6 +35,17 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
+              <Link to="/learn" className="sub-menu-item">
+                Learn
+              </Link>
+            </li>
+            <li>
+              <Link to="/docs" className="sub-menu-item">
+                Docs
+              </Link>
+            </li>
+
+            <li>
               <Link to="/eco-system" className="sub-menu-item">
                 Eco System
               </Link>

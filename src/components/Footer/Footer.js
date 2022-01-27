@@ -12,8 +12,8 @@ const Footer = () => {
       <footer style={{ backgroundColor: "white" }} >
         <div className='container'>
           <div className='mobile-view ' >
-            <div style={{ display: 'flex', flexDirection: "column", justifyContent: 'center', rowGap: "1rem", maring: "4rem 0", padding: "5rem 0" }}>
-              <div>
+            <div style={{ display: 'flex', flexDirection: "column", justifyContent: 'center', rowGap: "1rem", maring: "4rem 2rem", padding: "5rem 0", alignItems: "center" }}>
+              <div style={{ display: "flex", justifyContent: 'center', flexDirection: "column" }}>
                 <div style={{ color: "#0B1118", fontSize: "3rem" }}>Join</div>
                 <p style={{ color: "#0B1118" }}>The Community</p>
               </div>

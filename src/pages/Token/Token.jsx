@@ -1,8 +1,42 @@
 import Wave from "react-wavify";
 import Footer from "../../components/Footer/Footer";
 import { Link } from "react-router-dom";
+import Video from "../../assets/videos/final_61debe39bffffc010d375016_931214.mp4";
+import Imag from "../../assets/images/medium.svg";
+import { useEffect, useState } from "react";
 
 const Token = () => {
+  const [text, setText] = useState({ text: "" });
+  const [curr, setCurr] = useState(0);
+
+  useEffect(() => {
+    setText({ text: testimonials[0].testimonial });
+    setCurr(0);
+  }, []);
+
+  const updateTestmonial = (index) => {
+    setText({ text: testimonials[index].testimonial });
+    setCurr(index);
+  };
+
+  const testimonials = [
+    {
+      name: "John Doe",
+      role: "Co Founder A",
+      testimonial: "Some Text A",
+    },
+    {
+      name: "Will Cart",
+      role: "Co Founder C",
+      testimonial: "Some Text B",
+    },
+    {
+      name: "Smith Joe",
+      role: "Co Founder #",
+      testimonial: "Some Text C",
+    },
+  ];
+
   return (
     <div className="bg-img">
       <div>
@@ -172,16 +206,114 @@ const Token = () => {
         style={{
           padding: "4rem 0",
           background: "white",
-          height: "100vh",
         }}
       >
         <h2 style={{ textAlign: "center", color: "#0b1118" }}>
           $RNDV Token launch details
+          <div className="container">
+            <video
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                borderRadius: "4vh",
+                margin: "4rem 0",
+              }}
+              loop
+              muted
+              playsInline
+              controls
+            >
+              <source src={Video} type="video/mp4" />
+            </video>
+          </div>
         </h2>
       </div>
 
-      <div style={{ padding: "4rem 0", height: "100vh", background: "black" }}>
+      <div style={{ padding: "4rem 0", background: "#0b1118" }}>
         <h2 style={{ textAlign: "center" }}>Testimonials</h2>
+        <div
+          className="container"
+          style={{ padding: "5rem 0", textAlign: "center" }}
+        >
+          <h1 style={{ padding: "4rem 0" }}>{text.text}</h1>
+
+          <div
+            className="row justify-content-center"
+            style={{ rowGap: "1rem", columnGap: "1rem" }}
+          >
+            {testimonials.map((data, index) => {
+              return (
+                <div
+                  onClick={() => updateTestmonial(index)}
+                  className="col-lg-3 col-md-12 col-12"
+                  style={{
+                    padding: "1rem",
+                    borderRadius: "1vh 1vw",
+                    marginTop: "1rem",
+                    background: "linear-gradient(145deg, #0a0f16, #0c121a)",
+                    boxShadow: "5px 5px 37px #04070a, -5px -5px 37px #121b26",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "grid",
+                      gridTemplateColumns: "1fr 5fr",
+                      columnGap: "1rem",
+                    }}
+                  >
+                    <div>
+                      <img
+                        style={{
+                          background: "#2F86A6",
+                          padding: "1rem",
+                          borderRadius: "5vh",
+                        }}
+                        alt=""
+                        src={Imag}
+                        height={80}
+                        width={80}
+                      />
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        textAlign: "left",
+                        alignSelf: "center",
+                      }}
+                    >
+                      <div> {data.name} </div>
+                      <div> {data.role} </div>
+                    </div>
+                  </div>
+
+                  {curr === index ? (
+                    <div
+                      style={{
+                        height: "1vh",
+                        width: "100%",
+                        background: "#2F86A6",
+                        borderRadius: "4vh",
+                        marginTop: "1rem",
+                      }}
+                    ></div>
+                  ) : (
+                    <div
+                      style={{
+                        height: "1vh",
+                        width: "100%",
+                        background: "#D9D7F1",
+                        borderRadius: "4vh",
+                        marginTop: "1rem",
+                      }}
+                    ></div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
       <Footer />
     </div>
