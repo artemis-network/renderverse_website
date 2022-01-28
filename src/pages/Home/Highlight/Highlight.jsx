@@ -27,6 +27,9 @@ const HightLight = () => {
             textAlign: "left",
           }}
           className="high"
+          data-aos="zoom-out"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
         >
           <span className="general_text">
             BECOME A{" "}
@@ -36,9 +39,6 @@ const HightLight = () => {
             WITH{" "}
           </span>
           <span
-            data-aos="zoom-out"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
             class="main"
             aria-label="RENDERVERSE"
             data-aos-once="true"

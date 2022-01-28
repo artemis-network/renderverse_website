@@ -34,6 +34,12 @@
   width: 50px;
   display: flex;
   align-self: center;
+  transition: all 1s;
+}
+
+.socials_l :hover {
+  transition: all 0.5s;
+  transform: scale(1.5);
 }
 
 .footer_but_links {

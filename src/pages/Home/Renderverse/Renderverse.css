@@ -1,8 +1,24 @@
-.yelling .char {
-  animation-name: rock;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+.sub-text-title {
+  padding: 0.5rem 1rem 0.25rem 1rem;
+  border-radius: 4vh;
+  background-color: white;
+  color: #0b1118;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25);
+  position: relative;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .sub-text-title {
+    font-weight: bold;
+    background: white;
+    color: #0b1118;
+    padding: 0.25rem 1rem 0.5rem 1rem;
+    border-radius: 4vh;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25);
+    position: relative;
+    font-size: 0.9rem;
+  }
 }
 
 @keyframes rock {

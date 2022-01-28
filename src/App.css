@@ -20,10 +20,6 @@
     border: none;
   }
 }
-.glow-text {
-  text-shadow: 2px 2px 12px rgba(255, 255, 255, 0.3), -1px -1px 2px white;
-  animation: glow 2s infinite;
-}
 
 @keyframes glow {
   25% {
@@ -47,4 +43,13 @@
   .mobile_view {
     display: flex;
   }
+}
+
+.glow-text {
+  text-shadow: 2px 2px 12px rgba(255, 255, 255, 0.3), -1px -1px 2px white;
+  animation: glow 2s infinite;
+  font-size: 4rem;
+  font-family: "Kaushan Script", cursive;
+  font-weight: bold;
+  padding: 1.25rem 0 0 0;
 }

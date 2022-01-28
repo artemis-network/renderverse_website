@@ -1,3 +1,5 @@
+/* eslint-disable no-script-url */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Link } from "react-scroll";
 
 const Navbar = () => {
@@ -34,17 +36,38 @@ const Navbar = () => {
                 Mission
               </Link>
             </li>
-            <li>
-              <Link to="/learn" className="sub-menu-item">
-                Learn
-              </Link>
+            <li class="has-submenu parent-parent-menu-item">
+              <a href="javascript:void(0)">Learn</a>
+              <span class="menu-arrow"></span>
+              <ul class="submenu">
+                <li>
+                  <Link to="/news" class="sub-menu-item">
+                    Blog & News
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/faq" class="sub-menu-item">
+                    FAQ
+                  </Link>
+                </li>
+              </ul>
             </li>
-            <li>
-              <Link to="/docs" className="sub-menu-item">
-                Docs
-              </Link>
+            <li class="has-submenu parent-parent-menu-item">
+              <a href="javascript:void(0)">Docs</a>
+              <span class="menu-arrow"></span>
+              <ul class="submenu">
+                <li>
+                  <a href="aboutus.html" class="sub-menu-item">
+                    White-Paper
+                  </a>
+                </li>
+                <li>
+                  <a href="features.html" class="sub-menu-item">
+                    Economics-Paper
+                  </a>
+                </li>
+              </ul>
             </li>
-
             <li>
               <Link to="/eco-system" className="sub-menu-item">
                 Eco System

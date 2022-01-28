@@ -1,6 +1,7 @@
-import Akash from "../../assets/images/akash.jpeg";
 import Praneeth from "../../assets/images/praneeth.jpeg";
 import Chakri from "../../assets/images/chakri.jpeg";
+import Akash from "../../assets/images/akash.jpeg";
+import Roney from "../../assets/images/roney.jpeg";
 
 import LinkedIn from "../../assets/images/linkedin (1).svg";
 import Mail from "../../assets/images/mail (2).svg";
@@ -27,7 +28,10 @@ const Team = () => {
       img: Akash,
     },
     {
-      //  name: "Praneeth Nagu"
+      name: "Roney",
+      role: "Product / Design Lead",
+      links: [],
+      img: Roney,
     },
   ];
 

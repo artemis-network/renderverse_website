@@ -15,10 +15,12 @@ import Footer from "../../components/Footer/Footer";
 import { Element } from "react-scroll";
 
 import React from "react";
+import Tagline from "../../components/Tagline/Tagline";
 
 const Home = () => {
   return (
     <div>
+      <Tagline />
       <Navbar />
 
       <Element id="/" name="brand">
