@@ -1,14 +1,15 @@
 /* eslint-disable no-script-url */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Link } from "react-scroll";
+import * as Linker from "react-router-dom";
 
 const Navbar = () => {
   return (
     <header id="topnav" className="defaultscroll sticky tagline-height">
       <div className="container">
-        <Link to="/" className="logo">
+        <Linker.Link to="/" className="logo">
           <div>Renderverse</div>
-        </Link>
+        </Linker.Link>
         <div className="menu-extras">
           <div className="menu-item">
             <Link
@@ -41,14 +42,14 @@ const Navbar = () => {
               <span class="menu-arrow"></span>
               <ul class="submenu">
                 <li>
-                  <Link to="/news" class="sub-menu-item">
+                  <Linker.Link to="/news" class="sub-menu-item">
                     Blog & News
-                  </Link>
+                  </Linker.Link>
                 </li>
                 <li>
-                  <Link to="/faq" class="sub-menu-item">
+                  <Linker.Link to="/faq" class="sub-menu-item">
                     FAQ
-                  </Link>
+                  </Linker.Link>
                 </li>
               </ul>
             </li>

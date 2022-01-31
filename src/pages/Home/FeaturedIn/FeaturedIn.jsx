@@ -53,7 +53,7 @@ const Product = (props) => {
         <div className="row">
           <div
             data-aos="fade-up"
-            data-aos-offset="300"
+            data-aos-offset="0"
             data-aos-easing="ease-in-sine"
             className="feature_row_1"
           >
@@ -90,7 +90,7 @@ const Product = (props) => {
           </div>
           <div
             data-aos="fade-up"
-            data-aos-offset="300"
+            data-aos-offset="0"
             data-aos-easing="ease-in-sine"
             className="feature_row_1"
           >

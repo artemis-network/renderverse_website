@@ -8,6 +8,8 @@ import { Link } from "react-scroll";
 
 import "./Renderverse.css";
 import Background from "../../../assets/videos/final.mp4";
+import BubblyButton from "../../../components/Button/Button";
+import ButtonNew from "../../../components/Button/ButtonNew";
 
 const Renderverse = () => {
   const video = React.createRef();
@@ -58,20 +60,23 @@ const Renderverse = () => {
           </div>
         </div>
 
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          {/* <Link to="/token-launch" className="btn btn-primary m-1">
-            <i className="uil uil-bitcoin-circle" /> Token Launch
-          </Link>
-          <Link to="/white-paper" className="btn btn-secondary m-1">
-            <i className="uil uil-newspaper" /> White Paper
-          </Link> */}
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            margin: "4rem 0",
+            columnGap: "2rem",
+          }}
+        >
+          <ButtonNew to="/token-launch" label="Token Launch"></ButtonNew>
+          <BubblyButton to="/whitepaper" label="White Paper"></BubblyButton>
         </div>
         <div
           style={{
             display: "flex",
             justifyContent: "center",
             columnGap: "3rem",
-            margin: "20rem 0 0 0",
+            margin: "8rem 0 0 0",
           }}
         >
           <div className="socials_l">
