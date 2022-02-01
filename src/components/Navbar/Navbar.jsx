@@ -58,7 +58,10 @@ const Navbar = () => {
               <span class="menu-arrow"></span>
               <ul class="submenu">
                 <li>
-                  <a href="aboutus.html" class="sub-menu-item">
+                  <a
+                    href="https://whitepaper.renderverse.io/welcome/introduction"
+                    class="sub-menu-item"
+                  >
                     White-Paper
                   </a>
                 </li>

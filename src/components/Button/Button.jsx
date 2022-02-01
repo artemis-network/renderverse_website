@@ -1,12 +1,10 @@
 import "./Button.css";
 import React from "react";
-import { useHistory } from "react-router-dom";
 
 const BubblyButton = (props) => {
-  const history = useHistory();
-
-  function goTo(route) {
-    history.push(route);
+  function goTo() {
+    window.location.href =
+      "https://whitepaper.renderverse.io/welcome/introduction";
   }
 
   return (
