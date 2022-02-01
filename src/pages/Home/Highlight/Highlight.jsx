@@ -15,6 +15,11 @@ const HightLight = () => {
       style={{
         background:
           "linear-gradient(to bottom, #557571, #2b5f68, #004861, #002f56, #111341)",
+        height: "85vh",
+        display: "flex",
+        alignSelf: "center",
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
       <div className="container">

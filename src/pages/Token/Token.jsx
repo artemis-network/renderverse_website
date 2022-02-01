@@ -40,8 +40,8 @@ const Token = () => {
   ];
 
   return (
-    <div className="bg-img">
-      <div>
+    <div>
+      <div className="bg-img">
         <header id="topnav" className="defaultscroll sticky tagline-height">
           <div className="container">
             <Link to="/" className="logo">
@@ -62,25 +62,26 @@ const Token = () => {
                 </Link>
               </div>
             </div>
+
             <div id="navigation">
               <ul className="navigation-menu nav-right nav-light">
                 <li>
-                  <LinkTwo.Link to="/home" className="sub-menu-item">
+                  <LinkTwo.Link to="home" className="sub-menu-item">
                     Home
                   </LinkTwo.Link>
                 </li>
                 <li>
-                  <LinkTwo.Link to="/how-to-buy" className="sub-menu-item">
+                  <LinkTwo.Link to="how-to-buy" className="sub-menu-item">
                     How-to-buy
                   </LinkTwo.Link>
                 </li>
                 <li>
-                  <LinkTwo.Link to="/testimonials" className="sub-menu-item">
+                  <LinkTwo.Link to="testimonials" className="sub-menu-item">
                     Testimonials
                   </LinkTwo.Link>
                 </li>
                 <li>
-                  <LinkTwo.Link to="/contact-us" className="sub-menu-item">
+                  <LinkTwo.Link to="contact-us" className="sub-menu-item">
                     Contact Us
                   </LinkTwo.Link>
                 </li>
@@ -89,111 +90,110 @@ const Token = () => {
           </div>
         </header>
       </div>
-      <div>
-        <div className="container">
-          <Element id="/home" name="home">
+
+      <div className="container">
+        <Element id="/home" name="home">
+          <div
+            style={{ padding: "12rem 0 5rem 0" }}
+            className="row justify-content-center"
+          >
             <div
-              style={{ padding: "16rem 0 5rem 0" }}
-              className="row justify-content-center"
+              className="col-lg-6 col-md-6 col-12 token_cards"
+              style={{ padding: "0 1rem" }}
             >
-              <div
-                className="col-lg-6 col-md-6 col-12"
-                style={{ padding: "0 1rem" }}
-              >
-                <div style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
-                  The $RNDV token
-                </div>
-                <ul
-                  style={{
-                    padding: "2rem 1rem",
-                    display: "flex",
-                    flexDirection: "column",
-                    rowGap: ".5rem",
-                    fontSize: "1.05rem",
-                  }}
-                >
-                  <li>
-                    Render token ($RNDV) is a utility token powering Renderverse
-                  </li>
-                  <li>
-                    $RNDV facilitates users to access premium features like
-                    unlimited scans, editing tools in the RenderScan application
-                  </li>
-                  <li>
-                    $RNDV allows users to buy and sell NFT’s on the RenderMarket
-                  </li>
-                  <li>
-                    $RNDV enables users to buy the merchandise in the
-                    Renderstores and also encourages businesses to open physical
-                    franchisee stores
-                  </li>
-                  <li>
-                    Users can leverage DEFI protocols to earn passive yield on
-                    their RNDV tokens
-                  </li>
-                  <li>
-                    RenderPlay lets users earn passive income by playing their
-                    favorite play2earn games
-                  </li>
-                </ul>
+              <div style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
+                The $RNDV token
               </div>
+              <ul
+                style={{
+                  padding: "2rem 1rem",
+                  display: "flex",
+                  flexDirection: "column",
+                  rowGap: ".5rem",
+                  fontSize: "1.05rem",
+                }}
+              >
+                <li>
+                  Render token ($RNDV) is a utility token powering Renderverse
+                </li>
+                <li>
+                  $RNDV facilitates users to access premium features like
+                  unlimited scans, editing tools in the RenderScan application
+                </li>
+                <li>
+                  $RNDV allows users to buy and sell NFT’s on the RenderMarket
+                </li>
+                <li>
+                  $RNDV enables users to buy the merchandise in the Renderstores
+                  and also encourages businesses to open physical franchisee
+                  stores
+                </li>
+                <li>
+                  Users can leverage DEFI protocols to earn passive yield on
+                  their RNDV tokens
+                </li>
+                <li>
+                  RenderPlay lets users earn passive income by playing their
+                  favorite play2earn games
+                </li>
+              </ul>
+            </div>
+            <div
+              style={{
+                padding: "2rem",
+                color: "white",
+                height: "100%",
+              }}
+              className="col-lg-6 col-md-6 col-12 glass-morphism token_cards"
+            >
+              <h2 style={{ padding: "1rem" }}>Token Information</h2>
               <div
                 style={{
-                  padding: "2rem",
-                  color: "white",
-                  height: "100%",
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "center",
                 }}
-                className="col-lg-6 col-md-6 col-12 glass-morphism"
               >
-                <h2 style={{ padding: "1rem" }}>Token Information</h2>
                 <div
                   style={{
                     display: "flex",
-                    flexDirection: "row",
-                    justifyContent: "center",
+                    flexDirection: "column",
+                    justifyContent: "flex-start",
+                    width: "100%",
+                    rowGap: ".5rem",
                   }}
                 >
-                  <div
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      justifyContent: "flex-start",
-                      width: "100%",
-                      rowGap: ".5rem",
-                    }}
-                  >
-                    <div>Token Name</div>
-                    <div>Token Type</div>
-                    <div>Total Supply</div>
-                    <div>Circulation Supply</div>
-                    <div>Circulation Supply</div>
-                    <div>Circulation Supply</div>
-                  </div>
-                  <div
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      justifyContent: "flex-end",
-                      alignItems: "flex-end",
-                      width: "100%",
-                      rowGap: ".5rem",
-                    }}
-                  >
-                    <div>$RNDV</div>
-                    <div>BEP-20</div>
-                    <div>500 million</div>
-                    <div>150 million</div>
-                    <div>150 million</div>
-                    <div>150 million</div>
-                  </div>
+                  <div>Token Name</div>
+                  <div>Token Type</div>
+                  <div>Total Supply</div>
+                  <div>Circulation Supply</div>
+                  <div>Circulation Supply</div>
+                  <div>Circulation Supply</div>
                 </div>
-
-                <h3 style={{ margin: "1rem 0" }}>Contact Address</h3>
-                <p>0xa38898a4ae982cb0131104a6746f77fa0da57aaa</p>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "flex-end",
+                    alignItems: "flex-end",
+                    width: "100%",
+                    rowGap: ".5rem",
+                  }}
+                >
+                  <div>$RNDV</div>
+                  <div>BEP-20</div>
+                  <div>500 million</div>
+                  <div>150 million</div>
+                  <div>150 million</div>
+                  <div>150 million</div>
+                </div>
               </div>
+
+              <h3 style={{ margin: "1rem 0" }}>Contact Address</h3>
+              <p>0xa38898a4ae982cb0131104a6746f77fa0da57aaa</p>
             </div>
-          </Element>
-        </div>
+          </div>
+        </Element>
       </div>
       <Wave
         paused={false}
@@ -206,36 +206,38 @@ const Token = () => {
         }}
       />
 
-      <div
-        style={{
-          padding: "4rem 0",
-          background: "white",
-        }}
-      >
-        <h2 style={{ textAlign: "center", color: "#0b1118" }}>
-          $RNDV Token launch details
-          <div className="container">
-            <video
-              style={{
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-                borderRadius: "4vh",
-                margin: "4rem 0",
-              }}
-              loop
-              muted
-              playsInline
-              controls
-            >
-              <source src={Video} type="video/mp4" />
-            </video>
-          </div>
-        </h2>
-      </div>
+      <Element name="how-to-buy">
+        <div
+          style={{
+            padding: "4rem 0",
+            background: "white",
+          }}
+        >
+          <h2 style={{ textAlign: "center", color: "#0b1118" }}>
+            $RNDV Token launch details
+            <div className="container">
+              <video
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  borderRadius: "4vh",
+                  margin: "4rem 0",
+                }}
+                loop
+                muted
+                playsInline
+                controls
+              >
+                <source src={Video} type="video/mp4" />
+              </video>
+            </div>
+          </h2>
+        </div>
+      </Element>
 
-      <Element id="/testimonials" name="testimonails">
-        <div style={{ padding: "4rem 0", background: "#0b1118" }}>
+      <Element id="testimonials" name="testimonails">
+        <div style={{ padding: "4rem 2rem", background: "#0b1118" }}>
           <h2 style={{ textAlign: "center" }}>Testimonials</h2>
           <div
             className="container"
@@ -322,7 +324,7 @@ const Token = () => {
         </div>
       </Element>
 
-      <Element id="/contact-us">
+      <Element id="contact-us" name="contact-us">
         <Footer animation={null} duration={0} ease={null} />
       </Element>
     </div>

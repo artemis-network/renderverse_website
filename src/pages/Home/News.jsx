@@ -1,6 +1,6 @@
 /* eslint-disable no-script-url */
 
-import Navbar from "../../components/Navbar/Navbar";
+import Navbar from "../../components/Navbar2/Navbar2";
 import Tagline from "../../components/Tagline/Tagline";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */

@@ -17,6 +17,18 @@
   border-radius: 1vh 1vw;
 }
 
+@media screen and (max-width: 630px) {
+  .btn_custom {
+    width: 12rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .btn_custom {
+    width: 9rem;
+  }
+}
+
 .btn_custom span {
   position: relative;
   z-index: 1;

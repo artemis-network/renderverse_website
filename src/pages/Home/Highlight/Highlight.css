@@ -145,14 +145,6 @@
   }
 }
 
-.bg-img {
-  background: url("../../../assets/images/MicrosoftTeams-image\ \(1\).png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 116vh;
-  width: 100vw;
-}
-
 .glass-morphism {
   backdrop-filter: blur(7px) saturate(180%);
   -webkit-backdrop-filter: blur(7px) saturate(180%);

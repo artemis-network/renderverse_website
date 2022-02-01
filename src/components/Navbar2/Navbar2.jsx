@@ -1,0 +1,95 @@
+/* eslint-disable no-script-url */
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import { Link } from "react-scroll";
+import * as Linker from "react-router-dom";
+
+const Navbar = () => {
+  return (
+    <header id="topnav" className="defaultscroll sticky tagline-height">
+      <div className="container">
+        <Linker.Link to="/" className="logo">
+          <div>Renderverse</div>
+        </Linker.Link>
+        <div className="menu-extras">
+          <div className="menu-item">
+            <Link
+              className="navbar-toggle"
+              id="isToggle"
+              onClick={() => "toggleMenu()"}
+            >
+              <div className="lines">
+                <span />
+                <span />
+                <span />
+              </div>
+            </Link>
+          </div>
+        </div>
+        <div id="navigation">
+          <ul className="navigation-menu nav-right nav-light">
+            <li>
+              <Linker.Link to="/" className="sub-menu-item">
+                Home
+              </Linker.Link>
+            </li>
+            <li>
+              <Linker.Link to="/" className="sub-menu-item">
+                Mission
+              </Linker.Link>
+            </li>
+            <li class="has-submenu parent-parent-menu-item">
+              <a href="javascript:void(0)">Learn</a>
+              <span class="menu-arrow"></span>
+              <ul class="submenu">
+                <li>
+                  <Linker.Link to="/news" class="sub-menu-item">
+                    Blog & News
+                  </Linker.Link>
+                </li>
+                <li>
+                  <Linker.Link to="/faq" class="sub-menu-item">
+                    {" "}
+                    FAQ{" "}
+                  </Linker.Link>
+                </li>
+              </ul>
+            </li>
+            <li class="has-submenu parent-parent-menu-item">
+              <a href="javascript:void(0)">Docs</a>
+              <span class="menu-arrow"></span>
+              <ul class="submenu">
+                <li>
+                  <a href="aboutus.html" class="sub-menu-item">
+                    White-Paper
+                  </a>
+                </li>
+                <li>
+                  <a href="features.html" class="sub-menu-item">
+                    Economics-Paper
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <Linker.Link to="/" className="sub-menu-item">
+                Eco System
+              </Linker.Link>
+            </li>
+            <li>
+              <Linker.Link to="/" className="sub-menu-item">
+                Roadmap
+              </Linker.Link>
+            </li>
+            <li>
+              <Linker.Link to="/" className="sub-menu-item">
+                Team
+              </Linker.Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Navbar;

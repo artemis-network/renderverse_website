@@ -53,7 +53,9 @@ const Renderverse = () => {
       >
         <div style={{ display: "flex", justifyContent: "center" }}>
           <div className="title-heading">
-            <span className="badge bg-soft-success rounded-md">$RNDR</span>
+            <span className="badge bg-soft-success rounded-md linker">
+              $RNDR
+            </span>
             <div className="glow-text">
               An AR doorway into the Metaverse & NFTs
             </div>
