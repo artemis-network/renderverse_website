@@ -31,7 +31,7 @@ const Features = () => {
                 >
                   <div className="feature feature-primary feature-clean bg-light rounded p-4 mx-2">
                     <div className="icons text-center">
-                      <i className="uil uil-shield-check d-block rounded h3 mb-0" />
+                      <i className="uil uil-coins d-block rounded h3 mb-0" />
                     </div>
                     <div className="content mt-4">
                       <a href="features.html" className="text-dark h5 title">
@@ -59,7 +59,7 @@ const Features = () => {
                 >
                   <div className="feature feature-primary feature-clean bg-light rounded p-4 mx-2">
                     <div className="icons text-center">
-                      <i className="uil uil-stopwatch-slash d-block rounded h3 mb-0" />
+                      <i className="uil uil-megaphone d-block rounded h3 mb-0" />
                     </div>
                     <div className="content mt-4">
                       <a href="features.html" className="text-dark h5 title">
@@ -87,7 +87,7 @@ const Features = () => {
                 >
                   <div className="feature feature-primary feature-clean bg-light rounded p-4 mx-2">
                     <div className="icons text-center">
-                      <i className="uil uil-exclamation-octagon d-block rounded h3 mb-0" />
+                      <i className="uil uil-headphones-alt d-block rounded h3 mb-0" />
                     </div>
                     <div className="content mt-4">
                       <a href="features.html" className="text-dark h5 title">
@@ -115,14 +115,15 @@ const Features = () => {
                 >
                   <div className="feature feature-primary feature-clean bg-light rounded p-4 mx-2">
                     <div className="icons text-center">
-                      <i className="uil uil-money-bill d-block rounded h3 mb-0" />
+                      <i className="uil uil-store d-block rounded h3 mb-0" />
                     </div>
                     <div className="content mt-4">
                       <a href="features.html" className="text-dark h5 title">
                         RENDERSTORE
                       </a>
                       <p className="text-muted mt-3 mb-0">
-                        Shop your favourite merchandise on our e-commerce store.
+                        Shop your favourite merchandise on our e-commerce
+                        stores. Pay with $RNDV and get attractive discounts
                       </p>
                       <div className="mt-2">
                         <a href="features.html" className="link">

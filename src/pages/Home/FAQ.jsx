@@ -1,10 +1,8 @@
 import Navbar from "../../components/Navbar2/Navbar2";
-import Tagline from "../../components/Tagline/Tagline";
 
 const FAQ = () => {
   return (
     <div>
-      <Tagline />
       <Navbar />
       {/* Hero Start */}
       <section

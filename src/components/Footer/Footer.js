@@ -1,5 +1,8 @@
 import './Footer.css'
-import Blog from '../../assets/images/blog.svg'
+import Blog from '../../assets/images/clipboard.png'
+import Announcement from '../../assets/images/announcement.png'
+import Support from '../../assets/images/feedback-message.png'
+
 import Medium from '../../assets/images/medium (2).svg'
 import Discord from '../../assets/images/discord (2).svg'
 import Telegram from '../../assets/images/telegram (1).svg'
@@ -71,7 +74,7 @@ const Footer = (props) => {
               data-aos-easing={props.ease}
               className='col-lg-3 col-md-4 col-12 my-4'>
               <div className='p-2' style={{ display: "flex", justifyContent: "center" }}>
-                <img src={Blog} height={100} width={100} alt="cool" />
+                <img src={Support} height={100} width={100} alt="cool" />
               </div>
               <div className='p-2' style={{ textAlign: "center", fontSize: "1.25rem", color: "#0b1118" }}>Support and Feedback</div>
               <div className='p-2' style={{ color: "#0b1118", textAlign: 'center' }}>Ask questions and give feedback, We are adaptable and always strive to improve our services with your assistance.</div>
@@ -101,7 +104,7 @@ const Footer = (props) => {
               data-aos-easing={props.ease}
               className='col-lg-3 col-md-4 col-12 my-4'>
               <div className='p-2' style={{ display: "flex", justifyContent: "center" }}>
-                <img src={Blog} height={100} width={100} alt="cool" />
+                <img style={{ padding: "1rem" }} src={Blog} height={100} width={100} alt="cool" />
               </div>
               <div className='p-2' style={{ textAlign: "center", fontSize: "1.25rem", color: "#0b1118" }}>Blog</div>
               <div className='p-2' style={{ color: "#0b1118", textAlign: 'center' }}> In our Medium blog, you can learn about new features, partnerships, and monthly updates.</div>
@@ -123,7 +126,7 @@ const Footer = (props) => {
               data-aos-easing={props.ease}
               className='col-lg-3 col-md-4 col-12 my-4'>
               <div className='p-2' style={{ display: "flex", justifyContent: "center" }}>
-                <img src={Blog} height={100} width={100} alt="cool" />
+                <img src={Announcement} height={100} width={100} alt="cool" />
               </div>
               <div className='p-2' style={{ textAlign: "center", fontSize: "1.25rem", color: "#0b1118" }}>Annoucements</div>
               <div className='p-2' style={{ color: "#0b1118", textAlign: 'center' }}>Stay connected with our marketing team and be the first to know about upcoming events, progress and updates.</div>

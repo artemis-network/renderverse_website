@@ -36,12 +36,15 @@ const HightLight = () => {
           data-aos-offset="300"
           data-aos-easing="ease-in-sine"
         >
-          <span className="general_text">
-            BECOME A{" "}
+          <span
+            className="general_text"
+            style={{ transform: "translateY(3.2rem)" }}
+          >
+            Become a{" "}
             <span className="jump" data-splitting>
-              RENDEREAPE
+              Renderape
             </span>{" "}
-            WITH{" "}
+            with{" "}
           </span>
           <span
             class="main"

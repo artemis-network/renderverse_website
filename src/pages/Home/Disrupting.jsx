@@ -1,4 +1,6 @@
-import Placeholder from "../../assets/images/medium.svg";
+import Store from "../../assets/images/shopping-store.png";
+import Gamming from "../../assets/images/stick-ps.png";
+import NFT from "../../assets/images/nft-transfer.png";
 
 const Disrupting = () => {
   return (
@@ -23,13 +25,13 @@ const Disrupting = () => {
               style={{
                 background: "#313133",
                 borderRadius: "2vh",
-                padding: "2rem",
+                padding: "4rem",
                 display: "flex",
                 alignSelf: "center",
+                justifyContent: "center",
+                width: "100%",
               }}
-              src={Placeholder}
-              height={200}
-              width={300}
+              src={Gamming}
               alt="cool"
             />
             <div className="mx-2 my-4">
@@ -38,7 +40,7 @@ const Disrupting = () => {
               </div>
               <div
                 style={{
-                  fontSize: ".8rem",
+                  fontSize: "1rem",
                   fontWeight: "bold",
                 }}
               >
@@ -62,13 +64,13 @@ const Disrupting = () => {
               style={{
                 background: "#313133",
                 borderRadius: "2vh",
-                padding: "2rem",
+                padding: "4rem",
                 display: "flex",
                 alignSelf: "center",
+                justifyContent: "center",
+                width: "100%",
               }}
-              src={Placeholder}
-              height={200}
-              width={300}
+              src={NFT}
               alt="cool"
             />
             <div className="px-2 my-4">
@@ -77,7 +79,7 @@ const Disrupting = () => {
               </div>
               <div
                 style={{
-                  fontSize: ".8rem",
+                  fontSize: "1rem",
                   fontWeight: "bold",
                 }}
               >
@@ -100,13 +102,13 @@ const Disrupting = () => {
               style={{
                 background: "#313133",
                 borderRadius: "2vh",
-                padding: "2rem",
+                padding: "4rem",
                 display: "flex",
                 alignSelf: "center",
+                justifyContent: "center",
+                width: "100%",
               }}
-              src={Placeholder}
-              height={200}
-              width={300}
+              src={Store}
               alt="cool"
             />
             <div className="px-2 my-4">
@@ -115,7 +117,7 @@ const Disrupting = () => {
               </div>
               <div
                 style={{
-                  fontSize: ".8rem",
+                  fontSize: "1rem",
                   fontWeight: "bold",
                 }}
               >
