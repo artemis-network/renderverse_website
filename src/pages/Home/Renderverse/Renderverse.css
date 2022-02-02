@@ -30,3 +30,6 @@
     transform: rotate(-12deg);
   }
 }
+
+@media screen and (max-width: 1366px) {
+}

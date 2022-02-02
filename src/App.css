@@ -92,4 +92,15 @@
   .token_cards {
     padding: 1rem 3rem;
   }
+  .glow-text {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .glow-text {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
 }

@@ -3,7 +3,7 @@ import Blog from '../../assets/images/clipboard.png'
 import Announcement from '../../assets/images/announcement.png'
 import Support from '../../assets/images/feedback-message.png'
 
-import Medium from '../../assets/images/medium (2).svg'
+import Medium from '../../assets/images/medium (1).svg'
 import Discord from '../../assets/images/discord (2).svg'
 import Telegram from '../../assets/images/telegram (1).svg'
 import Twitter from '../../assets/images/twitter (2).svg'
@@ -40,10 +40,11 @@ const Footer = (props) => {
                 padding: "4rem",
                 borderRadius: "4vh",
                 height: "100%",
+                width: "80vw",
                 transform: "translateY(-30%)",
                 margin: "0 0 5rem 0"
               }}>
-              <div className='col-lg-3 col-md-3 col-12' style={{ display: "flex", justifyContent: 'center', flexDirection: "column", alignItems: 'center' }}>
+              <div className='col-lg-3 col-md-3 col-12' style={{ display: "flex", transform: "translateY(-.5rem)", justifyContent: 'center', flexDirection: "column", alignItems: 'center' }}>
                 <div style={{ color: "#0B1118", fontSize: "3rem" }}>Join</div>
                 <p style={{ color: "#0B1118" }}>The Community</p>
               </div>
@@ -51,13 +52,12 @@ const Footer = (props) => {
                 className='col-lg-9 col-md-9 col-md-12'
               >
                 <div className='row' style={{ display: "flex", justifyContent: 'center', alignItems: 'center', margin: "auto auto", height: "12vh" }}>
-                  <div className='col-lg-9 col-md-9 col-12' >
-                    <input className='form-control' style={{ padding: "1rem", fontSize: "1rem", background: "white", borderRadius: "4vh" }} placeholder="Enter your email" />
+                  <div className='col-lg-12 col-md-12 col-12' >
+                    <div style={{ display: "flex", justifyContent: "center", flexDirection: 'row', columnGap: "1rem" }}>
+                      <input className='form-control' style={{ padding: "1rem", fontSize: "1rem", background: "white", borderRadius: "4vh" }} placeholder="Enter your email" />
+                      <button style={{ borderRadius: "4vh", }} className="btn btn-secondary ">Submit</button>
+                    </div>
                     <div style={{ color: "#0b1118", fontSize: ".9rem", padding: ".5rem 1rem" }}>By entering your email, you agree to get our emails.</div>
-                  </div>
-                  <div className='col-lg-3 col-md-9 col-12'>
-                    <button style={{ borderRadius: "5vh", }} className="btn btn-secondary ">Submit</button>
-                    <div style={{ fontSize: ".9rem", padding: ".5rem 1rem" }}>Hidden</div>
                   </div>
                 </div>
               </div>

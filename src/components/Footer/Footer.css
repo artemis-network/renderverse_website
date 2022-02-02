@@ -131,8 +131,9 @@ hr {
 
 @media screen and (max-width: 768px) {
   .socials_l {
-    height: 25px;
-    width: 25px;
+    height: 45px;
+    width: 45px;
+    margin: 0 0 1rem 0;
   }
   .foot-box {
     transform: "translateY(20%)";

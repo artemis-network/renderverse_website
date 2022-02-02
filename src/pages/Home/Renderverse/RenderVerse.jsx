@@ -43,11 +43,13 @@ const Renderverse = () => {
 
       <div
         style={{
-          display: "flex",
-          flexDirection: "column",
+          display: "grid",
+          alignItems: "center",
+          rowGap: "1rem",
+          margin: "8rem auto 0 auto",
           justifyContent: "center",
-          rowGap: "1.5rem",
-          padding: "12rem 0 0 0 ",
+          alignSelf: "center",
+          alignContent: "center",
         }}
         className="container"
       >
@@ -66,7 +68,7 @@ const Renderverse = () => {
           style={{
             display: "flex",
             justifyContent: "center",
-            margin: "4rem 0",
+            margin: "4rem 0 0 0",
             columnGap: "2rem",
           }}
         >
@@ -78,7 +80,7 @@ const Renderverse = () => {
             display: "flex",
             justifyContent: "center",
             columnGap: "3rem",
-            margin: "8rem 0 0 0",
+            margin: "2rem 0 0 0",
           }}
         >
           <div className="socials_l">
