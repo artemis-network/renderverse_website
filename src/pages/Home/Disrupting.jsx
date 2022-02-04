@@ -1,6 +1,6 @@
-import Store from "../../assets/images/disrupting/shopping-store-min.png";
-import Gamming from "../../assets/images/disrupting/stick-ps-min.png";
-import NFT from "../../assets/images/disrupting/nft-transfer-min.png";
+import Store from "../../assets/images/disrupting/store1.png";
+import Gamming from "../../assets/images/disrupting/stick1.png";
+import NFT from "../../assets/images/disrupting/nft1.png";
 import Tilt from "react-parallax-tilt";
 
 const Disrupting = () => {
