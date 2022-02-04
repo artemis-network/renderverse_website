@@ -28,12 +28,12 @@ const Navbar = () => {
         <div id="navigation">
           <ul className="navigation-menu nav-right nav-light">
             <li>
-              <Linker.Link to="/" className="sub-menu-item">
+              <Linker.Link to="/" className="sub-menu-item item_point">
                 Home
               </Linker.Link>
             </li>
             <li>
-              <Linker.Link to="/" className="sub-menu-item">
+              <Linker.Link to="/" className="sub-menu-item item_point">
                 Mission
               </Linker.Link>
             </li>
@@ -42,12 +42,12 @@ const Navbar = () => {
               <span class="menu-arrow"></span>
               <ul class="submenu">
                 <li>
-                  <Linker.Link to="/news" class="sub-menu-item">
+                  <Linker.Link to="/news" class="sub-menu-item item_point">
                     Blog & News
                   </Linker.Link>
                 </li>
                 <li>
-                  <Linker.Link to="/faq" class="sub-menu-item">
+                  <Linker.Link to="/faq" class="sub-menu-item item_point">
                     {" "}
                     FAQ{" "}
                   </Linker.Link>
@@ -61,30 +61,30 @@ const Navbar = () => {
                 <li>
                   <a
                     href="https://whitepaper.renderverse.io/welcome/introduction"
-                    class="sub-menu-item"
+                    class="sub-menu-item item_point"
                   >
                     White-Paper
                   </a>
                 </li>
                 <li>
-                  <a href="features.html" class="sub-menu-item">
+                  <a href="features.html" class="sub-menu-item item_point">
                     Economics-Paper
                   </a>
                 </li>
               </ul>
             </li>
             <li>
-              <Linker.Link to="/" className="sub-menu-item">
+              <Linker.Link to="/" className="sub-menu-item item_point">
                 Eco System
               </Linker.Link>
             </li>
             <li>
-              <Linker.Link to="/" className="sub-menu-item">
+              <Linker.Link to="/" className="sub-menu-item item_point">
                 Roadmap
               </Linker.Link>
             </li>
             <li>
-              <Linker.Link to="/" className="sub-menu-item">
+              <Linker.Link to="/" className="sub-menu-item item_point">
                 Team
               </Linker.Link>
             </li>

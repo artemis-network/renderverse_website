@@ -1,4 +1,5 @@
-import MissionPNG from "../../assets/images/virtual-reality-experience.png";
+import MissionPNG from "../../assets/images/mission/virtual-reality-experience-min.png";
+import Product from "../../assets/images/mission/holding-phone-min.png";
 
 const Mission = () => {
   return (
@@ -75,6 +76,8 @@ const Mission = () => {
               className="col-lg-6 col-md-6 order-2 order-md-1"
             >
               <img
+                height="auto"
+                width="auto"
                 src={MissionPNG}
                 style={{ height: "100%", width: "100%" }}
                 alt=""
@@ -93,11 +96,17 @@ const Mission = () => {
               data-aos-easing="ease-in-sine"
               className="col-lg-6 col-md-6 order-2 order-md-1"
             >
-              {/* <img
-                src={MissionPNG}
-                style={{ height: "100%", width: "100%" }}
+              <img
+                height="auto"
+                width="auto"
+                src={Product}
+                style={{
+                  height: "750%",
+                  width: "75%",
+                  transform: "translateY(-3rem)",
+                }}
                 alt=""
-              /> */}
+              />
             </div>
 
             <div

@@ -44,7 +44,7 @@ const HightLight = () => {
             with{" "}
           </span>
           <span
-            class="main"
+            className="main"
             aria-label="RENDERVERSE"
             data-aos-once="true"
             data-splitting

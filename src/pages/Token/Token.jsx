@@ -1,9 +1,11 @@
 import Wave from "react-wavify";
-import Footer from "../../components/Footer/Footer";
 import { Link } from "react-router-dom";
 import LinkTwo, { Element } from "react-scroll";
-import Video from "../../assets/videos/final_61debe39bffffc010d375016_931214.mp4";
-import Imag from "../../assets/images/medium.svg";
+
+import Video from "../../assets/videos/final.mp4";
+import Imag from "../../assets/images/icons/footer/medium.svg";
+
+import Footer from "../../components/Footer/Footer";
 import { useEffect, useState } from "react";
 
 const Token = () => {
@@ -66,22 +68,31 @@ const Token = () => {
             <div id="navigation">
               <ul className="navigation-menu nav-right nav-light">
                 <li>
-                  <LinkTwo.Link to="home" className="sub-menu-item">
+                  <LinkTwo.Link to="home" className="sub-menu-item item_point">
                     Home
                   </LinkTwo.Link>
                 </li>
                 <li>
-                  <LinkTwo.Link to="how-to-buy" className="sub-menu-item">
+                  <LinkTwo.Link
+                    to="how-to-buy"
+                    className="sub-menu-item item_point"
+                  >
                     How-to-buy
                   </LinkTwo.Link>
                 </li>
                 <li>
-                  <LinkTwo.Link to="testimonials" className="sub-menu-item">
+                  <LinkTwo.Link
+                    to="testimonials"
+                    className="sub-menu-item item_point"
+                  >
                     Testimonials
                   </LinkTwo.Link>
                 </li>
                 <li>
-                  <LinkTwo.Link to="contact-us" className="sub-menu-item">
+                  <LinkTwo.Link
+                    to="contact-us"
+                    className="sub-menu-item item_point"
+                  >
                     Contact Us
                   </LinkTwo.Link>
                 </li>

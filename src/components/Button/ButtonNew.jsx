@@ -10,8 +10,8 @@ export default function ButtonNew(props) {
   }
 
   return (
-    <div class="button-container-1">
-      <span class="mas">{props.label}</span>
+    <div className="button-container-1">
+      <span className="mas">{props.label}</span>
       <button
         onClick={() => goTo(props.to)}
         id="work"

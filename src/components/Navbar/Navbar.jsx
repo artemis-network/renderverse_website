@@ -1,7 +1,9 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable no-script-url */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Link } from "react-scroll";
 import * as Linker from "react-router-dom";
+import PDF from "../../assets/Purple and Blue Annual Company Report Professional Presentation.pdf";
 
 const Navbar = () => {
   return (
@@ -13,6 +15,7 @@ const Navbar = () => {
         <div className="menu-extras">
           <div className="menu-item">
             <Link
+              to=""
               className="navbar-toggle"
               id="isToggle"
               onClick={() => "toggleMenu()"}
@@ -28,63 +31,63 @@ const Navbar = () => {
         <div id="navigation">
           <ul className="navigation-menu nav-right nav-light">
             <li>
-              <Link to="/" className="sub-menu-item">
+              <Link to="/" className="sub-menu-item item_point">
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/mission" className="sub-menu-item">
+              <Link to="/mission" className="sub-menu-item item_point">
                 Mission
               </Link>
             </li>
-            <li class="has-submenu parent-parent-menu-item">
-              <a href="javascript:void(0)">Learn</a>
-              <span class="menu-arrow"></span>
-              <ul class="submenu">
-                <li>
-                  <Linker.Link to="/news" class="sub-menu-item">
-                    Blog & News
-                  </Linker.Link>
-                </li>
-                <li>
-                  <Linker.Link to="/faq" class="sub-menu-item">
-                    FAQ
-                  </Linker.Link>
-                </li>
-              </ul>
+            <li>
+              <Linker.Link to="/news" className="sub-menu-item item_point">
+                Blog
+              </Linker.Link>
             </li>
-            <li class="has-submenu parent-parent-menu-item">
+            <li className="has-submenu parent-parent-menu-item">
               <a href="javascript:void(0)">Docs</a>
-              <span class="menu-arrow"></span>
-              <ul class="submenu">
+              <span className="menu-arrow"></span>
+              <ul className="submenu">
                 <li>
                   <a
-                    href="https://whitepaper.renderverse.io/welcome/introduction"
-                    class="sub-menu-item"
+                    target={"_blank"}
+                    href="https://whitepaper.renderverse.io/"
+                    className="sub-menu-item item_point"
                   >
                     White-Paper
                   </a>
                 </li>
                 <li>
-                  <a href="features.html" class="sub-menu-item">
+                  <a
+                    href={PDF}
+                    target={"_blank"}
+                    className="sub-menu-item item_point"
+                  >
                     Economics-Paper
                   </a>
                 </li>
               </ul>
             </li>
             <li>
-              <Link to="/eco-system" className="sub-menu-item">
+              <Link to="/eco-system" className="sub-menu-item item_point">
                 Eco System
               </Link>
             </li>
             <li>
-              <Link to="/roadmap" className="sub-menu-item">
+              <Link to="/roadmap" className="sub-menu-item item_point">
                 Roadmap
               </Link>
             </li>
             <li>
-              <Link to="/team" className="sub-menu-item">
+              <Link to="/team" className="sub-menu-item item_point">
                 Team
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/contact" className="sub-menu-item item_point">
+                Contact Us
               </Link>
             </li>
           </ul>

@@ -1,4 +1,4 @@
-import Dot from "../../assets/images/dot.svg";
+import Dot from "../../assets/images/icons/dot.svg";
 
 const Tagline = () => {
   return (

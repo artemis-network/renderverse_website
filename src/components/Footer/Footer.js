@@ -1,12 +1,13 @@
+/* eslint-disable react/jsx-no-target-blank */
 import './Footer.css'
-import Blog from '../../assets/images/clipboard.png'
-import Announcement from '../../assets/images/announcement.png'
-import Support from '../../assets/images/feedback-message.png'
+import Blog from '../../assets/images/footer/clipboard-min.png'
+import Announcement from '../../assets/images/footer/announcement-min.png'
+import Support from '../../assets/images/footer/feedback-message-min.png'
 
-import Medium from '../../assets/images/medium (1).svg'
-import Discord from '../../assets/images/discord (2).svg'
-import Telegram from '../../assets/images/telegram (1).svg'
-import Twitter from '../../assets/images/twitter (2).svg'
+import Medium from '../../assets/images/icons/footer/medium.svg'
+import Discord from '../../assets/images/icons/footer/discord.svg'
+import Telegram from '../../assets/images/icons/footer/telegram.svg'
+import Twitter from '../../assets/images/icons/footer/twitter.svg'
 
 const Footer = (props) => {
   return (
@@ -83,14 +84,23 @@ const Footer = (props) => {
                   <div className='col-6' style={{ justifyContent: "center", display: "flex" }}>
                     <button className='btn btn-outline-primary'>
                       <span >
-                        <img src={Telegram} height={30} alt="medium" />
+                        <a
+                          href="https://t.me/renderversechat"
+                          target={"_blank"}
+                        >
+                          <img src={Telegram} height={30} alt="medium" />
+                        </a>
                       </span>
                     </button>
                   </div>
                   <div className='col-6' style={{ justifyContent: "center", display: "flex" }}>
                     <button className='btn btn-outline-primary'>
                       <span >
-                        <img src={Discord} height={30} alt="medium" />
+                        <a
+                          href="https://discord.gg/Xp3HcvPedY"
+                          target={"_blank"}>
+                          <img src={Discord} height={30} alt="medium" />
+                        </a>
                       </span>
                     </button>
                   </div>
@@ -112,7 +122,12 @@ const Footer = (props) => {
                 <div className='row justify-content-center p-2 mb-2'>
                   <button className='btn btn-outline-primary'>
                     <span >
-                      <img src={Medium} height={30} alt="medium" />
+                      <a
+                        href="https://renderverse.medium.com/"
+                        target={"_blank"}
+                      >
+                        <img src={Medium} height={30} alt="medium" />
+                      </a>
                     </span>
                     <span className='mx-2'>Medium</span>
                   </button>
@@ -135,14 +150,22 @@ const Footer = (props) => {
                   <div className='col-6' style={{ justifyContent: "center", display: "flex" }}>
                     <button className='btn btn-outline-primary'>
                       <span >
-                        <img src={Telegram} height={30} alt="medium" />
+                        <a
+                          href="https://t.me/renderverse"
+                        >
+                          <img src={Telegram} height={30} alt="medium" />
+                        </a>
                       </span>
                     </button>
                   </div>
                   <div className='col-6' style={{ justifyContent: "center", display: "flex" }}>
                     <button className='btn btn-outline-primary'>
                       <span >
-                        <img src={Twitter} height={30} alt="medium" />
+                        <a
+                          href="https://twitter.com/teamrenderverse"
+                        >
+                          <img src={Twitter} height={30} alt="medium" />
+                        </a>
                       </span>
                     </button>
                   </div>

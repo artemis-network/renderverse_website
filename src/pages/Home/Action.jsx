@@ -1,7 +1,20 @@
-import Action1 from "../../assets/images/d30570a4482c615969784003790d46fa.jpeg";
+import Action1 from "../../assets/images/action/Laptop Project (1).png";
+import Action2 from "../../assets/images/action/Dark=No (2).png";
+
 import Wave from "react-wavify";
 
 const Action = () => {
+  const cols = [
+    {
+      url: Action2,
+      class: "",
+    },
+    {
+      url: Action1,
+      class: "",
+    },
+  ];
+
   return (
     <div>
       <div
@@ -63,7 +76,6 @@ const Action = () => {
                 padding: "1rem",
               }}
             ></div>
-
             <div
               style={{
                 justifyContent: "center",
@@ -81,19 +93,24 @@ const Action = () => {
                 <span> Play Store</span>
               </div>
             </div>
-
-            <div className="desk_view">
-              <div className="row">
-                <div className="col-lg-12 col-md-12 col-12">
-                  <img
-                    style={{ borderRadius: "3vh", margin: "4rem 0" }}
-                    height={520}
-                    width={320}
-                    alt="image4"
-                    src={Action1}
-                  ></img>
-                </div>
-              </div>
+            <div className="custom_grid" style={{ margin: "5rem 2rem" }}>
+              {cols.map((col, index) => {
+                return (
+                  <div className={col.class} key={index}>
+                    <img
+                      height="auto"
+                      width="auto"
+                      className="action_img"
+                      style={{
+                        display: "flex",
+                        alignSelf: "ceneter",
+                      }}
+                      alt="image4"
+                      src={col.url}
+                    ></img>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>

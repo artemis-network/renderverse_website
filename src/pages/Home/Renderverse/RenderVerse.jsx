@@ -1,15 +1,18 @@
+/* eslint-disable react/jsx-no-target-blank */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import Telegram from "../../../assets/images/telegram.svg";
-import Twitter from "../../../assets/images/twitter (1).svg";
-import Medium from "../../../assets/images/medium (2).svg";
-import Discord from "../../../assets/images/discord.svg";
-import ScrollDown from "../../../assets/images/down-arrow (1).svg";
+
 import { Link } from "react-scroll";
 
-import "./Renderverse.css";
 import Background from "../../../assets/videos/final.mp4";
+import Telegram from "../../../assets/images/renderverse/telegram.svg";
+import Twitter from "../../../assets/images/renderverse/twitter.svg";
+import Medium from "../../../assets/images/renderverse/medium.svg";
+import Discord from "../../../assets/images/renderverse/discord.svg";
+import ScrollDown from "../../../assets/images/icons/arrow.svg";
 import BubblyButton from "../../../components/Button/Button";
 import ButtonNew from "../../../components/Button/ButtonNew";
+import "./Renderverse.css";
 
 const Renderverse = () => {
   const video = React.createRef();
@@ -46,12 +49,11 @@ const Renderverse = () => {
           display: "grid",
           alignItems: "center",
           rowGap: "1rem",
-          margin: "8rem auto 0 auto",
           justifyContent: "center",
           alignSelf: "center",
           alignContent: "center",
         }}
-        className="container"
+        className="container renderverse"
       >
         <div style={{ display: "flex", justifyContent: "center" }}>
           <div className="title-heading">
@@ -76,28 +78,44 @@ const Renderverse = () => {
           <BubblyButton to="/whitepaper" label="White Paper"></BubblyButton>
         </div>
         <div
+          className="renderverse_socials"
           style={{
             display: "flex",
             justifyContent: "center",
             columnGap: "3rem",
-            margin: "2rem 0 0 0",
           }}
         >
-          <div className="socials_l">
+          <a
+            className="socials_l"
+            href="https://twitter.com/teamrenderverse"
+            target={"_blank"}
+          >
             <img src={Twitter} alt="twitter"></img>
-          </div>
+          </a>
 
-          <div className="socials_l">
+          <a
+            href="https://renderverse.medium.com/"
+            target={"_blank"}
+            className="socials_l"
+          >
             <img src={Medium} alt="medium"></img>
-          </div>
+          </a>
 
-          <div className="socials_l">
+          <a
+            href="https://t.me/renderversechat"
+            target={"_blank"}
+            className="socials_l"
+          >
             <img src={Telegram} alt="telegram"></img>
-          </div>
+          </a>
 
-          <div className="socials_l">
+          <a
+            href="https://discord.gg/Xp3HcvPedY"
+            target={"_blank"}
+            className="socials_l"
+          >
             <img src={Discord} alt="medium"></img>
-          </div>
+          </a>
         </div>
 
         <div

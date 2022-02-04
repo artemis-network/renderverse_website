@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 import './assets/css/bootstrap.min.css'
-import './assets/css/tobii.min.css'
+// import './assets/css/tobii.min.css'
 import './assets/css/selectr.min.css'
 import './assets/css/colors/default.css'
 import './assets/css/style-dark.css'

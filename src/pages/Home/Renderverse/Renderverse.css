@@ -31,5 +31,24 @@
   }
 }
 
-@media screen and (max-width: 1366px) {
+.renderverse {
+  margin: 8rem auto 0 auto;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .renderverse_socials {
+    margin: 4rem 0 0 0;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .renderverse {
+    margin: 15rem auto 0 auto;
+  }
+
+  .renderverse_socials {
+    margin: 6rem 0 0 0;
+  }
 }
