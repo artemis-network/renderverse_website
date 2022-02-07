@@ -26,10 +26,10 @@ const RoadMap = () => {
       >
         <div className="row justify-content-center p-3 rounded-top">
           <div className="col-lg-4 col-md-12 justify-content-center col-12">
-            <h2 className="text-center my-4 road_map_text_colors">Q3 2021</h2>
+            <h2 className="text-center my-4 road_map_text_colors">Q4-2021</h2>
             <div className="hide_border">
               <h4 className="my-2 road_map_text_colors">
-                Pure tokenomics baseline
+                Core Team Foundation
               </h4>
               <div className="row mx-4">
                 <div
@@ -42,7 +42,7 @@ const RoadMap = () => {
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
-                  Set of lending-borrowing contracts
+                  Market Research
                 </div>
               </div>
               <div className="row mx-4">
@@ -56,7 +56,7 @@ const RoadMap = () => {
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
-                  $UFI Pool
+                  Software dev Architecture
                 </div>
               </div>
               <div className="row mx-4">
@@ -70,7 +70,7 @@ const RoadMap = () => {
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
-                  $UFI Dex Integration
+                  Smart Contract Architecture
                 </div>
               </div>
               <div className="row mx-4">
@@ -84,7 +84,7 @@ const RoadMap = () => {
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
-                  Farming
+                  R&D of RenderScan
                 </div>
               </div>
               <h4 className="my-2 road_map_text_colors">PureFi Protocol</h4>
@@ -110,7 +110,7 @@ const RoadMap = () => {
           </div>
 
           <div className="col-lg-4 col-md-12 justify-content-center col-12">
-            <h2 className="text-center my-4 road_map_text_colors">Q4 2021</h2>
+            <h2 className="text-center my-4 road_map_text_colors">Q1-2022</h2>
             <div className="hide_border">
               <h4 className="my-2 road_map_text_colors">
                 Integration with DEXs
@@ -196,7 +196,7 @@ const RoadMap = () => {
           </div>
 
           <div className="col-lg-4 col-md-12 justify-content-center col-12">
-            <h2 className="text-center my-4 road_map_text_colors">Q1 2021</h2>
+            <h2 className="text-center my-4 road_map_text_colors">Q2-2022</h2>
             <h4 className="road_map_text_colors">Issuers SDK</h4>
             <div>
               <div className="row mx-4">

@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
 
+.view_h {
+  display: none;
+}
+
 .high > .main {
   line-height: 1;
   font-size: clamp(
@@ -181,6 +185,24 @@
   }
   .general_text {
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .view_h {
+    display: flex;
+    background: linear-gradient(
+      to bottom,
+      #557571,
+      #2b5f68,
+      #004861,
+      #002f56,
+      #111341
+    );
+    height: 85vh;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
   }
 }
 

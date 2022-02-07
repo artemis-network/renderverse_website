@@ -2,15 +2,6 @@
   color: #02ffd1;
 }
 
-@keyframes glow {
-  from {
-    text-shadow: 0px 0px 5px #fff, 0px 0px 5px #614ad3;
-  }
-  to {
-    text-shadow: 0px 0px 20px #fff, 0px 0px 20px #614ad3;
-  }
-}
-
 .hide_border {
   border-right: 2px dashed white;
 }
@@ -18,54 +9,6 @@
 @media screen and (max-width: 990px) {
   .hide_border {
     border: none;
-  }
-}
-
-@keyframes glow {
-  25% {
-    text-shadow: 1px 1px 2px white, -1px -1px 1px white;
-  }
-}
-
-.desk_view {
-  display: flex;
-  justify-content: center;
-}
-
-.mobile_view {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .desk_view {
-    display: none;
-  }
-  .mobile_view {
-    display: flex;
-  }
-}
-
-.glow-text {
-  text-shadow: 2px 2px 12px rgba(255, 255, 255, 0.3), -1px -1px 2px white;
-  animation: glow 2s infinite;
-  font-size: 4rem;
-  font-family: "Kaushan Script", cursive;
-  font-weight: bold;
-  padding: 1.25rem 0 0 0;
-}
-
-@media screen and (max-width: 1200px) {
-  .glow-text {
-    line-height: 5rem;
-  }
-}
-
-@media screen and (max-width: 720px) {
-  .glow-text {
-    padding: 0 2rem;
-  }
-  .linker {
-    margin: 0 2.5rem;
   }
 }
 
@@ -79,9 +22,6 @@
   position: absolute;
 }
 
-.token_cards {
-}
-
 @media screen and (max-width: 768px) {
   .bg-img {
     height: 100%;
@@ -91,57 +31,6 @@
   }
   .token_cards {
     padding: 1rem 3rem;
-  }
-  .glow-text {
-    font-size: 3rem;
-    line-height: 3.5rem;
-  }
-}
-
-@media screen and (max-width: 1366px) {
-  .glow-text {
-    font-size: 3rem;
-    line-height: 3.5rem;
-  }
-}
-
-.disrupting_img,
-.action_img {
-  width: 100%;
-}
-
-@media screen and (max-width: 1000px) {
-  .disrupting_img,
-  .action_img {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-  }
-  .disrupting_text {
-    text-align: center;
-    font-size: 1.25rem;
-  }
-  .disrupting_col {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .disrupting_col {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-  }
-
-  .disrupting_img {
-    width: 80%;
-  }
-  .disrupting_text {
-    text-align: left;
   }
 }
 

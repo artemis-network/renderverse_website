@@ -4,10 +4,10 @@ import FeaturedIn from "./FeaturedIn/FeaturedIn";
 
 import EcoSystem from "./EcoSystem";
 import Mission from "./Misison";
-import Action from "./Action";
+import Action from "./Action/Action";
 import RoadMap from "./RoadMap";
 import Team from "./Team";
-import Disrupting from "./Disrupting";
+import Disrupting from "./Disrupting/Disrupting";
 
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";

@@ -4,8 +4,16 @@
 import { Link } from "react-scroll";
 import * as Linker from "react-router-dom";
 import PDF from "../../assets/Purple and Blue Annual Company Report Professional Presentation.pdf";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [open, setOpen] = useState({ state: "none" });
+
+  function toggle() {
+    if (open.state === "block") setOpen({ state: "none" });
+    else setOpen({ state: "block" });
+  }
+
   return (
     <header id="topnav" className="defaultscroll sticky tagline-height">
       <div className="container">
@@ -14,19 +22,100 @@ const Navbar = () => {
         </Linker.Link>
         <div className="menu-extras">
           <div className="menu-item">
-            <Link
-              to=""
-              className="navbar-toggle"
-              id="isToggle"
-              onClick={() => "toggleMenu()"}
-            >
+            <a onClick={toggle} className="navbar-toggle">
               <div className="lines">
                 <span />
                 <span />
                 <span />
               </div>
-            </Link>
+            </a>
           </div>
+        </div>
+        <div style={{ display: open.state, padding: "8rem 0" }}>
+          <ul class="navigation-menu nav-right nav-light">
+            <li>
+              <Link
+                onClick={toggle}
+                to="/"
+                className="sub-menu-item item_point"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={toggle}
+                to="/mission"
+                className="sub-menu-item item_point"
+              >
+                Mission
+              </Link>
+            </li>
+            <li>
+              <Linker.Link
+                onClick={toggle}
+                to="/news"
+                className="sub-menu-item item_point"
+              >
+                Blog
+              </Linker.Link>
+            </li>
+            <li>
+              <a
+                target={"_blank"}
+                href="https://whitepaper.renderverse.io/"
+                className="sub-menu-item item_point"
+              >
+                White-Paper
+              </a>
+            </li>
+            <li>
+              <a
+                href={PDF}
+                target={"_blank"}
+                className="sub-menu-item item_point"
+              >
+                Economics-Paper
+              </a>
+            </li>
+            <li>
+              <Link
+                onClick={toggle}
+                to="/eco-system"
+                className="sub-menu-item item_point"
+              >
+                Eco System
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={toggle}
+                to="/roadmap"
+                className="sub-menu-item item_point"
+              >
+                Roadmap
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={toggle}
+                to="/team"
+                className="sub-menu-item item_point"
+              >
+                Team
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                onClick={toggle}
+                to="/contact"
+                className="sub-menu-item item_point"
+              >
+                Contact Us
+              </Link>
+            </li>
+          </ul>
         </div>
         <div id="navigation">
           <ul className="navigation-menu nav-right nav-light">
