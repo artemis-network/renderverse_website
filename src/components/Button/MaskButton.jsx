@@ -10,8 +10,8 @@ export default function MaskButton(props) {
   }
 
   return (
-    <div class="button-container-1">
-      <span class="mas">{props.label}</span>
+    <div className="button-container-1">
+      <span className="mas">{props.label}</span>
       <button
         id="work"
         type="button"

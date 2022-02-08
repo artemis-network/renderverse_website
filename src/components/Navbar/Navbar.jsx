@@ -1,6 +1,5 @@
-/* eslint-disable react/jsx-no-target-blank */
-/* eslint-disable no-script-url */
 /* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable react/jsx-no-target-blank */
 import { Link } from "react-scroll";
 import * as Linker from "react-router-dom";
 import PDF from "../../assets/Purple and Blue Annual Company Report Professional Presentation.pdf";
@@ -17,8 +16,8 @@ const Navbar = () => {
   return (
     <header id="topnav" className="defaultscroll sticky tagline-height">
       <div className="container">
-        <Linker.Link to="/" className="logo">
-          <div>Renderverse</div>
+        <Linker.Link to="/" className="logo" style={{ display: "flex" }}>
+          Renderverse
         </Linker.Link>
         <div className="menu-extras">
           <div className="menu-item">
@@ -32,7 +31,7 @@ const Navbar = () => {
           </div>
         </div>
         <div style={{ display: open.state, padding: "8rem 0" }}>
-          <ul class="navigation-menu nav-right nav-light">
+          <ul className="navigation-menu nav-right nav-light">
             <li>
               <Link
                 onClick={toggle}
@@ -135,7 +134,7 @@ const Navbar = () => {
               </Linker.Link>
             </li>
             <li className="has-submenu parent-parent-menu-item">
-              <a href="javascript:void(0)">Docs</a>
+              <a>Docs</a>
               <span className="menu-arrow"></span>
               <ul className="submenu">
                 <li>

@@ -8,27 +8,111 @@ import Medium from '../../assets/images/icons/footer/medium.svg'
 import Discord from '../../assets/images/icons/footer/discord.svg'
 import Telegram from '../../assets/images/icons/footer/telegram.svg'
 import Twitter from '../../assets/images/icons/footer/twitter.svg'
+import Lottie from 'lottie-react-web'
+import Animation from '../../assets/lottie/successfully-done.json'
+import { useState, useEffect } from 'react'
+
+const Modal = ({ onRequestClose }) => {
+  // Use useEffect to add an event listener to the document
+  useEffect(() => {
+    function onKeyDown(event) {
+      if (event.keyCode === 27) {
+        // Close the modal when the Escape key is pressed
+        onRequestClose();
+      }
+    }
+
+    // Prevent scolling
+    document.body.style.overflow = "hidden";
+    document.addEventListener("keydown", onKeyDown);
+
+    // Clear things up when unmounting this component
+    return () => {
+      document.body.style.overflow = "visible";
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  });
+
+  return (
+    <div className="modal__backdrop">
+      <div className="modal__container">
+        <Lottie options={{ animationData: Animation }} />
+        <button type="button" className='sbutton' onClick={onRequestClose}>
+          Close
+        </button>
+        <div className="placeholder" />
+        <div className="placeholder" />
+        <div className="placeholder medium" />
+        <div className="placeholder" />
+      </div>
+    </div>
+  );
+};
+
 
 const Footer = (props) => {
+
+  const [email, setEmail] = useState({ value: "" })
+
+
+  function onEmailChange(e) {
+    setEmail({ value: e.target.value })
+  }
+
+
+  async function postData() {
+    const url = 'https://formspree.io/f/mzboewek'
+    const data = { email: email.value, message: "hello" }
+    await toggleModal()
+    await fetch(url, {
+      method: 'POST', // *GET, POST, PUT, DELETE, etc.
+      mode: 'no-cors', // no-cors, *cors, same-origin
+      cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+      credentials: 'same-origin', // include, *same-origin, omit
+      headers: {
+        'Content-Type': 'application/json'
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      redirect: 'follow', // manual, *follow, error
+      referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+      body: JSON.stringify(data) // body data type must match "Content-Type" header
+    }).then((res => console.log(res))).catch(err => console.log(err))
+  }
+
+  const [isModalOpen, setModalIsOpen] = useState(false);
+
+  async function toggleModal() {
+    setModalIsOpen(!isModalOpen);
+  };
+
+
   return (
     <div>
       <div style={{ display: "flex", height: "16vh", background: "#0b1118" }}></div>
       <footer style={{ backgroundColor: "white" }} >
         <div className='container'>
+
+
+          {!isModalOpen && <Modal onRequestClose={toggleModal} />}
+
           <div className='mobile-view ' >
             <div style={{ display: 'flex', flexDirection: "column", justifyContent: 'center', rowGap: "1rem", maring: "4rem 2rem", padding: "5rem 0", alignItems: "center" }}>
               <div style={{ display: "flex", justifyContent: 'center', flexDirection: "column" }}>
                 <div style={{ color: "#0B1118", fontSize: "3rem" }}>Join</div>
                 <p style={{ color: "#0B1118" }}>The Community</p>
               </div>
-              <div>
-                <input className='form-control' style={{ padding: "1rem", fontSize: "1rem", background: "white", borderRadius: "4vh" }} placeholder="Enter your email" />
-                <div style={{ color: "#0b1118", fontSize: ".9rem", padding: ".5rem 1rem" }}>By entering your email, you agree to get our emails.</div>
+              <input
+                required
+                onChange={(e) => onEmailChange(e)}
+                className='form-control'
+                style={{ padding: "1rem", fontSize: "1rem", background: "white", borderRadius: "4vh" }}
+                type="email"
+                placeholder="Enter your email" />
+              <div style={{ color: "#0b1118", fontSize: ".9rem", padding: ".5rem 1rem" }}>By entering your email, you agree to get our emails.</div>
+              <div style={{ display: 'flex', flexDirection: "column", justifyContent: 'center' }}>
+                <button onClick={postData} style={{ borderRadius: "5vh", }} className="btn btn-secondary ">Submit</button>
               </div>
 
-              <div style={{ display: 'flex', flexDirection: "column", justifyContent: 'center' }}>
-                <button style={{ borderRadius: "5vh", }} className="btn btn-secondary ">Submit</button>
-              </div>
             </div>
           </div>
 

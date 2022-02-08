@@ -17,7 +17,7 @@ const Team = () => {
       role: "Founder / Marketing Lead",
       links: [
         {
-          link: "",
+          link: "53",
           icon: Twitter,
         },
         {
@@ -25,7 +25,7 @@ const Team = () => {
           icon: LinkedIn,
         },
         {
-          link: "",
+          link: "51",
           icon: Mail,
         },
       ],
@@ -36,7 +36,7 @@ const Team = () => {
       role: "Co-Founder / Project Lead",
       links: [
         {
-          link: "",
+          link: "41",
           icon: Twitter,
         },
         {
@@ -44,7 +44,7 @@ const Team = () => {
           icon: LinkedIn,
         },
         {
-          link: "",
+          link: "42",
           icon: Mail,
         },
       ],
@@ -63,7 +63,7 @@ const Team = () => {
           icon: LinkedIn,
         },
         {
-          link: "",
+          link: "31",
           icon: Mail,
         },
       ],
@@ -77,7 +77,7 @@ const Team = () => {
       role: "Product / Design Lead",
       links: [
         {
-          link: "",
+          link: "21",
           icon: Twitter,
         },
         {
@@ -85,7 +85,7 @@ const Team = () => {
           icon: LinkedIn,
         },
         {
-          link: "",
+          link: "23",
           icon: Mail,
         },
       ],
@@ -93,18 +93,18 @@ const Team = () => {
     },
     {
       name: "Prashanth",
-      role: "",
+      role: "2",
       links: [
         {
-          link: "",
+          link: "11",
           icon: Twitter,
         },
         {
-          link: "https://www.linkedin.com/in/roney-antony-41501891/",
+          link: "12",
           icon: LinkedIn,
         },
         {
-          link: "",
+          link: "13",
           icon: Mail,
         },
       ],

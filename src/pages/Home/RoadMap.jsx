@@ -26,11 +26,9 @@ const RoadMap = () => {
       >
         <div className="row justify-content-center p-3 rounded-top">
           <div className="col-lg-4 col-md-12 justify-content-center col-12">
-            <h2 className="text-center my-4 road_map_text_colors">Q4-2021</h2>
+            <h2 className="text-center my-4 road_map_text_colors">Q4 2021</h2>
             <div className="hide_border">
-              <h4 className="my-2 road_map_text_colors">
-                Core Team Foundation
-              </h4>
+              <h4 className="my-2 road_map_text_colors">Ideation</h4>
               <div className="row mx-4">
                 <div
                   className="p-3 my-2 "
@@ -42,7 +40,7 @@ const RoadMap = () => {
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
-                  Market Research
+                  Core team formation
                 </div>
               </div>
               <div className="row mx-4">
@@ -56,7 +54,7 @@ const RoadMap = () => {
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
-                  Software dev Architecture
+                  Market research
                 </div>
               </div>
               <div className="row mx-4">
@@ -70,7 +68,7 @@ const RoadMap = () => {
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
-                  Smart Contract Architecture
+                  Business Model Validation
                 </div>
               </div>
               <div className="row mx-4">
@@ -87,7 +85,7 @@ const RoadMap = () => {
                   R&D of RenderScan
                 </div>
               </div>
-              <h4 className="my-2 road_map_text_colors">PureFi Protocol</h4>
+              <h4 className="my-2 road_map_text_colors">Product Development</h4>
               <div className="row mx-4">
                 <div
                   className="p-3"
@@ -99,22 +97,46 @@ const RoadMap = () => {
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
-                  Verifiable Credentials Standards and document formats for:
-                  <ul>
-                    <li>AML</li>
-                    <li>KYC • Other Meta Standards</li>
-                  </ul>
+                  R&D of RenderScan
+                </div>
+              </div>
+
+              <div className="row mx-4 my-3">
+                <div
+                  className="p-3"
+                  style={{
+                    borderRadius: "2vh",
+                    border: "2px solid #0b1118",
+                    background: "#171b56",
+                    boxShadow:
+                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
+                  }}
+                >
+                  Software development Architecture
+                </div>
+              </div>
+              <div className="row mx-4 my-3">
+                <div
+                  className="p-3"
+                  style={{
+                    borderRadius: "2vh",
+                    border: "2px solid #0b1118",
+                    background: "#171b56",
+                    boxShadow:
+                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
+                  }}
+                >
+                  Smart contract Architecture
                 </div>
               </div>
             </div>
           </div>
 
           <div className="col-lg-4 col-md-12 justify-content-center col-12">
-            <h2 className="text-center my-4 road_map_text_colors">Q1-2022</h2>
+            <h2 className="text-center my-4 road_map_text_colors">Q1 2022</h2>
             <div className="hide_border">
-              <h4 className="my-2 road_map_text_colors">
-                Integration with DEXs
-              </h4>
+              <h4 className="my-2 road_map_text_colors">Growth phase</h4>
+
               <div className="row mx-4">
                 <div
                   className="p-3 my-2"
@@ -126,28 +148,10 @@ const RoadMap = () => {
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
-                  DEX integration KIT
+                  Website V1 Launch
                 </div>
               </div>
-              <div className="row mx-4">
-                <div
-                  className="p-3 my-2"
-                  style={{
-                    borderRadius: "2vh",
-                    border: "2px solid #0b1118",
-                    background: "#171b56",
-                    boxShadow:
-                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
-                  }}
-                >
-                  Circuit
-                  <ul>
-                    <li>AML </li>
-                    <li>KYC</li>
-                    <li>Other</li>
-                  </ul>
-                </div>
-              </div>
+
               <div className="row mx-4">
                 <div
                   className="p-3 my-2 "
@@ -159,22 +163,7 @@ const RoadMap = () => {
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
-                  ZK-SNARK setup procedure (Public event)
-                </div>
-              </div>
-              <div className="row mx-4">
-                <div
-                  className="p-3 my-2 "
-                  style={{
-                    borderRadius: "2vh",
-                    border: "2px solid #0b1118",
-                    background: "#171b56",
-                    boxShadow:
-                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
-                  }}
-                >
-                  Intermediate validation contract for EVM compatible
-                  blockchains
+                  Seed & Strategic Sale
                 </div>
               </div>
 
@@ -189,15 +178,78 @@ const RoadMap = () => {
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
-                  Intermediate smart contract for CosmWasm
+                  Team Expansion
+                </div>
+              </div>
+              <div className="row mx-4">
+                <div
+                  className="p-3 my-2 "
+                  style={{
+                    borderRadius: "2vh",
+                    border: "2px solid #0b1118",
+                    background: "#171b56",
+                    boxShadow:
+                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
+                  }}
+                >
+                  Marketing
+                  <ul>
+                    <li> PR campaigns</li>
+                    <li>Prelaunch Marketing</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="hide_border">
+              <div className="row mx-4">
+                <div
+                  className="p-3 my-2"
+                  style={{
+                    borderRadius: "2vh",
+                    border: "2px solid #0b1118",
+                    background: "#171b56",
+                    boxShadow:
+                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
+                  }}
+                >
+                  RenderScan V1 Launch
+                </div>
+              </div>
+              <div className="row mx-4">
+                <div
+                  className="p-3 my-2"
+                  style={{
+                    borderRadius: "2vh",
+                    border: "2px solid #0b1118",
+                    background: "#171b56",
+                    boxShadow:
+                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
+                  }}
+                >
+                  RenderFi launch
+                </div>
+              </div>
+              <div className="row mx-4">
+                <div
+                  className="p-3 my-2 "
+                  style={{
+                    borderRadius: "2vh",
+                    border: "2px solid #0b1118",
+                    background: "#171b56",
+                    boxShadow:
+                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
+                  }}
+                >
+                  Smart contracts auditing
                 </div>
               </div>
             </div>
           </div>
 
           <div className="col-lg-4 col-md-12 justify-content-center col-12">
-            <h2 className="text-center my-4 road_map_text_colors">Q2-2022</h2>
-            <h4 className="road_map_text_colors">Issuers SDK</h4>
+            <h2 className="text-center my-4 road_map_text_colors">Q2 2022</h2>
+            <h4 className="road_map_text_colors">Expansion</h4>
             <div>
               <div className="row mx-4">
                 <div
@@ -210,7 +262,7 @@ const RoadMap = () => {
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
-                  $UFI staking
+                  Website V2 launch
                 </div>
               </div>
               <div className="row mx-4">
@@ -224,7 +276,7 @@ const RoadMap = () => {
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
-                  Onboarding procedure
+                  Listings on CEX and DEX
                 </div>
               </div>
               <div className="row mx-4">
@@ -238,7 +290,7 @@ const RoadMap = () => {
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
-                  External reference API
+                  Strategic partnerships
                 </div>
               </div>
               <div className="row mx-4">
@@ -252,7 +304,53 @@ const RoadMap = () => {
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
-                  Farming
+                  Scaling userbase to 100k users
+                </div>
+              </div>
+            </div>
+
+            <h4 className="road_map_text_colors">Ecosystem Launches</h4>
+            <div>
+              <div className="row mx-4">
+                <div
+                  className="p-3 my-2"
+                  style={{
+                    borderRadius: "2vh",
+                    border: "2px solid #0b1118",
+                    background: "#171b56",
+                    boxShadow:
+                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
+                  }}
+                >
+                  RenderMarket launch
+                </div>
+              </div>
+              <div className="row mx-4">
+                <div
+                  className="p-3 my-2 "
+                  style={{
+                    borderRadius: "2vh",
+                    border: "2px solid #0b1118",
+                    background: "#171b56",
+                    boxShadow:
+                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
+                  }}
+                >
+                  RenderPlay launch
+                </div>
+              </div>
+              <div className="row mx-4">
+                <div
+                  className="p-3 my-2"
+                  style={{
+                    borderRadius: "2vh",
+                    border: "2px solid #0b1118",
+                    background: "#171b56",
+                    boxShadow:
+                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
+                  }}
+                >
+                  RenderStore launch
                 </div>
               </div>
             </div>
