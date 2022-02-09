@@ -71,20 +71,7 @@ const RoadMap = () => {
                   Business Model Validation
                 </div>
               </div>
-              <div className="row mx-4">
-                <div
-                  className="p-3 my-2"
-                  style={{
-                    borderRadius: "2vh",
-                    border: "2px solid #0b1118",
-                    background: "#171b56",
-                    boxShadow:
-                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
-                  }}
-                >
-                  R&D of RenderScan
-                </div>
-              </div>
+
               <h4 className="my-2 road_map_text_colors">Product Development</h4>
               <div className="row mx-4">
                 <div

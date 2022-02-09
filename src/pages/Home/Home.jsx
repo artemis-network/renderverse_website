@@ -27,7 +27,11 @@ const Home = () => {
         <RenderVerse />
       </Element>
 
-      <FeaturedIn title={"Featured In"} isFeatured={true} />
+      <FeaturedIn
+        title={"To be soon Featured In..."}
+        isFeatured={true}
+        hasBackers={true}
+      />
       <Element id="/mission" name="mission">
         <Mission />
       </Element>
@@ -47,7 +51,11 @@ const Home = () => {
         <Team />
       </Element>
 
-      <FeaturedIn title={"Advisors and Backer"} isFeatured={false} />
+      <FeaturedIn
+        title={"Advisors and Backers"}
+        isFeatured={false}
+        hasBackers={false}
+      />
       <Element id="/contact" name="contact">
         <Footer animation={"flip-left"} duration={400} ease={"linear"} />
       </Element>

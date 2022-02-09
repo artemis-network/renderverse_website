@@ -50,63 +50,75 @@ const Product = (props) => {
         className="container"
         style={{ display: "flex", flexDirection: "column", rowGap: "4rem" }}
       >
-        <div className="row">
-          <div
-            data-aos="fade-up"
-            data-aos-offset="0"
-            data-aos-easing="ease-in-sine"
-            className="feature_row_1"
-          >
-            <img
-              height={30}
-              width={160}
-              style={{ display: "flex", alignSelf: "center" }}
-              src={Image1}
-              alt="image1"
-            />
-            <img
-              height={30}
-              width={160}
-              style={{ display: "flex", alignSelf: "center" }}
-              src={Image2}
-              alt="image1"
-            />
-            <img height={35} width={100} src={Image3} alt="image1" />
-            <img
-              height={30}
-              width={160}
-              style={{ display: "flex", alignSelf: "center" }}
-              src={Image4}
-              alt="image1"
-            />
-            <img
-              height={30}
-              width={160}
-              style={{ display: "flex", alignSelf: "center" }}
-              src={Image5}
-              alt="image1"
-            />
-            <img height={30} width={120} src={Image6} alt="image1" />
+        {props.hasBackers ? (
+          <div className="row">
+            <div
+              data-aos="fade-up"
+              data-aos-offset="0"
+              data-aos-easing="ease-in-sine"
+              className="feature_row_1"
+            >
+              <img
+                height={30}
+                width={160}
+                style={{ display: "flex", alignSelf: "center" }}
+                src={Image1}
+                alt="image1"
+              />
+              <img
+                height={30}
+                width={160}
+                style={{ display: "flex", alignSelf: "center" }}
+                src={Image2}
+                alt="image1"
+              />
+              <img height={35} width={100} src={Image3} alt="image1" />
+              <img
+                height={30}
+                width={160}
+                style={{ display: "flex", alignSelf: "center" }}
+                src={Image4}
+                alt="image1"
+              />
+              <img
+                height={30}
+                width={160}
+                style={{ display: "flex", alignSelf: "center" }}
+                src={Image5}
+                alt="image1"
+              />
+              <img height={30} width={120} src={Image6} alt="image1" />
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-offset="0"
+              data-aos-easing="ease-in-sine"
+              className="feature_row_1"
+            >
+              <img
+                height={30}
+                width={160}
+                style={{ display: "flex", alignSelf: "center" }}
+                src={Image7}
+                alt="image1"
+              />
+              <img height={40} width={150} src={Image8} alt="image1" />
+              <img height={30} width={150} src={Image9} alt="image1" />
+              <img height={25} width={170} src={Image10} alt="image1" />
+              <img height={40} width={150} src={Image11} alt="image1" />
+            </div>
           </div>
+        ) : (
           <div
-            data-aos="fade-up"
-            data-aos-offset="0"
-            data-aos-easing="ease-in-sine"
-            className="feature_row_1"
+            style={{
+              fontSize: "4rem",
+              fontWeight: "bold",
+              textAlign: "center",
+            }}
           >
-            <img
-              height={30}
-              width={160}
-              style={{ display: "flex", alignSelf: "center" }}
-              src={Image7}
-              alt="image1"
-            />
-            <img height={40} width={150} src={Image8} alt="image1" />
-            <img height={30} width={150} src={Image9} alt="image1" />
-            <img height={25} width={170} src={Image10} alt="image1" />
-            <img height={40} width={150} src={Image11} alt="image1" />
+            To be announced soon!
           </div>
-        </div>
+        )}
       </div>
       {props.isFeatured ? (
         <Wave
