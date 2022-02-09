@@ -36,7 +36,7 @@ const Modal = ({ onRequestClose }) => {
   return (
     <div className="modal__backdrop">
       <div className="modal__container">
-        <Lottie options={{ animationData: Animation }} />
+        <Lottie options={{ animationData: Animation, loop: false }} />
         <button type="button" className='sbutton' onClick={onRequestClose}>
           Close
         </button>
@@ -60,11 +60,11 @@ const Footer = (props) => {
   }
 
 
-  async function postData() {
+  function postData() {
+    toggleModal()
     const url = 'https://formspree.io/f/mzboewek'
     const data = { email: email.value, message: "hello" }
-    await toggleModal()
-    await fetch(url, {
+    fetch(url, {
       method: 'POST', // *GET, POST, PUT, DELETE, etc.
       mode: 'no-cors', // no-cors, *cors, same-origin
       cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
@@ -81,8 +81,10 @@ const Footer = (props) => {
 
   const [isModalOpen, setModalIsOpen] = useState(false);
 
-  async function toggleModal() {
+  function toggleModal() {
+    console.log(isModalOpen)
     setModalIsOpen(!isModalOpen);
+    console.log(isModalOpen)
   };
 
 
@@ -92,8 +94,7 @@ const Footer = (props) => {
       <footer style={{ backgroundColor: "white" }} >
         <div className='container'>
 
-
-          {!isModalOpen && <Modal onRequestClose={toggleModal} />}
+          {isModalOpen && <Modal onRequestClose={toggleModal} />}
 
           <div className='mobile-view ' >
             <div style={{ display: 'flex', flexDirection: "column", justifyContent: 'center', rowGap: "1rem", maring: "4rem 2rem", padding: "5rem 0", alignItems: "center" }}>
