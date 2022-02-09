@@ -60,8 +60,8 @@ const Footer = (props) => {
   }
 
 
-  function postData() {
-    toggleModal()
+  function postData(e) {
+    toggleModal(e)
     const url = 'https://formspree.io/f/mzboewek'
     const data = { email: email.value, message: "hello" }
     fetch(url, {
@@ -81,7 +81,8 @@ const Footer = (props) => {
 
   const [isModalOpen, setModalIsOpen] = useState(false);
 
-  function toggleModal() {
+  function toggleModal(e) {
+    e.preventDefault()
     console.log(isModalOpen)
     setModalIsOpen(!isModalOpen);
     console.log(isModalOpen)
@@ -111,7 +112,7 @@ const Footer = (props) => {
                 placeholder="Enter your email" />
               <div style={{ color: "#0b1118", fontSize: ".9rem", padding: ".5rem 1rem" }}>By entering your email, you agree to get our emails.</div>
               <div style={{ display: 'flex', flexDirection: "column", justifyContent: 'center' }}>
-                <button onClick={postData} style={{ borderRadius: "5vh", }} className="btn btn-secondary ">Submit</button>
+                <button onClick={(e) => postData(e)} style={{ borderRadius: "5vh", }} className="btn btn-secondary ">Submit</button>
               </div>
 
             </div>
@@ -140,8 +141,9 @@ const Footer = (props) => {
                 <div className='row' style={{ display: "flex", justifyContent: 'center', alignItems: 'center', margin: "auto auto", height: "12vh" }}>
                   <div className='col-lg-12 col-md-12 col-12' >
                     <div style={{ display: "flex", justifyContent: "center", flexDirection: 'row', columnGap: "1rem" }}>
-                      <input className='form-control' style={{ padding: "1rem", fontSize: "1rem", background: "white", borderRadius: "4vh" }} placeholder="Enter your email" />
-                      <button style={{ borderRadius: "4vh", }} className="btn btn-secondary ">Submit</button>
+                      <input required
+                        onChange={(e) => onEmailChange(e)} className='form-control' style={{ padding: "1rem", fontSize: "1rem", background: "white", borderRadius: "4vh" }} placeholder="Enter your email" />
+                      <button onClick={(e) => postData(e)} style={{ borderRadius: "4vh", }} className="btn btn-secondary ">Submit</button>
                     </div>
                     <div style={{ color: "#0b1118", fontSize: ".9rem", padding: ".5rem 1rem" }}>By entering your email, you agree to get our emails.</div>
                   </div>
