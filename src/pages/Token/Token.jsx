@@ -175,11 +175,11 @@ const Token = () => {
                   }}
                 >
                   <div>Token Name</div>
+                  <div>Token Ticker</div>
                   <div>Token Type</div>
                   <div>Total Supply</div>
-                  <div>Circulation Supply</div>
-                  <div>Circulation Supply</div>
-                  <div>Circulation Supply</div>
+                  <div>Allocated for Sale</div>
+                  <div>Initial Circulation Supply</div>
                 </div>
                 <div
                   style={{
@@ -191,12 +191,12 @@ const Token = () => {
                     rowGap: ".5rem",
                   }}
                 >
+                  <div>RENDERVERSE</div>
                   <div>$RNDV</div>
                   <div>BEP-20</div>
                   <div>500 million</div>
-                  <div>150 million</div>
-                  <div>150 million</div>
-                  <div>150 million</div>
+                  <div>200 million</div>
+                  <div>63.5 million</div>
                 </div>
               </div>
 

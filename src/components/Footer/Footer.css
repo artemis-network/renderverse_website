@@ -191,7 +191,7 @@ hr {
   background: #682ede;
   transform: scale(1.1);
 }
-a {
+.linkc {
   border-radius: 5px;
   color: #682ede;
   font-weight: 600;
@@ -199,7 +199,7 @@ a {
   margin-left: -2px;
   margin-right: -2px;
 }
-a:hover {
+.linkc:hover {
   background: #8c54ff;
   color: #fff;
   text-decoration: none;

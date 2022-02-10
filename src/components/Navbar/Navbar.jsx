@@ -2,8 +2,9 @@
 /* eslint-disable react/jsx-no-target-blank */
 import { Link } from "react-scroll";
 import * as Linker from "react-router-dom";
-import PDF from "../../assets/Purple and Blue Annual Company Report Professional Presentation.pdf";
+import PDF from "../../assets/Economics paper.pdf";
 import { useState } from "react";
+import Logo from "../../assets/images/logo2.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState({ state: "none" });
@@ -17,6 +18,7 @@ const Navbar = () => {
     <header id="topnav" className="defaultscroll sticky tagline-height">
       <div className="container">
         <Linker.Link to="/" className="logo" style={{ display: "flex" }}>
+          <img src={Logo} alt="Logo" width={78} />
           Renderverse
         </Linker.Link>
         <div className="menu-extras">

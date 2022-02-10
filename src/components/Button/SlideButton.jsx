@@ -1,13 +1,14 @@
+/* eslint-disable react/jsx-no-target-blank */
 import "./SlideButton.css";
 import React from "react";
 
 const SlideButton = (props) => {
-  function goTo() {
-    window.location.href = "https://whitepaper.renderverse.io";
+  function goto() {
+    window.open("https://whitepaper.renderverse.io", "_blank");
   }
 
   return (
-    <button onClick={() => goTo(props.to)} className="btn_custom">
+    <button onClick={goto} className="btn_custom">
       <i className={props.icon} />
       <span>{props.label}</span>
     </button>

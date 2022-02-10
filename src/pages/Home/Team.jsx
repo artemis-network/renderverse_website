@@ -3,6 +3,7 @@ import Praneeth from "../../assets/images/team/praneeth-min.jpeg";
 import Chakri from "../../assets/images/team/chakri.jpeg";
 import Akash from "../../assets/images/team/akash.jpeg";
 import Roney from "../../assets/images/team/roney-min.jpeg";
+import Prasanth from "../../assets/images/team/prasanth.png";
 
 import LinkedIn from "../../assets/images/icons/socials/linkedin.svg";
 import Mail from "../../assets/images/icons/socials/mail.svg";
@@ -93,7 +94,7 @@ const Team = () => {
     },
     {
       name: "Prashanth",
-      role: "2",
+      role: "Blockchain Developer",
       links: [
         {
           link: "11",
@@ -108,7 +109,7 @@ const Team = () => {
           icon: Mail,
         },
       ],
-      img: Roney,
+      img: Prasanth,
     },
   ];
 
