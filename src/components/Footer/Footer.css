@@ -164,8 +164,8 @@ hr {
   position: fixed;
   right: 0;
   top: 0;
-  padding-top: 8rem;
-  z-index: 1;
+  padding-top: 3rem;
+  z-index: 10000;
 }
 .modal__container {
   background: #fff;

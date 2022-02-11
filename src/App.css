@@ -52,3 +52,35 @@
   pointer-events: all;
   cursor: pointer;
 }
+
+.eco_system {
+  height: auto;
+  width: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .eco_system {
+    height: 100%;
+    width: 100%;
+  }
+  .logo {
+    padding: 1rem;
+    margin: 0 0.25rem;
+  }
+}
+
+.mission_mobile_row {
+  display: flex;
+}
+.mission_desk_row {
+  display: none;
+}
+
+@media screen and (min-width: 900px) {
+  .mission_mobile_row {
+    display: none;
+  }
+  .mission_desk_row {
+    display: flex;
+  }
+}

@@ -5,12 +5,14 @@ import Announcement from '../../assets/images/footer/announcement-min.png'
 import Support from '../../assets/images/footer/feedback-message-min.png'
 
 import Medium from '../../assets/images/icons/footer/medium.svg'
-import Discord from '../../assets/images/icons/footer/discord.svg'
+import Instagram from '../../assets/images/icons/footer/instagram.svg'
 import Telegram from '../../assets/images/icons/footer/telegram.svg'
 import Twitter from '../../assets/images/icons/footer/twitter.svg'
+import Terms from '../../pages/Home/TermsAndConditions'
 import Lottie from 'lottie-react-web'
 import Animation from '../../assets/lottie/successfully-done.json'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-scroll'
 
 const Modal = ({ onRequestClose }) => {
   // Use useEffect to add an event listener to the document
@@ -83,9 +85,14 @@ const Footer = (props) => {
 
   function toggleModal(e) {
     e.preventDefault()
-    console.log(isModalOpen)
     setModalIsOpen(!isModalOpen);
-    console.log(isModalOpen)
+  };
+
+  const [isModalOpen2, setModalIsOpen2] = useState(false);
+
+  function toggleModal2(e) {
+    e.preventDefault()
+    setModalIsOpen2(!isModalOpen2);
   };
 
 
@@ -96,6 +103,7 @@ const Footer = (props) => {
         <div className='container'>
 
           {isModalOpen && <Modal onRequestClose={toggleModal} />}
+          {isModalOpen2 && <Modal2 onRequestClose={toggleModal2} />}
 
           <div className='mobile-view ' >
             <div style={{ display: 'flex', flexDirection: "column", justifyContent: 'center', rowGap: "1rem", maring: "4rem 2rem", padding: "5rem 0", alignItems: "center" }}>
@@ -184,9 +192,9 @@ const Footer = (props) => {
                     <button className='btn btn-outline-primary'>
                       <span >
                         <a
-                          href="https://discord.gg/Xp3HcvPedY"
+                          href="https://instagram.com/teamrenderverse"
                           target={"_blank"}>
-                          <img src={Discord} height={30} alt="medium" />
+                          <img src={Instagram} height={30} alt="instagram" />
                         </a>
                       </span>
                     </button>
@@ -263,15 +271,13 @@ const Footer = (props) => {
 
         </div>
         <hr />
-        <div className='footer_end_l'>
-          <div style={{ fontSize: "1.75rem", display: 'flex', justifyContent: "center" }}>
+        <div className='footer_end_l item_point'>
+          <Link to="/" style={{ fontSize: "1.75rem", display: 'flex', justifyContent: "center" }}>
             Renderverse
-          </div>
-          <div className='footer_content_links'>
+          </Link>
+          <div className='footer_content_links item_point'>
+            <div onClick={(e) => toggleModal2(e)}>Terms and condition</div>
             <div>© Renderverse 2022</div>
-            <div>Terms and condition</div>
-            <div>Privacy policy</div>
-            <div>Risk Disclaimer</div>
           </div>
         </div>
       </footer>
@@ -280,3 +286,36 @@ const Footer = (props) => {
 };
 
 export default Footer;
+
+const Modal2 = ({ onRequestClose }) => {
+  // Use useEffect to add an event listener to the document
+  useEffect(() => {
+    function onKeyDown(event) {
+      if (event.keyCode === 27) {
+        // Close the modal when the Escape key is pressed
+        onRequestClose();
+      }
+    }
+
+    // Prevent scolling
+    document.body.style.overflow = "hidden";
+    document.addEventListener("keydown", onKeyDown);
+
+    // Clear things up when unmounting this component
+    return () => {
+      document.body.style.overflow = "visible";
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  });
+
+  return (
+    <div className="modal__backdrop">
+      <div style={{ background: "#0b1118", color: "white", zIndex: 10000, padding: "2rem", margin: "4rem auto", width: "80%", borderRadius: "2vh" }}>
+        <Terms />
+        <button type="button" className='sbutton' onClick={onRequestClose}>
+          Close
+        </button>
+      </div>
+    </div>
+  );
+};

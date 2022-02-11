@@ -2,14 +2,9 @@ import Image1 from "../../../assets/images/backers/cointelegraph_press.png";
 import Image2 from "../../../assets/images/backers/investing_press.png";
 import Image3 from "../../../assets/images/backers/yahoo_press.png";
 import Image4 from "../../../assets/images/backers/coindesk_press.png";
-import Image5 from "../../../assets/images/backers/dailycoin_press.png";
-import Image6 from "../../../assets/images/backers/odaily_press.png";
 
-import Image7 from "../../../assets/images/backers/coinrivet_press.png";
 import Image8 from "../../../assets/images/backers/cryptobriefing_press.png";
 import Image9 from "../../../assets/images/backers/blockonomi_press.png";
-import Image10 from "../../../assets/images/backers/cryptoadventure_press.png";
-import Image11 from "../../../assets/images/backers/8848_press.png";
 
 import Wave from "react-wavify";
 
@@ -80,14 +75,6 @@ const Product = (props) => {
                 src={Image4}
                 alt="image1"
               />
-              <img
-                height={30}
-                width={160}
-                style={{ display: "flex", alignSelf: "center" }}
-                src={Image5}
-                alt="image1"
-              />
-              <img height={30} width={120} src={Image6} alt="image1" />
             </div>
             <div
               data-aos="fade-up"
@@ -95,17 +82,8 @@ const Product = (props) => {
               data-aos-easing="ease-in-sine"
               className="feature_row_1"
             >
-              <img
-                height={30}
-                width={160}
-                style={{ display: "flex", alignSelf: "center" }}
-                src={Image7}
-                alt="image1"
-              />
               <img height={40} width={150} src={Image8} alt="image1" />
               <img height={30} width={150} src={Image9} alt="image1" />
-              <img height={25} width={170} src={Image10} alt="image1" />
-              <img height={40} width={150} src={Image11} alt="image1" />
             </div>
           </div>
         ) : (
@@ -116,7 +94,7 @@ const Product = (props) => {
               textAlign: "center",
             }}
           >
-            To be announced soon!
+            To be Revealed soon!
           </div>
         )}
       </div>

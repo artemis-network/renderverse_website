@@ -2,6 +2,8 @@ import Wave from "react-wavify";
 import { Link } from "react-router-dom";
 import LinkTwo, { Element } from "react-scroll";
 
+import Logo from "../../assets/images/logo_noback (1).png";
+
 import Video from "../../assets/videos/final.mp4";
 import Imag from "../../assets/images/icons/footer/medium.svg";
 
@@ -46,8 +48,15 @@ const Token = () => {
       <div className="bg-img">
         <header id="topnav" className="defaultscroll sticky tagline-height">
           <div className="container">
-            <Link to="/" className="logo">
-              <div>Renderverse</div>
+            <Link to="/" className="logo" style={{ display: "flex" }}>
+              <img
+                src={Logo}
+                alt="Logo"
+                width={40}
+                height={40}
+                style={{ transform: "translateY(.7rem) translateX(-.6rem)" }}
+              />
+              <span>Renderverse</span>
             </Link>
             <div className="menu-extras">
               <div className="menu-item">

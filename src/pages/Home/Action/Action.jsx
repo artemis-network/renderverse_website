@@ -1,10 +1,55 @@
 import Action1 from "../../../assets/images/action/Laptop Project (1).png";
 import Action2 from "../../../assets/images/action/Dark=No (2).png";
 import "./Action.css";
+import { useState, useEffect } from "react";
+
+import Lottie from "lottie-react-web";
+import Animation from "../../../assets/lottie/coming-soon.json";
 
 import Wave from "react-wavify";
 
+const Modal = ({ onRequestClose }) => {
+  // Use useEffect to add an event listener to the document
+  useEffect(() => {
+    function onKeyDown(event) {
+      if (event.keyCode === 27) {
+        // Close the modal when the Escape key is pressed
+        onRequestClose();
+      }
+    }
+
+    // Prevent scolling
+    document.body.style.overflow = "hidden";
+    document.addEventListener("keydown", onKeyDown);
+
+    // Clear things up when unmounting this component
+    return () => {
+      document.body.style.overflow = "visible";
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  });
+
+  return (
+    <div className="modal__backdrop">
+      <div className="modal__container">
+        <div data-aos="fade-down">
+          <Lottie options={{ animationData: Animation, loop: true }} />
+        </div>
+        <button type="button" className="sbutton" onClick={onRequestClose}>
+          Close
+        </button>
+      </div>
+    </div>
+  );
+};
+
 const Action = () => {
+  const [open, setOpen] = useState(false);
+
+  function toggle() {
+    setOpen(!open);
+  }
+
   const cols = [
     {
       url: Action2,
@@ -59,13 +104,24 @@ const Action = () => {
                 color: "#0B1118",
               }}
             >
-              See it in action
+              <span
+                style={{
+                  background: "#7A0BC0",
+                  color: "white",
+                  padding: "0 1rem",
+                  margin: "0 .5rem",
+                }}
+              >
+                Explore
+              </span>
+              Renderverse
             </div>
             <div
               style={{
                 display: "flex",
                 justifyContent: "center",
-                color: "#0B1118",
+                color: "#7A0BC0",
+                margin: "1rem 0 0 0",
               }}
             >
               Try it yourself. Invite code: renderverse
@@ -85,15 +141,16 @@ const Action = () => {
                 columnGap: "1rem",
               }}
             >
-              <div className="btn btn-primary btn-lg">
+              <div onClick={toggle} className="btn btn-primary btn-lg">
                 <i className="uil uil-apple"></i>
                 <span> App Store</span>
               </div>
-              <div className="btn btn-primary btn-lg">
+              <div onClick={toggle} className="btn btn-primary btn-lg">
                 <i className="uil uil-google-play"></i>
                 <span> Play Store</span>
               </div>
             </div>
+            {open ? <Modal onRequestClose={toggle}></Modal> : null}
             <div className="custom_grid" style={{ margin: "5rem 2rem" }}>
               {cols.map((col, index) => {
                 return (

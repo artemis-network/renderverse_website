@@ -3,6 +3,7 @@
 import { Link } from "react-scroll";
 import * as Linker from "react-router-dom";
 import { useState } from "react";
+import Logo from "../../assets/images/logo_noback (1).png";
 
 const Navbar = () => {
   const [open, setOpen] = useState({ state: "none" });
@@ -15,8 +16,15 @@ const Navbar = () => {
   return (
     <header id="topnav" className="defaultscroll sticky tagline-height">
       <div className="container">
-        <Linker.Link to="/" className="logo">
-          <div>Renderverse</div>
+        <Linker.Link to="/" className="logo" style={{ display: "flex" }}>
+          <img
+            src={Logo}
+            alt="Logo"
+            width={40}
+            height={40}
+            style={{ transform: "translateY(.7rem) translateX(-.6rem)" }}
+          />
+          <span>Renderverse</span>
         </Linker.Link>
         <div className="menu-extras">
           <div className="menu-item">
@@ -49,15 +57,7 @@ const Navbar = () => {
                 Mission
               </Linker.Link>
             </li>
-            <li>
-              <Linker.Link
-                onClick={toggle}
-                to="/news"
-                class="sub-menu-item item_point"
-              >
-                Blog & News
-              </Linker.Link>
-            </li>
+
             <li>
               <a
                 href="https://whitepaper.renderverse.io/welcome/introduction"
@@ -100,23 +100,6 @@ const Navbar = () => {
               <Linker.Link to="/" className="sub-menu-item item_point">
                 Mission
               </Linker.Link>
-            </li>
-            <li class="has-submenu parent-parent-menu-item">
-              <a href="javascript:void(0)">Learn</a>
-              <span class="menu-arrow"></span>
-              <ul class="submenu">
-                <li>
-                  <Linker.Link to="/news" class="sub-menu-item item_point">
-                    Blog & News
-                  </Linker.Link>
-                </li>
-                <li>
-                  <Linker.Link to="/faq" class="sub-menu-item item_point">
-                    {" "}
-                    FAQ{" "}
-                  </Linker.Link>
-                </li>
-              </ul>
             </li>
             <li class="has-submenu parent-parent-menu-item">
               <a href="javascript:void(0)">Docs</a>

@@ -8,9 +8,8 @@ import Background from "../../../assets/videos/final.mp4";
 import Telegram from "../../../assets/images/renderverse/telegram.svg";
 import Twitter from "../../../assets/images/renderverse/twitter.svg";
 import Medium from "../../../assets/images/renderverse/medium.svg";
-import Discord from "../../../assets/images/renderverse/discord.svg";
+import Instagram from "../../../assets/images/renderverse/instagram (3).svg";
 import ScrollDown from "../../../assets/images/icons/arrow.svg";
-
 import SlideButton from "../../../components/Button/SlideButton";
 import MaskButton from "../../../components/Button/MaskButton";
 
@@ -56,7 +55,7 @@ const Renderverse = () => {
             }}
           >
             <div className="title-heading">
-              <span className="badge bg-soft-success rounded-md linker">
+              <span className="linker badge bg-soft-success rounded-md">
                 $RNDR
               </span>
               <div className="glow-text">
@@ -106,11 +105,11 @@ const Renderverse = () => {
               </a>
 
               <a
-                href="https://discord.gg/Xp3HcvPedY"
+                href="https://instagram.com/teamrenderverse"
                 target={"_blank"}
                 className="socials_l"
               >
-                <img src={Discord} alt="medium"></img>
+                <img src={Instagram} alt="medium"></img>
               </a>
             </div>
 

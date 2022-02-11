@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import * as Linker from "react-router-dom";
 import PDF from "../../assets/Economics paper.pdf";
 import { useState } from "react";
-import Logo from "../../assets/images/logo2.png";
+import Logo from "../../assets/images/logo_noback (1).png";
 
 const Navbar = () => {
   const [open, setOpen] = useState({ state: "none" });
@@ -18,8 +18,14 @@ const Navbar = () => {
     <header id="topnav" className="defaultscroll sticky tagline-height">
       <div className="container">
         <Linker.Link to="/" className="logo" style={{ display: "flex" }}>
-          <img src={Logo} alt="Logo" width={78} />
-          Renderverse
+          <img
+            src={Logo}
+            alt="Logo"
+            width={40}
+            height={40}
+            style={{ transform: "translateY(.7rem) translateX(-.6rem)" }}
+          />
+          <span>Renderverse</span>
         </Linker.Link>
         <div className="menu-extras">
           <div className="menu-item">

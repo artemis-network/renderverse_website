@@ -1,7 +1,8 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 /* eslint-disable react/jsx-no-target-blank */
-import Praneeth from "../../assets/images/team/praneeth-min.jpeg";
-import Chakri from "../../assets/images/team/chakri.jpeg";
-import Akash from "../../assets/images/team/akash.jpeg";
+import Praneeth from "../../assets/images/team/avtar_praneeth.png";
+import Chakri from "../../assets/images/team/avtar_chakri.png";
+import Akash from "../../assets/images/team/avtar_akash.png";
 import Roney from "../../assets/images/team/roney-min.jpeg";
 import Prasanth from "../../assets/images/team/prasanth.png";
 
@@ -16,6 +17,7 @@ const Team = () => {
     {
       name: "Praneeth Nagu",
       role: "Founder / Marketing Lead",
+      size: 188,
       links: [
         {
           link: "53",
@@ -35,6 +37,7 @@ const Team = () => {
     {
       name: "Chakravardhan Reddy",
       role: "Co-Founder / Project Lead",
+      size: 170,
       links: [
         {
           link: "41",
@@ -54,6 +57,8 @@ const Team = () => {
     {
       name: "Akash Madduru",
       role: "Product / Dev Lead",
+
+      size: 170,
       links: [
         {
           link: "https://twitter.com/akash2rockzzz",
@@ -124,7 +129,17 @@ const Team = () => {
           color: "#0b111a",
         }}
       >
-        Our Team
+        <span
+          style={{
+            padding: "0 1rem",
+            background: "#111341",
+            color: "white",
+            margin: "0 .5rem",
+          }}
+        >
+          Meet
+        </span>{" "}
+        the Team
       </div>
       <section className="section">
         <div className="container">
@@ -175,10 +190,11 @@ const Team = () => {
                           borderRadius: "12rem",
                           display: "flex",
                           alignSelf: "center",
+                          margin: "0 2rem",
                         }}
                         src={person.img}
                         alt=""
-                        width={150}
+                        width={person.size}
                       />
                       <div className="py-4">
                         <h6 className="mb-0 text-muted text-center">
@@ -260,9 +276,9 @@ const Team = () => {
                         }}
                         src={person.img}
                         alt=""
-                        width={150}
+                        width={190}
                       />
-                      <div className="py-4">
+                      <div className="">
                         <h6 className="mb-0 text-muted text-center">
                           {person.name}
                         </h6>

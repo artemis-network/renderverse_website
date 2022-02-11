@@ -135,7 +135,7 @@ const RoadMap = () => {
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
-                  Website V1 Launch
+                  Website Launch
                 </div>
               </div>
 
@@ -154,20 +154,6 @@ const RoadMap = () => {
                 </div>
               </div>
 
-              <div className="row mx-4">
-                <div
-                  className="p-3 my-2"
-                  style={{
-                    borderRadius: "2vh",
-                    border: "2px solid #0b1118",
-                    background: "#171b56",
-                    boxShadow:
-                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
-                  }}
-                >
-                  Team Expansion
-                </div>
-              </div>
               <div className="row mx-4">
                 <div
                   className="p-3 my-2 "
@@ -231,6 +217,20 @@ const RoadMap = () => {
                   Smart contracts auditing
                 </div>
               </div>
+              <div className="row mx-4">
+                <div
+                  className="p-3 my-2 "
+                  style={{
+                    borderRadius: "2vh",
+                    border: "2px solid #0b1118",
+                    background: "#171b56",
+                    boxShadow:
+                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
+                  }}
+                >
+                  Platform auditing
+                </div>
+              </div>
             </div>
           </div>
 
@@ -249,7 +249,7 @@ const RoadMap = () => {
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
-                  Website V2 launch
+                  Team Expansion
                 </div>
               </div>
               <div className="row mx-4">

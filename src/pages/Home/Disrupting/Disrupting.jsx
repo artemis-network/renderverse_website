@@ -13,7 +13,19 @@ const Disrupting = () => {
       }}
     >
       <div className="container">
-        <h1 className="font-weight-bold px-4">Renderverse is disrupting a</h1>
+        <h1 className="font-weight-bold px-4">
+          <span
+            style={{
+              background: "white",
+              color: "#0b1118",
+              padding: "0 1rem",
+              margin: "0 .5rem 0 0",
+            }}
+          >
+            Renderverse
+          </span>{" "}
+          is disrupting a
+        </h1>
         <h1 className="font-weight-bold px-4">$800 billion industry</h1>
         <div className="disrupting_row my-4">
           <div
@@ -39,7 +51,7 @@ const Disrupting = () => {
                 </div>
                 <div style={{ fontSize: "1rem", margin: ".25rem 0" }}>
                   RenderPlay aims to develop, contribute and support GameFI with
-                  P2E games.
+                  P2E games
                 </div>
               </div>
             </Tilt>
@@ -68,7 +80,7 @@ const Disrupting = () => {
                 </div>
                 <div style={{ fontSize: "1rem", margin: ".25rem 0" }}>
                   We bring people one step closer to the realm of metaverse and
-                  NFTs with RenderScan and RenderMarket.
+                  NFTs with RenderMarket
                 </div>
               </div>
             </Tilt>
@@ -95,7 +107,8 @@ const Disrupting = () => {
                   E-commerce Merchandise
                 </div>
                 <div style={{ fontSize: "1rem", margin: ".25rem 0" }}>
-                  Shop from a wide range of merchandise with RenderStore
+                  Shop from a wide range of merchandise on our RenderStore
+                  platform
                 </div>
               </div>
             </Tilt>

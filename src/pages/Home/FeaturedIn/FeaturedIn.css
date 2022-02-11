@@ -9,7 +9,7 @@
 @media screen and (max-width: 1366px) {
   .feature_row_1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     row-gap: 4rem;
     column-gap: 4rem;
   }
