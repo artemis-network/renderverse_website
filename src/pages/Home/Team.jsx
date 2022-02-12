@@ -3,7 +3,7 @@
 import Praneeth from "../../assets/images/team/avtar_praneeth.png";
 import Chakri from "../../assets/images/team/avtar_chakri.png";
 import Akash from "../../assets/images/team/avtar_akash.png";
-import Roney from "../../assets/images/team/roney-min.jpeg";
+import Roney from "../../assets/images/team/MicrosoftTeams-image (6).png";
 import Prasanth from "../../assets/images/team/prasanth.png";
 
 import LinkedIn from "../../assets/images/icons/socials/linkedin.svg";
@@ -18,6 +18,7 @@ const Team = () => {
       name: "Praneeth Nagu",
       role: "Founder / Marketing Lead",
       size: 188,
+      margin: "0rem",
       links: [
         {
           link: "53",
@@ -38,6 +39,7 @@ const Team = () => {
       name: "Chakravardhan Reddy",
       role: "Co-Founder / Project Lead",
       size: 170,
+      margin: "0rem",
       links: [
         {
           link: "41",
@@ -59,6 +61,7 @@ const Team = () => {
       role: "Product / Dev Lead",
 
       size: 170,
+      margin: "0rem",
       links: [
         {
           link: "https://twitter.com/akash2rockzzz",
@@ -81,6 +84,7 @@ const Team = () => {
     {
       name: "Roney",
       role: "Product / Design Lead",
+      margin: "2rem",
       links: [
         {
           link: "21",
@@ -100,6 +104,7 @@ const Team = () => {
     {
       name: "Prashanth",
       role: "Blockchain Developer",
+      margin: "0rem",
       links: [
         {
           link: "11",
@@ -190,7 +195,9 @@ const Team = () => {
                           borderRadius: "12rem",
                           display: "flex",
                           alignSelf: "center",
-                          margin: "0 2rem",
+                          marginLeft: "2rem",
+                          marginRight: "2rem",
+                          marginBottom: person.margin,
                         }}
                         src={person.img}
                         alt=""
@@ -230,7 +237,7 @@ const Team = () => {
                         justifyContent: "center",
                         alignItems: "center",
                         columnGap: ".5rem",
-                        margin: "1rem 0",
+                        padding: "1rem 0",
                       }}
                     >
                       <img
@@ -273,6 +280,7 @@ const Team = () => {
                           borderRadius: "12rem",
                           display: "flex",
                           alignSelf: "center",
+                          marginBottom: person.margin,
                         }}
                         src={person.img}
                         alt=""
