@@ -59,6 +59,15 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
+              <Link
+                onClick={toggle}
+                to="/eco-system"
+                className="sub-menu-item item_point"
+              >
+                Eco System
+              </Link>
+            </li>
+            <li>
               <Linker.Link
                 onClick={toggle}
                 to="/news"
@@ -85,15 +94,7 @@ const Navbar = () => {
                 Economics-Paper
               </a>
             </li>
-            <li>
-              <Link
-                onClick={toggle}
-                to="/eco-system"
-                className="sub-menu-item item_point"
-              >
-                Eco System
-              </Link>
-            </li>
+
             <li>
               <Link
                 onClick={toggle}
@@ -137,10 +138,11 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Linker.Link to="/news" className="sub-menu-item item_point">
-                Blog
-              </Linker.Link>
+              <Link to="/eco-system" className="sub-menu-item item_point">
+                Eco System
+              </Link>
             </li>
+
             <li className="has-submenu parent-parent-menu-item">
               <a>Docs</a>
               <span className="menu-arrow"></span>
@@ -165,11 +167,7 @@ const Navbar = () => {
                 </li>
               </ul>
             </li>
-            <li>
-              <Link to="/eco-system" className="sub-menu-item item_point">
-                Eco System
-              </Link>
-            </li>
+
             <li>
               <Link to="/roadmap" className="sub-menu-item item_point">
                 Roadmap
@@ -180,7 +178,11 @@ const Navbar = () => {
                 Team
               </Link>
             </li>
-
+            <li>
+              <Linker.Link to="/news" className="sub-menu-item item_point">
+                Blog
+              </Linker.Link>
+            </li>
             <li>
               <Link to="/contact" className="sub-menu-item item_point">
                 Contact Us

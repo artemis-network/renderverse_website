@@ -1,5 +1,4 @@
-import Action1 from "../../../assets/images/action/Laptop Project (1).png";
-import Action2 from "../../../assets/images/action/Dark=No (2).png";
+import Action1 from "../../../assets/images/action/action_main.png";
 import "./Action.css";
 import { useState, useEffect } from "react";
 
@@ -52,10 +51,6 @@ const Action = () => {
 
   const cols = [
     {
-      url: Action2,
-      class: "",
-    },
-    {
       url: Action1,
       class: "",
     },
@@ -94,7 +89,7 @@ const Action = () => {
             padding: "2rem 0",
           }}
         >
-          <div className="container">
+          <div className="">
             <div
               style={{
                 fontSize: "2rem",
@@ -151,10 +146,18 @@ const Action = () => {
               </div>
             </div>
             {open ? <Modal onRequestClose={toggle}></Modal> : null}
-            <div className="custom_grid" style={{ margin: "5rem 2rem" }}>
+            <div style={{ margin: "5rem 0rem" }}>
               {cols.map((col, index) => {
                 return (
-                  <div className={col.class} key={index}>
+                  <div
+                    className={col.class}
+                    style={{
+                      display: "flex",
+                      alignSelf: "center",
+                      justifySelf: "center",
+                    }}
+                    key={index}
+                  >
                     <img
                       height="auto"
                       width="auto"

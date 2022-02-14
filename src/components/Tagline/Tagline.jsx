@@ -16,36 +16,48 @@ const Tagline = () => {
                   style={{ fontSize: "1.05rem", fontWeight: "bold" }}
                 >
                   <li className="list-inline-item small mb-0">
-                    $RDNV token sale is coming soon
+                    RenderScan app will be available soon on the Google Play
+                    Store and the Apple App Store
                   </li>
                   <li className="list-inline-item small mb-0">
                     <img src={Dot} alt="" height={25} width={25} />
                   </li>
                   <li className="list-inline-item small mb-0">
-                    RenderScan application is coming soon on android play store
-                    and ios app store
+                    In Q2 2022, RenderMarket will be operational.
                   </li>
                   <li className="list-inline-item small mb-0">
                     <img src={Dot} alt="" height={25} width={25} />
                   </li>
                   <li className="list-inline-item small mb-0">
-                    Render marketplace is going live soon
+                    The sale of $RNDV tokens will begin soon.
                   </li>
                   <li className="list-inline-item small mb-0">
                     <img src={Dot} alt="" height={25} width={25} />
                   </li>
                   <li className="list-inline-item small mb-0">
-                    $RDNV token sale is coming soon
+                    RenderFi is going live soon
+                  </li>
+                  <li className="list-inline-item small mb-0">
+                    RenderScan app will be available soon on the Google Play
+                    Store and the Apple App Store
                   </li>
                   <li className="list-inline-item small mb-0">
                     <img src={Dot} alt="" height={25} width={25} />
                   </li>
                   <li className="list-inline-item small mb-0">
-                    RenderScan application is coming soon on android play store
-                    and ios app store
+                    In Q2 2022, RenderMarket will be operational.
                   </li>
                   <li className="list-inline-item small mb-0">
                     <img src={Dot} alt="" height={25} width={25} />
+                  </li>
+                  <li className="list-inline-item small mb-0">
+                    The sale of $RNDV tokens will begin soon.
+                  </li>
+                  <li className="list-inline-item small mb-0">
+                    <img src={Dot} alt="" height={25} width={25} />
+                  </li>
+                  <li className="list-inline-item small mb-0">
+                    RenderFi is going live soon
                   </li>
                 </ul>
               </div>

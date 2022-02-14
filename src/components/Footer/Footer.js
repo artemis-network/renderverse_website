@@ -39,6 +39,10 @@ const Modal = ({ onRequestClose }) => {
     <div className="modal__backdrop">
       <div className="modal__container">
         <Lottie options={{ animationData: Animation, loop: false }} />
+        <h2 style={{ color: "black", textAlign: "center" }}>Thanks!</h2>
+        <h4 style={{ color: "black", textAlign: "center" }}>
+          You're all signed up.
+        </h4>
         <button type="button" className='sbutton' onClick={onRequestClose}>
           Close
         </button>
@@ -84,20 +88,18 @@ const Footer = (props) => {
   const [isModalOpen, setModalIsOpen] = useState(false);
 
   function toggleModal(e) {
-    e.preventDefault()
     setModalIsOpen(!isModalOpen);
   };
 
   const [isModalOpen2, setModalIsOpen2] = useState(false);
 
   function toggleModal2(e) {
-    e.preventDefault()
     setModalIsOpen2(!isModalOpen2);
   };
 
 
   return (
-    <div>
+    <div style={{ padding: "2rem 0" }}>
       <div style={{ display: "flex", height: "16vh", background: "#0b1118" }}></div>
       <footer style={{ backgroundColor: "white" }} >
         <div className='container'>
@@ -291,12 +293,10 @@ const Modal2 = ({ onRequestClose }) => {
   // Use useEffect to add an event listener to the document
   useEffect(() => {
     function onKeyDown(event) {
-      if (event.keyCode === 27) {
-        // Close the modal when the Escape key is pressed
+      if (event.key === "Escape") {
         onRequestClose();
       }
     }
-
     // Prevent scolling
     document.body.style.overflow = "hidden";
     document.addEventListener("keydown", onKeyDown);
@@ -307,6 +307,7 @@ const Modal2 = ({ onRequestClose }) => {
       document.removeEventListener("keydown", onKeyDown);
     };
   });
+
 
   return (
     <div className="modal__backdrop">

@@ -37,17 +37,8 @@
 
 .custom_grid {
   display: grid;
-  grid-template-columns: 2fr 6fr;
-  column-gap: 5rem;
+  margin: 0 2rem;
 }
-
-@media screen and (max-width: 1000px) {
-  .custom_grid {
-    display: grid;
-    grid-template-columns: 3fr 6fr;
-  }
-}
-
 .item_point {
   pointer-events: all;
   cursor: pointer;

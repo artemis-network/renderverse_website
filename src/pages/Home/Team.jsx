@@ -130,7 +130,7 @@ const Team = () => {
           fontSize: "2rem",
           display: "flex",
           justifyContent: "center",
-          padding: "4rem 0 0 0 ",
+          padding: "6rem 0 0 0 ",
           color: "#0b111a",
         }}
       >

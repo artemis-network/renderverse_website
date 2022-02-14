@@ -8,7 +8,7 @@ const Mission = () => {
         className="section"
         style={{
           background: "#ffffff",
-          padding: "0 0 4rem 0",
+          padding: "4rem 0 4rem 0",
         }}
       >
         <div

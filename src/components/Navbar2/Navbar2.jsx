@@ -40,24 +40,14 @@ const Navbar = () => {
         <div style={{ display: open.state, padding: "8rem 0" }}>
           <ul className="navigation-menu nav-right nav-light">
             <li>
-              <Linker.Link
+              <Link
                 onClick={toggle}
                 to="/"
                 className="sub-menu-item item_point"
               >
                 Home
-              </Linker.Link>
+              </Link>
             </li>
-            <li>
-              <Linker.Link
-                onClick={toggle}
-                to="/"
-                className="sub-menu-item item_point"
-              >
-                Mission
-              </Linker.Link>
-            </li>
-
             <li>
               <a
                 href="https://whitepaper.renderverse.io/welcome/introduction"
@@ -72,19 +62,9 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <Linker.Link to="/" className="sub-menu-item item_point">
-                Eco System
-              </Linker.Link>
-            </li>
-            <li>
-              <Linker.Link to="/" className="sub-menu-item item_point">
-                Roadmap
-              </Linker.Link>
-            </li>
-            <li>
-              <Linker.Link to="/" className="sub-menu-item item_point">
-                Team
-              </Linker.Link>
+              <Link to="/contact" className="sub-menu-item item_point">
+                Contact Us
+              </Link>
             </li>
           </ul>
         </div>
@@ -92,14 +72,9 @@ const Navbar = () => {
         <div id="navigation">
           <ul className="navigation-menu nav-right nav-light">
             <li>
-              <Linker.Link to="/" className="sub-menu-item item_point">
+              <Link to="/" className="sub-menu-item item_point">
                 Home
-              </Linker.Link>
-            </li>
-            <li>
-              <Linker.Link to="/" className="sub-menu-item item_point">
-                Mission
-              </Linker.Link>
+              </Link>
             </li>
             <li class="has-submenu parent-parent-menu-item">
               <a href="javascript:void(0)">Docs</a>
@@ -121,19 +96,9 @@ const Navbar = () => {
               </ul>
             </li>
             <li>
-              <Linker.Link to="/" className="sub-menu-item item_point">
-                Eco System
-              </Linker.Link>
-            </li>
-            <li>
-              <Linker.Link to="/" className="sub-menu-item item_point">
-                Roadmap
-              </Linker.Link>
-            </li>
-            <li>
-              <Linker.Link to="/" className="sub-menu-item item_point">
-                Team
-              </Linker.Link>
+              <Link to="/contact" className="sub-menu-item item_point">
+                Contact Us
+              </Link>
             </li>
           </ul>
         </div>

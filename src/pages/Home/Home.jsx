@@ -14,10 +14,14 @@ import Footer from "../../components/Footer/Footer";
 
 import { Element } from "react-scroll";
 
-import React from "react";
+import React, { useEffect } from "react";
 import Tagline from "../../components/Tagline/Tagline";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <Tagline />
@@ -32,8 +36,11 @@ const Home = () => {
         isFeatured={true}
         hasBackers={true}
       />
+
       <Element id="/mission" name="mission">
-        <Mission />
+        <div>
+          <Mission />
+        </div>
       </Element>
 
       <Element id="/eco-system" name="eco-system">
