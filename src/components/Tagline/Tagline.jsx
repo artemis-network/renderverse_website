@@ -38,6 +38,9 @@ const Tagline = () => {
                     RenderFi is going live soon
                   </li>
                   <li className="list-inline-item small mb-0">
+                    <img src={Dot} alt="" height={25} width={25} />
+                  </li>
+                  <li className="list-inline-item small mb-0">
                     RenderScan app will be available soon on the Google Play
                     Store and the Apple App Store
                   </li>

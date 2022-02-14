@@ -1,9 +1,12 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable no-script-url */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Link } from "react-scroll";
 import * as Linker from "react-router-dom";
 import { useState } from "react";
 import Logo from "../../assets/images/logo_noback (1).png";
+
+import PDF from "../../assets/Economics paper.pdf";
 
 const Navbar = () => {
   const [open, setOpen] = useState({ state: "none" });
@@ -50,14 +53,15 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="https://whitepaper.renderverse.io/welcome/introduction"
+                target={"_blank"}
+                href="https://whitepaper.renderverse.io/"
                 class="sub-menu-item item_point"
               >
                 White-Paper
               </a>
             </li>
             <li>
-              <a href="features.html" class="sub-menu-item item_point">
+              <a href={PDF} target={"_blank"} class="sub-menu-item item_point">
                 Economics-Paper
               </a>
             </li>
@@ -82,14 +86,19 @@ const Navbar = () => {
               <ul class="submenu">
                 <li>
                   <a
-                    href="https://whitepaper.renderverse.io/welcome/introduction"
+                    target={"_blank"}
+                    href="https://whitepaper.renderverse.io/"
                     class="sub-menu-item item_point"
                   >
                     White-Paper
                   </a>
                 </li>
                 <li>
-                  <a href="features.html" class="sub-menu-item item_point">
+                  <a
+                    href={PDF}
+                    target={"_blank"}
+                    class="sub-menu-item item_point"
+                  >
                     Economics-Paper
                   </a>
                 </li>

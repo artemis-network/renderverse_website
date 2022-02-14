@@ -248,6 +248,7 @@ const Footer = (props) => {
                     <button className='btn btn-outline-primary'>
                       <span >
                         <a
+                          target={"_blank"}
                           href="https://t.me/renderverse"
                         >
                           <img src={Telegram} height={30} alt="medium" />
@@ -259,6 +260,7 @@ const Footer = (props) => {
                     <button className='btn btn-outline-primary'>
                       <span >
                         <a
+                          target={"_blank"}
                           href="https://twitter.com/teamrenderverse"
                         >
                           <img src={Twitter} height={30} alt="medium" />
