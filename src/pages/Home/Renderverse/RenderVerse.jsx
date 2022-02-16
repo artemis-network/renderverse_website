@@ -67,7 +67,7 @@ const Renderverse = () => {
 
           <div className="custom_button_group">
             <MaskButton to="/token-launch" label="Token Launch" />
-            <SlideButton to="/whitepaper" label="White Paper" />
+            <SlideButton to="/whitepaper" label="Pitch-deck" />
           </div>
         </div>
 
