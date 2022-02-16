@@ -1,4 +1,4 @@
-import Eco from "../../assets/eco.gif";
+import Eco from "../../assets/eco.mp4";
 
 const Features = () => {
   return (
@@ -42,15 +42,20 @@ const Features = () => {
               }}
               className="col-12 mt-4 pt-2"
             >
-              <img
+              <video
                 style={{
                   display: "flex",
                   alignSelf: "center",
                 }}
-                src={Eco}
-                alt="eco-system"
                 className="eco_system"
-              />
+                alt="eco_system"
+                loop
+                muted
+                autoPlay
+                playsInline
+              >
+                <source src={Eco}></source>
+              </video>
             </div>
 
             <div className="col-12 mt-4 pt-2">

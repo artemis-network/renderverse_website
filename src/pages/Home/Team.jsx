@@ -36,7 +36,7 @@ const Team = () => {
       img: Praneeth,
     },
     {
-      name: "Chakravardhan Reddy",
+      name: "D. C. R",
       role: "Co-Founder / Project Lead",
       size: 170,
       margin: "0rem",

@@ -2,6 +2,7 @@ import Store from "../../../assets/images/disrupting/store1.png";
 import Gamming from "../../../assets/images/disrupting/stick1.png";
 import NFT from "../../../assets/images/disrupting/nft1.png";
 import Tilt from "react-parallax-tilt";
+
 import "./Disrupting.css";
 
 const Disrupting = () => {
@@ -35,7 +36,7 @@ const Disrupting = () => {
             data-aos-easing="ease-in-sine"
             className="disrupting_col"
           >
-            <Tilt>
+            <Tilt options={{ scale: 2 }}>
               <img className="disrupting_img" src={Gamming} alt="cool" />
               <div className="disrupting_text">
                 <div style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
@@ -64,7 +65,7 @@ const Disrupting = () => {
             data-aos-easing="ease-in-sine"
             className="disrupting_col"
           >
-            <Tilt>
+            <Tilt options={{ scale: 2 }}>
               <img className="disrupting_img" src={NFT} alt="cool" />
               <div className="disrupting_text">
                 <div style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
@@ -92,7 +93,7 @@ const Disrupting = () => {
             data-aos-easing="ease-in-sine"
             className="disrupting_col"
           >
-            <Tilt>
+            <Tilt options={{ scale: 2 }}>
               <img className="disrupting_img" src={Store} alt="cool" />
               <div className="disrupting_text">
                 <div style={{ fontSize: "2.5rem", fontWeight: "bold" }}>

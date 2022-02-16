@@ -41,6 +41,7 @@ const Renderverse = () => {
         loop
         muted
         playsInline
+        preload
       >
         <source src={Background} type="video/mp4" />
       </video>

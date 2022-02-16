@@ -45,8 +45,8 @@
 }
 
 .eco_system {
-  height: auto;
-  width: auto;
+  height: 50%;
+  width: 50%;
 }
 
 @media screen and (max-width: 800px) {
