@@ -99,7 +99,7 @@ const Footer = (props) => {
 
 
   return (
-    <div style={{ padding: "2rem 0" }}>
+    <div style={{ background: "white" }}>
       <div style={{ display: "flex", height: "16vh", background: "#0b1118" }}></div>
       <footer style={{ backgroundColor: "white" }} >
         <div className='container'>

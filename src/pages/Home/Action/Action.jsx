@@ -1,4 +1,4 @@
-import Action1 from "../../../assets/images/action/action_1.png";
+import Action1 from "../../../assets/images/action/action_2.png";
 import "./Action.css";
 import { useState, useEffect } from "react";
 

@@ -49,10 +49,10 @@ const Features = () => {
                 }}
                 className="eco_system"
                 alt="eco_system"
-                loop
                 muted
-                autoPlay
                 playsInline
+                autoPlay
+                loop
               >
                 <source src={Eco}></source>
               </video>
