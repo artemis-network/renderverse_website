@@ -38,10 +38,10 @@ const Renderverse = () => {
           zIndex: -1,
         }}
         ref={video}
+        autoPlay
         loop
         muted
         playsInline
-        preload
       >
         <source src={Background} type="video/mp4" />
       </video>
