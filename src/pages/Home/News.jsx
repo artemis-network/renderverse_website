@@ -6,14 +6,14 @@ import Footer from "../../components/Footer/Footer";
 import { useEffect } from "react";
 import { Element } from "react-scroll";
 
-import News1 from "../../assets/images/news/m1.png";
-import News2 from "../../assets/images/news/m2.jpg";
+import News1 from "../../assets/images/news/m1.webp";
+import News2 from "../../assets/images/news/m2.webp";
 import News4 from "../../assets/images/news/m4.webp";
-import News5 from "../../assets/images/news/m5.png";
-import News6 from "../../assets/images/news/m6.png";
+import News5 from "../../assets/images/news/m5.webp";
+import News6 from "../../assets/images/news/m6.webp";
 
-import News8 from "../../assets/images/news/m7.jpg";
-import News9 from "../../assets/images/news/m8.png";
+import News8 from "../../assets/images/news/m7.webp";
+import News9 from "../../assets/images/news/m8.webp";
 
 const blog = [
   {

@@ -2,9 +2,9 @@ import Wave from "react-wavify";
 import { Link } from "react-router-dom";
 import LinkTwo, { Element } from "react-scroll";
 
-import Logo from "../../assets/images/logo_noback (1).png";
+import Logo from "../../assets/images/logo.webp";
 
-import Video from "../../assets/videos/final.mp4";
+import Video from "../../assets/videos/final.webm";
 import Imag from "../../assets/images/icons/footer/medium.svg";
 
 import Footer from "../../components/Footer/Footer";

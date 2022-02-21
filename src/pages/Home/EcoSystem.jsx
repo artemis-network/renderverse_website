@@ -1,4 +1,4 @@
-import Eco from "../../assets/eco.mp4";
+import Eco from "../../assets/videos/eco.webm";
 
 const Features = () => {
   return (

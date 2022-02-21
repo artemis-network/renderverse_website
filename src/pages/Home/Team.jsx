@@ -1,10 +1,10 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 /* eslint-disable react/jsx-no-target-blank */
-import Praneeth from "../../assets/images/team/avtar_praneeth.png";
-import Chakri from "../../assets/images/team/avtar_chakri.png";
-import Akash from "../../assets/images/team/avtar_akash.png";
-import Roney from "../../assets/images/team/MicrosoftTeams-image (6).png";
-import Prasanth from "../../assets/images/team/prasanth.png";
+import Praneeth from "../../assets/images/team/avtar_praneeth.webp";
+import Chakri from "../../assets/images/team/avtar_chakri.webp";
+import Akash from "../../assets/images/team/avtar_akash.webp";
+import Roney from "../../assets/images/team/roney.webp";
+import Prasanth from "../../assets/images/team/prasanth.webp";
 
 import LinkedIn from "../../assets/images/icons/socials/linkedin.svg";
 import Mail from "../../assets/images/icons/socials/mail.svg";

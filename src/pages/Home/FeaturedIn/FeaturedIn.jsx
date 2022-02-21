@@ -1,10 +1,10 @@
-import Image1 from "../../../assets/images/backers/cointelegraph_press.png";
-import Image2 from "../../../assets/images/backers/investing_press.png";
-import Image3 from "../../../assets/images/backers/yahoo_press.png";
-import Image4 from "../../../assets/images/backers/coindesk_press.png";
+import Image1 from "../../../assets/images/backers/cointelegraph_press.webp";
+import Image2 from "../../../assets/images/backers/investing_press.webp";
+import Image3 from "../../../assets/images/backers/yahoo_press.webp";
+import Image4 from "../../../assets/images/backers/coindesk_press.webp";
 
-import Image8 from "../../../assets/images/backers/cryptobriefing_press.png";
-import Image9 from "../../../assets/images/backers/blockonomi_press.png";
+import Image8 from "../../../assets/images/backers/cryptobriefing_press.webp";
+import Image9 from "../../../assets/images/backers/blockonomi_press.webp";
 
 import Wave from "react-wavify";
 

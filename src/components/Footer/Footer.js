@@ -1,8 +1,8 @@
 /* eslint-disable react/jsx-no-target-blank */
 import './Footer.css'
-import Blog from '../../assets/images/footer/clipboard-min.png'
-import Announcement from '../../assets/images/footer/announcement-min.png'
-import Support from '../../assets/images/footer/feedback-message-min.png'
+import Blog from '../../assets/images/footer/clipboard-min.webp'
+import Announcement from '../../assets/images/footer/announcement-min.webp'
+import Support from '../../assets/images/footer/feedback-message-min.webp'
 
 import Medium from '../../assets/images/icons/footer/medium.svg'
 import Instagram from '../../assets/images/icons/footer/instagram.svg'

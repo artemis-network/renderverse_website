@@ -1,5 +1,5 @@
-import MissionPNG from "../../assets/images/mission/virtual-reality-experience-min.jpg";
-import Product from "../../assets/images/mission/hand-min.png";
+import MissionPNG from "../../assets/images/mission/virtual-reality-experience-min.webp";
+import Product from "../../assets/images/mission/hand-min.webp";
 
 const Mission = () => {
   return (

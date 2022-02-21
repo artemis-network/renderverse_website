@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import * as Linker from "react-router-dom";
 import PDF from "../../assets/Economics paper.pdf";
 import { useState } from "react";
-import Logo from "../../assets/images/logo_noback (1).png";
+import Logo from "../../assets/images/logo.webp";
 
 const Navbar = () => {
   const [open, setOpen] = useState({ state: "none" });

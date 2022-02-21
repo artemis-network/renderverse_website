@@ -14,7 +14,7 @@
 }
 
 .bg-img {
-  background: url("./assets/images/token_background.png");
+  background: url("./assets/images/token_background.webp");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;

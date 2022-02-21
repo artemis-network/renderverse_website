@@ -4,7 +4,7 @@ import React from "react";
 
 import { Link } from "react-scroll";
 
-import Background from "../../../assets/videos/final.mp4";
+import Background from "../../../assets/videos/final.webm";
 import Telegram from "../../../assets/images/renderverse/telegram.svg";
 import Twitter from "../../../assets/images/renderverse/twitter.svg";
 import Medium from "../../../assets/images/renderverse/medium.svg";
@@ -122,7 +122,7 @@ const Renderverse = () => {
                     display: "block",
                     position: "absolute",
                     left: "50%",
-                    transform: "translate(-50%, -10%)",
+                    transform: "translate(-50%, -20%)",
                   }}
                 >
                   <img
