@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { BrowserRouter, } from 'react-router-dom'
 import { Route, Switch } from "react-router";
 import NFT from './redirects/Nfts'
 import Swap from './redirects/Swap'
-
+import Loader from './components/Loader/Loader'
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -26,7 +26,9 @@ const App = () => {
     <div >
       <BrowserRouter>
         <Switch>
-          <Route component={Home} exact path={"/"} />
+          <Suspense fallback={Loader}>
+            <Route component={Home} exact path={"/"} />
+          </Suspense>
           <Route component={Token} exact path={"/token-launch"} />
           <Route component={Swap} exact path={"/sale"} />
           <Route component={NFT} exact path={"/nft-market-place"} />
