@@ -4,7 +4,7 @@ import LinkTwo, { Element } from "react-scroll";
 
 import Logo from "../../assets/images/logo.webp";
 
-import Video from "../../assets/videos/final.webm";
+import Video from "../../assets/final.mp4";
 import Imag from "../../assets/images/icons/footer/medium.svg";
 
 import Footer from "../../components/Footer/Footer";

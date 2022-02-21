@@ -4,7 +4,7 @@ import React from "react";
 
 import { Link } from "react-scroll";
 
-import Background from "../../../assets/videos/final.webm";
+import Background from "../../../assets/final.mp4";
 import Telegram from "../../../assets/images/renderverse/telegram.svg";
 import Twitter from "../../../assets/images/renderverse/twitter.svg";
 import Medium from "../../../assets/images/renderverse/medium.svg";
