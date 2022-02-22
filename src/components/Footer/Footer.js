@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 /* eslint-disable react/jsx-no-target-blank */
 import './Footer.css'
 import Blog from '../../assets/images/footer/clipboard-min.webp'
@@ -63,7 +64,13 @@ const Footer = (props) => {
 
 
   function onEmailChange(e) {
+    console.log(e.target.value)
     setEmail({ value: e.target.value })
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)) {
+      setMessage({ message: "" })
+    } else {
+      setMessage({ message: "Invalid Email Format" })
+    }
   }
 
 
@@ -73,24 +80,29 @@ const Footer = (props) => {
       setMessage({ message: "*Required" })
     }
     else {
-      setMessage({ message: "" })
-      setEmail({ value: "" })
-      toggleModal(e)
-      const url = 'https://formspree.io/f/mzboewek'
-      const data = { email: email.value, message: "hello" }
-      fetch(url, {
-        method: 'POST', // *GET, POST, PUT, DELETE, etc.
-        mode: 'no-cors', // no-cors, *cors, same-origin
-        cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-        credentials: 'same-origin', // include, *same-origin, omit
-        headers: {
-          'Content-Type': 'application/json'
-          // 'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        redirect: 'follow', // manual, *follow, error
-        referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-        body: JSON.stringify(data) // body data type must match "Content-Type" header
-      }).then((res => console.log(res))).catch(err => console.log(err))
+      const isValidEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)
+      if (isValidEmail) {
+        setMessage({ message: "" })
+        setEmail({ value: "" })
+        toggleModal(e)
+        const url = 'https://formspree.io/f/mzboewek'
+        const data = { email: email.value, message: "hello" }
+        fetch(url, {
+          method: 'POST', // *GET, POST, PUT, DELETE, etc.
+          mode: 'no-cors', // no-cors, *cors, same-origin
+          cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+          credentials: 'same-origin', // include, *same-origin, omit
+          headers: {
+            'Content-Type': 'application/json'
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          redirect: 'follow', // manual, *follow, error
+          referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+          body: JSON.stringify(data) // body data type must match "Content-Type" header
+        }).then((res => console.log(res))).catch(err => console.log(err))
+      } else {
+        setMessage({ message: "Invalid Email Format" })
+      }
     }
 
   }
@@ -172,6 +184,7 @@ const Footer = (props) => {
                   <div className='col-lg-12 col-md-12 col-12' >
                     <div style={{ display: "flex", justifyContent: "center", flexDirection: 'row', columnGap: "1rem" }}>
                       <input required
+                        type="email"
                         onChange={(e) => onEmailChange(e)} className='form-control' style={{ padding: "1rem", fontSize: "1rem", background: "white", borderRadius: "4vh" }} placeholder="Enter your email" />
                       <button onClick={(e) => postData(e)} style={{ borderRadius: "4vh", }} className="btn btn-secondary ">Submit</button>
                     </div>
