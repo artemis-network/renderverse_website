@@ -59,6 +59,7 @@ const Modal = ({ onRequestClose }) => {
 const Footer = (props) => {
 
   const [email, setEmail] = useState({ value: "" })
+  const [message, setMessage] = useState({ message: "" })
 
 
   function onEmailChange(e) {
@@ -67,22 +68,31 @@ const Footer = (props) => {
 
 
   function postData(e) {
-    toggleModal(e)
-    const url = 'https://formspree.io/f/mzboewek'
-    const data = { email: email.value, message: "hello" }
-    fetch(url, {
-      method: 'POST', // *GET, POST, PUT, DELETE, etc.
-      mode: 'no-cors', // no-cors, *cors, same-origin
-      cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: 'same-origin', // include, *same-origin, omit
-      headers: {
-        'Content-Type': 'application/json'
-        // 'Content-Type': 'application/x-www-form-urlencoded',
-      },
-      redirect: 'follow', // manual, *follow, error
-      referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-      body: JSON.stringify(data) // body data type must match "Content-Type" header
-    }).then((res => console.log(res))).catch(err => console.log(err))
+    setMessage({ message: "" })
+    if (email.value === null || email.value === undefined || email.value === "") {
+      setMessage({ message: "*Required" })
+    }
+    else {
+      setMessage({ message: "" })
+      setEmail({ value: "" })
+      toggleModal(e)
+      const url = 'https://formspree.io/f/mzboewek'
+      const data = { email: email.value, message: "hello" }
+      fetch(url, {
+        method: 'POST', // *GET, POST, PUT, DELETE, etc.
+        mode: 'no-cors', // no-cors, *cors, same-origin
+        cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+        credentials: 'same-origin', // include, *same-origin, omit
+        headers: {
+          'Content-Type': 'application/json'
+          // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        redirect: 'follow', // manual, *follow, error
+        referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+        body: JSON.stringify(data) // body data type must match "Content-Type" header
+      }).then((res => console.log(res))).catch(err => console.log(err))
+    }
+
   }
 
   const [isModalOpen, setModalIsOpen] = useState(false);
@@ -117,10 +127,20 @@ const Footer = (props) => {
                 required
                 onChange={(e) => onEmailChange(e)}
                 className='form-control'
-                style={{ padding: "1rem", fontSize: "1rem", background: "white", borderRadius: "4vh" }}
+                style={{ padding: "1rem 0 0 0", fontSize: "1rem", background: "white", borderRadius: "4vh" }}
                 type="email"
                 placeholder="Enter your email" />
-              <div style={{ color: "#0b1118", fontSize: ".9rem", padding: ".5rem 1rem" }}>By entering your email, you agree to get our emails.</div>
+              <div style={{ fontSize: ".9rem", padding: ".5rem 1rem" }}>
+
+                <div style={{ display: "flex", flexDirection: "column" }}>
+                  <div style={{ color: "#EF6D6D" }}>
+                    {message.message}
+                  </div>
+                  <div style={{ color: "#0b1118" }}>
+                    By entering your email, you agree to get our emails.
+                  </div>
+                </div>
+              </div>
               <div style={{ display: 'flex', flexDirection: "column", justifyContent: 'center' }}>
                 <button onClick={(e) => postData(e)} style={{ borderRadius: "5vh", }} className="btn btn-secondary ">Submit</button>
               </div>
@@ -155,7 +175,14 @@ const Footer = (props) => {
                         onChange={(e) => onEmailChange(e)} className='form-control' style={{ padding: "1rem", fontSize: "1rem", background: "white", borderRadius: "4vh" }} placeholder="Enter your email" />
                       <button onClick={(e) => postData(e)} style={{ borderRadius: "4vh", }} className="btn btn-secondary ">Submit</button>
                     </div>
-                    <div style={{ color: "#0b1118", fontSize: ".9rem", padding: ".5rem 1rem" }}>By entering your email, you agree to get our emails.</div>
+                    <div style={{ display: "flex", flexDirection: "column", padding: ".25rem .5rem" }}>
+                      <div style={{ color: "#EF6D6D" }}>
+                        {message.message}
+                      </div>
+                      <div style={{ color: "#0b1118" }}>
+                        By entering your email, you agree to get our emails.
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
