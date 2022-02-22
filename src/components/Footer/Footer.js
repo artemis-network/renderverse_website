@@ -66,7 +66,7 @@ const Footer = (props) => {
   function onEmailChange(e) {
     console.log(e.target.value)
     setEmail({ value: e.target.value })
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)) {
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{1,3})+$/.test(email.value)) {
       setMessage({ message: "" })
     } else {
       setMessage({ message: "Invalid Email Format" })
