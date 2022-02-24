@@ -139,7 +139,7 @@ const Footer = (props) => {
                 required
                 onChange={(e) => onEmailChange(e)}
                 className='form-control'
-                style={{ padding: "1rem 0 0 0", fontSize: "1rem", background: "white", borderRadius: "4vh" }}
+                style={{ padding: "1rem", fontSize: "1rem", background: "white", borderRadius: "4vh" }}
                 type="email"
                 placeholder="Enter your email" />
               <div style={{ fontSize: ".9rem", padding: ".5rem 1rem" }}>
@@ -219,27 +219,25 @@ const Footer = (props) => {
               <div className='container'>
                 <div className='row justify-content-center p-2'>
                   <div className='col-6' style={{ justifyContent: "center", display: "flex" }}>
-                    <button className='btn btn-outline-primary'>
-                      <span >
-                        <a
-                          href="https://t.me/renderversechat"
-                          target={"_blank"}
-                        >
-                          <img src={Telegram} height={30} alt="medium" />
-                        </a>
-                      </span>
-                    </button>
+                    <span >
+                      <a
+                        className='btn btn-outline-primary'
+                        href="https://t.me/renderversechat"
+                        target={"_blank"}
+                      >
+                        <img src={Telegram} height={30} alt="medium" />
+                      </a>
+                    </span>
                   </div>
                   <div className='col-6' style={{ justifyContent: "center", display: "flex" }}>
-                    <button className='btn btn-outline-primary'>
-                      <span >
-                        <a
-                          href="https://instagram.com/teamrenderverse"
-                          target={"_blank"}>
-                          <img src={Instagram} height={30} alt="instagram" />
-                        </a>
-                      </span>
-                    </button>
+                    <span >
+                      <a
+                        className='btn btn-outline-primary'
+                        href="https://instagram.com/teamrenderverse"
+                        target={"_blank"}>
+                        <img src={Instagram} height={30} alt="instagram" />
+                      </a>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -257,17 +255,14 @@ const Footer = (props) => {
               <div className='p-2' style={{ color: "#0b1118", textAlign: 'center' }}> In our Medium blog, you can learn about new features, partnerships, and monthly updates.</div>
               <div className='container'>
                 <div className='row justify-content-center p-2 mb-2'>
-                  <button className='btn btn-outline-primary'>
-                    <span >
-                      <a
-                        href="https://renderverse.medium.com/"
-                        target={"_blank"}
-                      >
-                        <img src={Medium} height={30} alt="medium" />
-                      </a>
-                    </span>
+                  <a
+                    className='btn btn-outline-primary'
+                    href="https://renderverse.medium.com/"
+                    target={"_blank"}
+                  >
+                    <img src={Medium} height={30} alt="medium" />
                     <span className='mx-2'>Medium</span>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -285,28 +280,23 @@ const Footer = (props) => {
               <div className='container'>
                 <div className='row justify-content-center p-2'>
                   <div className='col-6' style={{ justifyContent: "center", display: "flex" }}>
-                    <button className='btn btn-outline-primary'>
-                      <span >
-                        <a
-                          target={"_blank"}
-                          href="https://t.me/renderverse"
-                        >
-                          <img src={Telegram} height={30} alt="medium" />
-                        </a>
-                      </span>
-                    </button>
+                    <a
+                      className='btn btn-outline-primary'
+                      target={"_blank"}
+                      href="https://t.me/renderverse"
+                    >
+                      <img src={Telegram} height={30} alt="medium" />
+                    </a>
                   </div>
                   <div className='col-6' style={{ justifyContent: "center", display: "flex" }}>
-                    <button className='btn btn-outline-primary'>
-                      <span >
-                        <a
-                          target={"_blank"}
-                          href="https://twitter.com/teamrenderverse"
-                        >
-                          <img src={Twitter} height={30} alt="medium" />
-                        </a>
-                      </span>
-                    </button>
+                    <a
+
+                      className='btn btn-outline-primary'
+                      target={"_blank"}
+                      href="https://twitter.com/teamrenderverse"
+                    >
+                      <img src={Twitter} height={30} alt="medium" />
+                    </a>
                   </div>
                 </div>
               </div>

@@ -6,9 +6,9 @@ import Akash from "../../assets/images/team/avtar_akash.webp";
 import Roney from "../../assets/images/team/roney.webp";
 import Prasanth from "../../assets/images/team/prasanth.webp";
 
-import LinkedIn from "../../assets/images/icons/socials/linkedin.svg";
-import Mail from "../../assets/images/icons/socials/mail.svg";
-import Twitter from "../../assets/images/icons/socials/twitter.svg";
+import LinkedIn from "../../assets/images/icons/socials/linkedin.webp";
+import Mail from "../../assets/images/icons/socials/email.webp";
+import Twitter from "../../assets/images/icons/socials/twitter.webp";
 
 import Tilt from "react-parallax-tilt";
 
@@ -18,19 +18,16 @@ const Team = () => {
       name: "Praneeth Nagu",
       role: "Founder / Marketing Lead",
       size: 188,
-      margin: "0rem",
       links: [
-        {
-          link: "53",
-          icon: Twitter,
-        },
         {
           link: "https://www.linkedin.com/in/praneethnagu/",
           icon: LinkedIn,
+          size: "40",
         },
         {
-          link: "51",
+          link: "mailto:praneeth@artemisnetwork.io",
           icon: Mail,
+          size: "40",
         },
       ],
       img: Praneeth,
@@ -39,19 +36,16 @@ const Team = () => {
       name: "D. C. R",
       role: "Co-Founder / Project Lead",
       size: 170,
-      margin: "0rem",
       links: [
         {
-          link: "41",
+          link: "https://twitter.com/dcr_dev",
           icon: Twitter,
+          size: "40",
         },
         {
-          link: "https://www.linkedin.com/in/chakravardhan/",
-          icon: LinkedIn,
-        },
-        {
-          link: "42",
+          link: "mailto:dcr@artemisnetwork.io",
           icon: Mail,
+          size: "40",
         },
       ],
       img: Chakri,
@@ -61,19 +55,16 @@ const Team = () => {
       role: "Product / Dev Lead",
 
       size: 170,
-      margin: "0rem",
       links: [
-        {
-          link: "https://twitter.com/akash2rockzzz",
-          icon: Twitter,
-        },
         {
           link: "https://www.linkedin.com/in/akashmrc98/",
           icon: LinkedIn,
+          size: "40",
         },
         {
-          link: "31",
+          link: "mailto:akashm@artemisnetwork.io",
           icon: Mail,
+          size: "40",
         },
       ],
       img: Akash,
@@ -85,18 +76,17 @@ const Team = () => {
       name: "Roney",
       role: "Product / Design Lead",
       margin: "2rem",
+      size: 170,
       links: [
-        {
-          link: "21",
-          icon: Twitter,
-        },
         {
           link: "https://www.linkedin.com/in/roney-antony-41501891/",
           icon: LinkedIn,
+          size: "40",
         },
         {
-          link: "23",
+          link: "mailto:roney@artmeisnetwork.io",
           icon: Mail,
+          size: "40",
         },
       ],
       img: Roney,
@@ -105,18 +95,12 @@ const Team = () => {
       name: "Prashanth",
       role: "Blockchain Developer",
       margin: "0rem",
+      size: 170,
       links: [
         {
-          link: "11",
-          icon: Twitter,
-        },
-        {
-          link: "12",
-          icon: LinkedIn,
-        },
-        {
-          link: "13",
+          link: "mailto:prashanth@artemisnetwork.io",
           icon: Mail,
+          size: "40",
         },
       ],
       img: Prasanth,
@@ -157,65 +141,67 @@ const Team = () => {
             {coreTeam.map((person, index) => {
               return (
                 <div key={index} className="col-lg-3 col-md-3 col-12">
-                  <Tilt>
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        columnGap: ".5rem",
-                        margin: "1rem 0",
-                      }}
-                    >
-                      {person.links.map((link) => {
-                        return (
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      columnGap: ".5rem",
+                      margin: "1rem 0",
+                    }}
+                  >
+                    {person.links.map((link) => {
+                      return (
+                        <Tilt>
                           <a href={link.link} key={link.link} target={"_blank"}>
                             <img
                               src={link.icon}
-                              height={35}
-                              width={35}
+                              width={link.size}
                               style={{
                                 boxShadow: "1px 1px 12px solid gray",
                               }}
                               alt="im1"
                             ></img>
                           </a>
-                        );
-                      })}
-                    </div>
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        flexDirection: "column",
-                      }}
-                    >
+                        </Tilt>
+                      );
+                    })}
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      flexDirection: "column",
+                    }}
+                  >
+                    <Tilt>
                       <img
                         style={{
                           borderRadius: "12rem",
                           display: "flex",
                           alignSelf: "center",
-                          marginLeft: "2rem",
-                          marginRight: "2rem",
-                          marginBottom: person.margin,
+                          margin: "auto",
                         }}
                         src={person.img}
                         alt=""
                         width={person.size}
                       />
-                      <div className="py-4">
-                        <h6 className="mb-0 text-muted text-center">
-                          {person.name}
-                        </h6>
-                        <h6
-                          className="text-muted mb-0 text-center"
-                          style={{ fontWeight: "bold" }}
-                        >
-                          {person.role}
-                        </h6>
-                      </div>
+                    </Tilt>
+                    <div className="py-4">
+                      <h6
+                        className="mb-0  text-center"
+                        style={{ color: "#0b1118" }}
+                      >
+                        {person.name}
+                      </h6>
+                      <h6
+                        className="mb-0 text-center"
+                        style={{ fontWeight: "bold", color: "#0b1118" }}
+                      >
+                        {person.role}
+                      </h6>
                     </div>
-                  </Tilt>
+                  </div>
                 </div>
               );
             })}
@@ -230,75 +216,65 @@ const Team = () => {
             {team.map((person, index) => {
               return (
                 <div key={index} className="col-lg-3 col-md-3 col-12">
-                  <Tilt>
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        columnGap: ".5rem",
-                        padding: "1rem 0",
-                      }}
-                    >
-                      <img
-                        src={Twitter}
-                        height={35}
-                        width={35}
-                        style={{
-                          boxShadow: "1px 1px 12px solid gray",
-                        }}
-                        alt="im1"
-                      ></img>
-                      <img
-                        src={LinkedIn}
-                        height={35}
-                        width={35}
-                        style={{
-                          boxShadow: "1px 1px 12px solid gray",
-                        }}
-                        alt="im1"
-                      ></img>
-                      <img
-                        src={Mail}
-                        height={35}
-                        width={35}
-                        style={{
-                          boxShadow: "1px 1px 12px solid gray",
-                        }}
-                        alt="im1"
-                      ></img>
-                    </div>
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        flexDirection: "column",
-                      }}
-                    >
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      columnGap: ".5rem",
+                      padding: "1rem 0",
+                    }}
+                  >
+                    {person.links.map((link) => {
+                      return (
+                        <Tilt>
+                          <a href={link.link} key={link.link} target={"_blank"}>
+                            <img
+                              src={link.icon}
+                              width={link.size}
+                              alt="im1"
+                            ></img>
+                          </a>
+                        </Tilt>
+                      );
+                    })}
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      flexDirection: "column",
+                    }}
+                  >
+                    <Tilt>
                       <img
                         style={{
                           borderRadius: "12rem",
                           display: "flex",
                           alignSelf: "center",
-                          marginBottom: person.margin,
+                          margin: "auto",
+                          paddingBottom: person.margin,
                         }}
                         src={person.img}
                         alt=""
                         width={190}
                       />
-                      <div className="">
-                        <h6 className="mb-0 text-muted text-center">
-                          {person.name}
-                        </h6>
-                        <h6
-                          className="text-muted mb-0 text-center"
-                          style={{ fontWeight: "bold" }}
-                        >
-                          {person.role}
-                        </h6>
-                      </div>
+                    </Tilt>
+                    <div className="">
+                      <h6
+                        className="mb-0 text-center"
+                        style={{ color: "#0b1118" }}
+                      >
+                        {person.name}
+                      </h6>
+                      <h6
+                        className="mb-0 text-center"
+                        style={{ fontWeight: "bold", color: "#0b1118" }}
+                      >
+                        {person.role}
+                      </h6>
                     </div>
-                  </Tilt>
+                  </div>
                 </div>
               );
             })}

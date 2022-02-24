@@ -1,10 +1,10 @@
-import Wave from "react-wavify";
+// import Wave from "react-wavify";
 import { Link } from "react-router-dom";
 import LinkTwo, { Element } from "react-scroll";
 
 import Logo from "../../assets/images/logo.webp";
 
-import Video from "../../assets/final.mp4";
+// import Video from "../../assets/final.mp4";
 import Imag from "../../assets/images/icons/footer/medium.svg";
 
 import Footer from "../../components/Footer/Footer";
@@ -81,14 +81,14 @@ const Token = () => {
                     Home
                   </LinkTwo.Link>
                 </li>
-                <li>
+                {/* <li>
                   <LinkTwo.Link
                     to="how-to-buy"
                     className="sub-menu-item item_point"
                   >
                     How-to-buy
                   </LinkTwo.Link>
-                </li>
+                </li> */}
                 <li>
                   <LinkTwo.Link
                     to="testimonials"
@@ -210,23 +210,13 @@ const Token = () => {
               </div>
 
               <h3 style={{ margin: "1rem 0" }}>Contact Address</h3>
-              <p>0xa38898a4ae982cb0131104a6746f77fa0da57aaa</p>
+              <p>&#60; To be updated soon &#62; </p>
             </div>
           </div>
         </Element>
       </div>
-      <Wave
-        paused={false}
-        fill="white"
-        options={{
-          height: 25,
-          amplitude: 25,
-          speed: 0.35,
-          points: 3,
-        }}
-      />
 
-      <Element name="how-to-buy">
+      {/* <Element name="how-to-buy">
         <div
           style={{
             padding: "4rem 0",
@@ -254,10 +244,10 @@ const Token = () => {
             </div>
           </h2>
         </div>
-      </Element>
+      </Element> */}
 
       <Element id="testimonials" name="testimonails">
-        <div style={{ padding: "4rem 2rem", background: "#0b1118" }}>
+        <div style={{ padding: "12rem 2rem", background: "#0b1118" }}>
           <h2 style={{ textAlign: "center" }}>Testimonials</h2>
           <div
             className="container"

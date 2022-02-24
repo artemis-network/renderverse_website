@@ -8,3 +8,11 @@ html {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
 }
+
+.glass-morphism {
+  backdrop-filter: blur(7px) saturate(180%);
+  -webkit-backdrop-filter: blur(7px) saturate(180%);
+  background-color: rgba(22, 22, 22, 0.7);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
