@@ -5,6 +5,7 @@ import * as Linker from "react-router-dom";
 import PDF from "../../assets/Economics paper.pdf";
 import { useState } from "react";
 import Logo from "../../assets/images/logo.webp";
+import PDF_1 from "../../assets/images/Pitch Deck.pdf";
 
 const Navbar = () => {
   const [open, setOpen] = useState({ state: "none" });
@@ -13,7 +14,6 @@ const Navbar = () => {
     if (open.state === "block") setOpen({ state: "none" });
     else setOpen({ state: "block" });
   }
-
   return (
     <header id="topnav" className="defaultscroll sticky tagline-height">
       <div className="container">
@@ -96,6 +96,16 @@ const Navbar = () => {
             </li>
 
             <li>
+              <a
+                target={"_blank"}
+                href={PDF_1}
+                className="sub-menu-item item_point"
+              >
+                Pitch-Deck
+              </a>
+            </li>
+
+            <li>
               <Link
                 onClick={toggle}
                 to="/roadmap"
@@ -163,6 +173,15 @@ const Navbar = () => {
                     className="sub-menu-item item_point"
                   >
                     Economics-Paper
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target={"_blank"}
+                    href={PDF_1}
+                    className="sub-menu-item item_point"
+                  >
+                    Pitch-Deck
                   </a>
                 </li>
               </ul>

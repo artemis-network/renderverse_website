@@ -1,11 +1,10 @@
 /* eslint-disable react/jsx-no-target-blank */
 import "./SlideButton.css";
 import React from "react";
-import PDF from "../../assets/images/Pitch Deck.pdf";
 
 const SlideButton = (props) => {
   function goto() {
-    window.open(PDF, "_blank");
+    window.open("https://play.renderverse.io", "_blank");
   }
 
   return (
