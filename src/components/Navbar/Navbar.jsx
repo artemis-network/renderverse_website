@@ -5,7 +5,7 @@ import * as Linker from "react-router-dom";
 import PDF from "../../assets/Economics paper.pdf";
 import { useState } from "react";
 import Logo from "../../assets/images/logo.webp";
-import PDF_1 from "../../assets/images/Pitch Deck.pdf";
+import PDF_1 from "../../assets/Pitch Deck.pdf";
 
 const Navbar = () => {
   const [open, setOpen] = useState({ state: "none" });
