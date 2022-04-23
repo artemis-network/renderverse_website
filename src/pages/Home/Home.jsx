@@ -56,9 +56,6 @@ const Home = () => {
           <EcoSystem />
         </Suspense>
         <Suspense fallback={Loader}>
-          <Action />
-        </Suspense>
-        <Suspense fallback={Loader}>
           <Disrupting />
         </Suspense>
         <Suspense fallback={Loader}>

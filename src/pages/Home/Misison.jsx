@@ -154,7 +154,7 @@ const Mission = () => {
                   of its economy, Project Renderverse is conquering the
                   metaverse by storm. Our state-of-the-art models enable users
                   to transform real-world items into high-quality NFTs. Users
-                  can exchange NFTs, purchase merchandise, and play P2E games on
+                  can mint NFTs, purchase merchandise, and play P2E games on
                   Renderverse ecosystem.
                 </div>
               </div>

@@ -26,7 +26,7 @@ const RoadMap = () => {
       >
         <div className="row justify-content-center p-3 rounded-top">
           <div className="col-lg-4 col-md-12 justify-content-center col-12">
-            <h2 className="text-center my-4 road_map_text_colors">Q4 2021</h2>
+            <h2 className="text-center my-4 road_map_text_colors">Q1 2022</h2>
             <div className="hide_border">
               <h4 className="my-2 road_map_text_colors">Ideation</h4>
               <div className="row mx-4">
@@ -40,7 +40,7 @@ const RoadMap = () => {
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
-                  Core team formation
+                  Feasibility study
                 </div>
               </div>
               <div className="row mx-4">
@@ -54,7 +54,7 @@ const RoadMap = () => {
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
-                  Market research
+                  Core team formation
                 </div>
               </div>
               <div className="row mx-4">
@@ -71,6 +71,20 @@ const RoadMap = () => {
                   Business Model Validation
                 </div>
               </div>
+              <div className="row mx-4">
+                <div
+                  className="p-3 my-2 "
+                  style={{
+                    borderRadius: "2vh",
+                    border: "2px solid #0b1118",
+                    background: "#171b56",
+                    boxShadow:
+                      "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
+                  }}
+                >
+                  Mockup design
+                </div>
+              </div>
 
               <h4 className="my-2 road_map_text_colors">Product Development</h4>
               <div className="row mx-4">
@@ -84,7 +98,7 @@ const RoadMap = () => {
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
-                  R&D of RenderScan
+                  RenderScan R&D
                 </div>
               </div>
 
@@ -120,7 +134,7 @@ const RoadMap = () => {
           </div>
 
           <div className="col-lg-4 col-md-12 justify-content-center col-12">
-            <h2 className="text-center my-4 road_map_text_colors">Q1 2022</h2>
+            <h2 className="text-center my-4 road_map_text_colors">Q2 2022</h2>
             <div className="hide_border">
               <h4 className="my-2 road_map_text_colors">Growth phase</h4>
 
@@ -150,7 +164,7 @@ const RoadMap = () => {
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
-                  Seed & Strategic Sale
+                  Seed & IDO Sale
                 </div>
               </div>
 
@@ -200,7 +214,7 @@ const RoadMap = () => {
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
-                  RenderFi launch
+                  RenderPlay V1 launch
                 </div>
               </div>
               <div className="row mx-4">
@@ -235,7 +249,7 @@ const RoadMap = () => {
           </div>
 
           <div className="col-lg-4 col-md-12 justify-content-center col-12">
-            <h2 className="text-center my-4 road_map_text_colors">Q2 2022</h2>
+            <h2 className="text-center my-4 road_map_text_colors">Q3 2022</h2>
             <h4 className="road_map_text_colors">Expansion</h4>
             <div>
               <div className="row mx-4">
@@ -309,7 +323,7 @@ const RoadMap = () => {
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
-                  RenderMarket launch
+                  RenderStore Metaverse
                 </div>
               </div>
               <div className="row mx-4">
@@ -323,7 +337,7 @@ const RoadMap = () => {
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
-                  RenderPlay launch
+                  RenderFi - DeFI
                 </div>
               </div>
               <div className="row mx-4">
@@ -337,7 +351,7 @@ const RoadMap = () => {
                       "-3px -3px 6px rgba(2,255,209,0.25), -2px -2px 1px rgba(2,255,209,0.25)",
                   }}
                 >
-                  RenderStore launch
+                  RenderScan & RenderPlay V2
                 </div>
               </div>
             </div>
