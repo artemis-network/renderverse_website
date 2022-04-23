@@ -69,7 +69,7 @@ const Features = () => {
                 >
                   <div className="feature feature-primary feature-clean bg-light rounded p-4 mx-2">
                     <div className="icons text-center">
-                      <i className="uil uil-megaphone d-block rounded h3 mb-0" />
+                      <i className="uil uil-mobile-android d-block rounded h3 mb-0" />
                     </div>
                     <div className="content mt-4">
                       <a href="features.html" className="text-dark h5 title">
@@ -96,15 +96,14 @@ const Features = () => {
                 >
                   <div className="feature feature-primary feature-clean bg-light rounded p-4 mx-2">
                     <div className="icons text-center">
-                      <i className="uil uil-headphones-alt d-block rounded h3 mb-0" />
+                      <i className="uil uil-play d-block rounded h3 mb-0" />
                     </div>
                     <div className="content mt-4">
                       <a href="features.html" className="text-dark h5 title">
                         RENDERPLAY
                       </a>
                       <p className="text-muted mt-3 mb-0">
-                        Form a team, battle with RenderApes and earn $RNDV on
-                        our online P2E gaming platform
+                        Participate in contests and win exciting rewards on our online P2E gaming platform
                       </p>
                       <div className="mt-2">
                         <a href="features.html" className="link">
@@ -131,8 +130,7 @@ const Features = () => {
                         RENDERSTORE
                       </a>
                       <p className="text-muted mt-3 mb-0">
-                        Shop your favourite merchandise on our e-commerce
-                        stores. Pay with $RNDV and get attractive discounts
+                        Shop your favourite merchandise on our metaverse store with $RNDV token
                       </p>
                       <div className="mt-2">
                         <a href="features.html" className="link">
