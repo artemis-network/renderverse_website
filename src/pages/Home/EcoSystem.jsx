@@ -69,15 +69,41 @@ const Features = () => {
                 >
                   <div className="feature feature-primary feature-clean bg-light rounded p-4 mx-2">
                     <div className="icons text-center">
-                      <i className="uil uil-megaphone d-block rounded h3 mb-0" />
+                      <i className="uil uil-mobile-android d-block rounded h3 mb-0" />
                     </div>
                     <div className="content mt-4">
                       <a href="features.html" className="text-dark h5 title">
-                        RENDERMARKET
+                        RENDERSCAN
                       </a>
                       <p className="text-muted mt-3 mb-0">
-                        An NFT Marketplace to mint and trade your NFTs using
-                        $RNDV tokens
+                        A Deep learning based mobile application that enables users to mint NFT's by scanning objects around them
+                      </p>
+                      <div className="mt-2">
+                        <a href="features.html" className="link">
+                          Read More
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/*end col*/}
+                <div
+                  data-aos="fade-down"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-once="true"
+                  className="col-lg-6 col-md-6 col-12 mt-4 pt-2"
+                >
+                  <div className="feature feature-primary feature-clean bg-light rounded p-4 mx-2">
+                    <div className="icons text-center">
+                      <i className="uil uil-play d-block rounded h3 mb-0" />
+                    </div>
+                    <div className="content mt-4">
+                      <a href="features.html" className="text-dark h5 title">
+                        RENDERPLAY
+                      </a>
+                      <p className="text-muted mt-3 mb-0">
+                        Participate in contests and win exciting rewards on our online P2E gaming platform
                       </p>
                       <div className="mt-2">
                         <a href="features.html" className="link">
@@ -104,8 +130,7 @@ const Features = () => {
                         RENDERSTORE
                       </a>
                       <p className="text-muted mt-3 mb-0">
-                        Shop your favourite merchandise on our e-commerce
-                        stores. Pay with $RNDV and get attractive discounts
+                        Shop your favourite merchandise on our metaverse store with $RNDV token
                       </p>
                       <div className="mt-2">
                         <a href="features.html" className="link">
@@ -134,34 +159,6 @@ const Features = () => {
                       <p className="text-muted mt-3 mb-0">
                         Earn passive yield on your $RNDV tokens on our DEFI
                         Platform with attractive APY
-                      </p>
-                      <div className="mt-2">
-                        <a href="features.html" className="link">
-                          Read More
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/*end col*/}
-                <div
-                  data-aos="fade-down"
-                  data-aos-offset="300"
-                  data-aos-easing="ease-in-sine"
-                  data-aos-once="true"
-                  className="col-lg-6 col-md-6 col-12 mt-4 pt-2"
-                >
-                  <div className="feature feature-primary feature-clean bg-light rounded p-4 mx-2">
-                    <div className="icons text-center">
-                      <i className="uil uil-headphones-alt d-block rounded h3 mb-0" />
-                    </div>
-                    <div className="content mt-4">
-                      <a href="features.html" className="text-dark h5 title">
-                        RENDERPLAY
-                      </a>
-                      <p className="text-muted mt-3 mb-0">
-                        Form a team, battle with RenderApes and earn $RNDV on
-                        our online P2E gaming platform
                       </p>
                       <div className="mt-2">
                         <a href="features.html" className="link">

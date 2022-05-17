@@ -8,7 +8,6 @@ const RenderVerse = React.lazy(() => import("./Renderverse/RenderVerse"));
 const FeaturedIn = React.lazy(() => import("./FeaturedIn/FeaturedIn"));
 const Mission = React.lazy(() => import("./Misison"));
 const EcoSystem = React.lazy(() => import("./EcoSystem"));
-const Action = React.lazy(() => import("./Action/Action"));
 const HighLight = React.lazy(() => import("./Highlight/Highlight"));
 const Disrupting = React.lazy(() => import("./Disrupting/Disrupting"));
 const RoadMap = React.lazy(() => import("./RoadMap"));
@@ -54,9 +53,6 @@ const Home = () => {
       <Element id="/eco-system" name="eco-system">
         <Suspense fallback={Loader}>
           <EcoSystem />
-        </Suspense>
-        <Suspense fallback={Loader}>
-          <Action />
         </Suspense>
         <Suspense fallback={Loader}>
           <Disrupting />

@@ -23,19 +23,25 @@ const Tagline = () => {
                     <img src={Dot} alt="" height={25} width={25} />
                   </li>
                   <li className="list-inline-item small mb-0">
-                    In Q2 2022, RenderMarket will be operational.
+                    In Q3 2022, RenderStore Metaverse will be launched
                   </li>
                   <li className="list-inline-item small mb-0">
                     <img src={Dot} alt="" height={25} width={25} />
                   </li>
                   <li className="list-inline-item small mb-0">
-                    The sale of $RNDV tokens will begin soon.
+                    The sale of $RNDV tokens will begin soon
                   </li>
                   <li className="list-inline-item small mb-0">
                     <img src={Dot} alt="" height={25} width={25} />
                   </li>
                   <li className="list-inline-item small mb-0">
                     RenderFi is going live soon
+                  </li>
+                  <li className="list-inline-item small mb-0">
+                    <img src={Dot} alt="" height={25} width={25} />
+                  </li>
+                  <li className="list-inline-item small mb-0">
+                    Renderplay will be operational in Q2 2022
                   </li>
                   <li className="list-inline-item small mb-0">
                     <img src={Dot} alt="" height={25} width={25} />
@@ -48,13 +54,19 @@ const Tagline = () => {
                     <img src={Dot} alt="" height={25} width={25} />
                   </li>
                   <li className="list-inline-item small mb-0">
-                    In Q2 2022, RenderMarket will be operational.
+                    In Q2 2022, RenderStore Metaverse will be launched
                   </li>
                   <li className="list-inline-item small mb-0">
                     <img src={Dot} alt="" height={25} width={25} />
                   </li>
                   <li className="list-inline-item small mb-0">
-                    The sale of $RNDV tokens will begin soon.
+                    The sale of $RNDV tokens will begin soon
+                  </li>
+                  <li className="list-inline-item small mb-0">
+                    <img src={Dot} alt="" height={25} width={25} />
+                  </li>
+                  <li className="list-inline-item small mb-0">
+                    Renderplay will be operational in Q2 2022
                   </li>
                   <li className="list-inline-item small mb-0">
                     <img src={Dot} alt="" height={25} width={25} />
