@@ -36,6 +36,7 @@ const Navbar = () => {
           color: "white",
           fontWeight: "bold",
           borderRadius: "2vh",
+          transform: "scale(0.7)",
         }}
       >
         <Download label="Try Renderscan!" click={() => download()}></Download>
