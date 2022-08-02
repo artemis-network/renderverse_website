@@ -9,9 +9,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import './App.css'
 
-
-import Spline from '@splinetool/react-spline';
-
 import Token from "./pages/Token/Token";
 import Home from './pages/Home/Home'
 import News from './pages/Home/News'
@@ -24,9 +21,6 @@ const App = () => {
 
   return (
     <div >
-      {/* <div style={{ height: "600px", width: "600px", background: "green" }}>
-        <Spline height={600} width={600} scene="https://prod.spline.design/qt1cZ5gIaxSLsatX/scene.splinecode" />
-      </div> */}
       <BrowserRouter>
         <Switch>
           <Route component={Home} exact path={"/"} />
