@@ -14,8 +14,36 @@ const Navbar = () => {
     if (open.state === "block") setOpen({ state: "none" });
     else setOpen({ state: "block" });
   }
+
+  const download = async () => {
+    console.log("Working");
+    let a = document.createElement("a");
+    a.href =
+      "https://renderscan.s3.ap-south-1.amazonaws.com/renderscan_v1.0.0.apk";
+    a.download = "renderscan_v1.0.0.apk";
+    console.log(a);
+    a.click();
+  };
+
   return (
     <header id="topnav" className="defaultscroll sticky tagline-height">
+      <button
+        onClick={() => download()}
+        style={{
+          position: "absolute",
+
+          right: "5rem",
+          zIndex: 100000,
+          top: ".5rem",
+          color: "white",
+          fontWeight: "bold",
+          background: "#31087B",
+          borderRadius: "2vh",
+          padding: "1rem 2rem",
+        }}
+      >
+        Try Renderscan!
+      </button>
       <div className="container">
         <Linker.Link to="/" className="logo" style={{ display: "flex" }}>
           <img
