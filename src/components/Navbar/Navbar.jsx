@@ -6,6 +6,7 @@ import PDF from "../../assets/Economics paper.pdf";
 import { useState } from "react";
 import Logo from "../../assets/images/logo.webp";
 import PDF_1 from "../../assets/Pitch Deck.pdf";
+import Download from "./Download";
 
 const Navbar = () => {
   const [open, setOpen] = useState({ state: "none" });
@@ -21,29 +22,25 @@ const Navbar = () => {
     a.href =
       "https://renderscan.s3.ap-south-1.amazonaws.com/renderscan_v1.0.0.apk";
     a.download = "renderscan_v1.0.0.apk";
-    console.log(a);
     a.click();
   };
 
   return (
     <header id="topnav" className="defaultscroll sticky tagline-height">
-      <button
-        onClick={() => download()}
+      <div
         style={{
           position: "absolute",
-
           right: "5rem",
           zIndex: 100000,
           top: ".5rem",
           color: "white",
           fontWeight: "bold",
-          background: "#31087B",
           borderRadius: "2vh",
-          padding: "1rem 2rem",
         }}
       >
-        Try Renderscan!
-      </button>
+        <Download label="Try Renderscan!" click={() => download()}></Download>
+      </div>
+
       <div className="container">
         <Linker.Link to="/" className="logo" style={{ display: "flex" }}>
           <img
