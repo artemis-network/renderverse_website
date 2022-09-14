@@ -6,7 +6,6 @@ import PDF from "../../assets/Economics paper.pdf";
 import { useState } from "react";
 import Logo from "../../assets/images/logo.webp";
 import PDF_1 from "../../assets/Pitch Deck.pdf";
-import Download from "./Download";
 
 const Navbar = () => {
   const [open, setOpen] = useState({ state: "none" });
