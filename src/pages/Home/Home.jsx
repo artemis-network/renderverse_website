@@ -1,18 +1,19 @@
-import React, { useEffect, Suspense } from "react";
-import Loader from "../../components/Loader/Loader";
+import { useEffect } from "react";
 import { Element } from "react-scroll";
 
-const Tagline = React.lazy(() => import("../../components/Tagline/Tagline"));
-const Navbar = React.lazy(() => import("../../components/Navbar/Navbar"));
-const RenderVerse = React.lazy(() => import("./Renderverse/RenderVerse"));
-const FeaturedIn = React.lazy(() => import("./FeaturedIn/FeaturedIn"));
-const Mission = React.lazy(() => import("./Misison"));
-const EcoSystem = React.lazy(() => import("./EcoSystem"));
-const HighLight = React.lazy(() => import("./Highlight/Highlight"));
-const Disrupting = React.lazy(() => import("./Disrupting/Disrupting"));
-const RoadMap = React.lazy(() => import("./RoadMap"));
-const Team = React.lazy(() => import("./Team"));
-const Footer = React.lazy(() => import("../../components/Footer/Footer"));
+import Tagline from "../../components/Tagline/Tagline";
+import Navbar from "../../components/Navbar/Navbar";
+import RenderVerse from "./Renderverse/RenderVerse";
+import FeaturedIn from "./FeaturedIn/FeaturedIn";
+import Mission from "./Misison";
+import EcoSystem from "./EcoSystem";
+import HighLight from "./Highlight/Highlight";
+import Disrupting from "./Disrupting/Disrupting";
+import RoadMap from "./RoadMap";
+import Team from "./Team";
+import Footer from "../../components/Footer/Footer";
+
+import "../../App.css";
 
 const Home = () => {
   useEffect(() => {
@@ -21,70 +22,43 @@ const Home = () => {
 
   return (
     <div>
-      <Suspense fallback={Loader}>
-        <Tagline />
-      </Suspense>
-      <Suspense fallback={Loader}>
-        <Navbar />
-      </Suspense>
-
+      <Tagline />
+      <Navbar />
       <Element id="/" name="brand">
-        <Suspense fallback={Loader}>
-          <RenderVerse />
-        </Suspense>
+        <RenderVerse />
       </Element>
-
-      <Suspense fallback={Loader}>
-        <FeaturedIn
-          title={"To be soon Featured In..."}
-          isFeatured={true}
-          hasBackers={true}
-        />
-      </Suspense>
-
+      <FeaturedIn
+        title={"To be soon Featured In..."}
+        isFeatured={true}
+        hasBackers={true}
+      />
       <Element id="/mission" name="mission">
         <div>
-          <Suspense fallback={Loader}>
-            <Mission />
-          </Suspense>
+          <Mission />
         </div>
       </Element>
 
       <Element id="/eco-system" name="eco-system">
-        <Suspense fallback={Loader}>
-          <EcoSystem />
-        </Suspense>
-        <Suspense fallback={Loader}>
-          <Disrupting />
-        </Suspense>
-        <Suspense fallback={Loader}>
-          <HighLight />
-        </Suspense>
+        <EcoSystem />
+        <Disrupting />
+        <HighLight />
       </Element>
 
       <Element id="/roadmap" name="roadmap">
-        <Suspense fallback={Loader}>
-          <RoadMap />
-        </Suspense>
+        <RoadMap />
       </Element>
 
       <Element id="/team" name="team">
-        <Suspense fallback={Loader}>
-          <Team />
-        </Suspense>
+        <Team />
       </Element>
 
-      <Suspense fallback={Loader}>
-        <FeaturedIn
-          title={"Advisors and Backers"}
-          isFeatured={false}
-          hasBackers={false}
-        />
-      </Suspense>
+      <FeaturedIn
+        title={"Advisors and Backers"}
+        isFeatured={false}
+        hasBackers={false}
+      />
       <Element id="/contact" name="contact">
-        <Suspense fallback={Loader}>
-          <Footer animation={"flip-left"} duration={400} ease={"linear"} />
-        </Suspense>
+        <Footer animation={"flip-left"} duration={400} ease={"linear"} />
       </Element>
     </div>
   );

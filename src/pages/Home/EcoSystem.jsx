@@ -76,7 +76,8 @@ const Features = () => {
                         RENDERSCAN
                       </a>
                       <p className="text-muted mt-3 mb-0">
-                        A Deep learning based mobile application that enables users to mint NFT's by scanning objects around them
+                        A Deep learning based mobile application that enables
+                        users to mint AI's by scanning objects around them
                       </p>
                       <div className="mt-2">
                         <a href="features.html" className="link">
@@ -103,7 +104,8 @@ const Features = () => {
                         RENDERPLAY
                       </a>
                       <p className="text-muted mt-3 mb-0">
-                        Participate in contests and win exciting rewards on our online P2E gaming platform
+                        Participate in contests and win exciting rewards on our
+                        online P2E gaming platform
                       </p>
                       <div className="mt-2">
                         <a href="features.html" className="link">
@@ -130,7 +132,8 @@ const Features = () => {
                         RENDERSTORE
                       </a>
                       <p className="text-muted mt-3 mb-0">
-                        Shop your favourite merchandise on our metaverse store with $RNDV token
+                        Shop your favourite merchandise on our metaverse store
+                        with $RNDV token
                       </p>
                       <div className="mt-2">
                         <a href="features.html" className="link">

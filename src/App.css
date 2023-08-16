@@ -59,19 +59,3 @@
     margin: 0 0.25rem;
   }
 }
-
-.mission_mobile_row {
-  display: flex;
-}
-.mission_desk_row {
-  display: none;
-}
-
-@media screen and (min-width: 900px) {
-  .mission_mobile_row {
-    display: none;
-  }
-  .mission_desk_row {
-    display: flex;
-  }
-}

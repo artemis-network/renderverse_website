@@ -1,6 +1,6 @@
 import React from "react";
-import Lottie from "lottie-react-web";
-import animation from "../../assets/lottie/loader.json";
+// import Lottie from "lottie-react-web";
+// import animation from "../../assets/lottie/loader.json";
 
 const App = () => (
   <div
@@ -16,11 +16,11 @@ const App = () => (
       padding: "0",
     }}
   >
-    <Lottie
+    {/* <Lottie
       options={{
         animationData: animation,
       }}
-    />
+    /> */}
   </div>
 );
 

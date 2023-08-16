@@ -1,12 +1,10 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./MaskButton.css";
-import { useHistory } from "react-router-dom";
 
-export default function MaskButton(props) {
-  const history = useHistory();
-
+function MaskButton(props) {
+  const history = useNavigate();
   function goTo(route) {
-    history.push(route);
+    history(route);
   }
 
   return (
@@ -24,3 +22,5 @@ export default function MaskButton(props) {
     </div>
   );
 }
+
+export default MaskButton;

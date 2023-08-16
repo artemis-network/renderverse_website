@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/jsx-no-target-blank */
 import { Link } from "react-scroll";
 import * as Linker from "react-router-dom";

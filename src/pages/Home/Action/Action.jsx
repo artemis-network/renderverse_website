@@ -2,8 +2,8 @@ import Action1 from "../../../assets/images/action/action_2.webp";
 import "./Action.css";
 import { useState, useEffect } from "react";
 
-import Lottie from "lottie-react-web";
-import Animation from "../../../assets/lottie/coming-soon.json";
+// import Lottie from "lottie-react-web";
+// import Animation from "../../../assets/lottie/coming-soon.json";
 
 import Wave from "react-wavify";
 
@@ -32,7 +32,7 @@ const Modal = ({ onRequestClose }) => {
     <div className="modal__backdrop">
       <div className="modal__container">
         <div data-aos="fade-down">
-          <Lottie options={{ animationData: Animation, loop: true }} />
+          {/* <Lottie options={{ animationData: Animation, loop: true }} /> */}
         </div>
         <button type="button" className="sbutton" onClick={onRequestClose}>
           Close

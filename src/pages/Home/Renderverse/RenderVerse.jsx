@@ -59,15 +59,13 @@ const Renderverse = () => {
               <span className="linker badge bg-soft-success rounded-md">
                 $RNDR
               </span>
-              <div className="glow-text">
-                An AR doorway into the Metaverse & NFTs
-              </div>
+              <div className="glow-text">A Doorway into the AI & Metaverse</div>
             </div>
           </div>
 
           <div className="custom_button_group">
             <MaskButton to="/token-launch" label="Token Launch" />
-            <SlideButton label="Try Renderscan" />
+            <SlideButton label="Try Dapp" />
           </div>
         </div>
 
