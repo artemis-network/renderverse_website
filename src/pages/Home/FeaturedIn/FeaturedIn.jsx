@@ -6,9 +6,27 @@ import Image4 from "../../../assets/images/backers/coindesk_press.webp";
 import Image8 from "../../../assets/images/backers/cryptobriefing_press.webp";
 import Image9 from "../../../assets/images/backers/blockonomi_press.webp";
 
+import P1 from "../../../assets/images/backers/p1.png";
+import P2 from "../../../assets/images/backers/p2.png";
+
 import Wave from "react-wavify";
 
 import "./FeaturedIn.css";
+
+const data = [
+  {
+    img: P1,
+    name: "Venkatesh Sarvaiddhi",
+    role_1: "MD at Springer Nature India",
+    role_2: "Ex - Deloitte, Microsoft | IIM Calcutta",
+  },
+  {
+    img: P2,
+    name: "Prem Dharmani",
+    role_1: "Founder OpinionVerse",
+    role_2: "Ex - MPL Goibibo & MMT | IIT Madras",
+  },
+];
 
 const Product = (props) => {
   return (
@@ -94,7 +112,60 @@ const Product = (props) => {
               textAlign: "center",
             }}
           >
-            To be Revealed soon!
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  padding: "1rem 0",
+                  transform: "translateX(-2%)",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: "1.35rem",
+                    padding: ".25rem .5rem",
+                  }}
+                  className="text-muted"
+                >
+                  OUR
+                </div>
+                <div
+                  style={{
+                    color: "#ffffff",
+                    fontSize: "1.35rem",
+                    fontWeight: "bold",
+                    padding: ".25rem .5rem",
+                    background: "#E20880",
+                  }}
+                >
+                  ADVISORS
+                </div>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  columnGap: "3rem",
+                }}
+              >
+                {data.map((d, i) => (
+                  <div key={i}>
+                    <image src={d.img} alt="img" />
+                    <h4>{d.name}</h4>
+                    <h6>{d.role_1}</h6>
+                    <h6>{d.role_2}</h6>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         )}
       </div>
