@@ -2,7 +2,7 @@ import React, { useEffect, Suspense } from "react";
 import Loader from "../../components/Loader/Loader";
 import { Element } from "react-scroll";
 
-const Tagline = React.lazy(() => import("../../components/Tagline/Tagline"));
+// const Tagline = React.lazy(() => import("../../components/Tagline/Tagline"));
 const Navbar = React.lazy(() => import("../../components/Navbar/Navbar"));
 const RenderVerse = React.lazy(() => import("./Renderverse/RenderVerse"));
 const FeaturedIn = React.lazy(() => import("./FeaturedIn/FeaturedIn"));
