@@ -4,12 +4,14 @@ import React from "react";
 
 const SlideButton = (props) => {
   const download = async () => {
-    console.log("Working");
-    let a = document.createElement("a");
-    a.href =
-      "https://renderscan.s3.ap-south-1.amazonaws.com/renderscan_v1.0.0.apk";
-    a.download = "renderscan_v1.0.0.apk";
-    a.click();
+    window.open("https://chipper-yeot-d29d0d.netlify.app/dapp", "_blank");
+    // let a = document.createElement("a");
+    // a.href = "https://chipper-yeot-d29d0d.netlify.app/dapp";
+
+    // a.href =
+    //   "https://renderscan.s3.ap-south-1.amazonaws.com/renderscan_v1.0.0.apk";
+    // a.download = "renderscan_v1.0.0.apk";
+    // a.click();
   };
 
   return (

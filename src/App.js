@@ -1,26 +1,25 @@
 import React from "react";
-import { BrowserRouter, } from 'react-router-dom'
-import { Route, Switch } from "react-router";
 
-import NFT from './redirects/Nfts'
-import Swap from './redirects/Swap'
+import { BrowserRouter } from "react-router-dom";
+import { Route, Switch } from "react-router";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import './App.css'
+import "./App.css";
 
+import Home from "./pages/Home/Home";
+import NFT from "./redirects/Nfts";
 import Token from "./pages/Token/Token";
-import Home from './pages/Home/Home'
-import News from './pages/Home/News'
+import News from "./pages/Home/News";
+import Swap from "./redirects/Swap";
 
 const App = () => {
-
   React.useEffect(() => {
     AOS.init({});
-  }, [])
+  }, []);
 
   return (
-    <div >
+    <div>
       <BrowserRouter>
         <Switch>
           <Route component={Home} exact path={"/"} />
