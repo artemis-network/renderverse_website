@@ -26,7 +26,7 @@ const RoadMap = () => {
       >
         <div className="row justify-content-center p-3 rounded-top">
           <div className="col-lg-4 col-md-12 justify-content-center col-12">
-            <h2 className="text-center my-4 road_map_text_colors">Q1 2022</h2>
+            <h2 className="text-center my-4 road_map_text_colors">Q3 2023</h2>
             <div className="hide_border">
               <h4 className="my-2 road_map_text_colors">Ideation</h4>
               <div className="row mx-4">
@@ -134,7 +134,7 @@ const RoadMap = () => {
           </div>
 
           <div className="col-lg-4 col-md-12 justify-content-center col-12">
-            <h2 className="text-center my-4 road_map_text_colors">Q2 2022</h2>
+            <h2 className="text-center my-4 road_map_text_colors">Q4 2023</h2>
             <div className="hide_border">
               <h4 className="my-2 road_map_text_colors">Growth phase</h4>
 
@@ -249,7 +249,7 @@ const RoadMap = () => {
           </div>
 
           <div className="col-lg-4 col-md-12 justify-content-center col-12">
-            <h2 className="text-center my-4 road_map_text_colors">Q3 2022</h2>
+            <h2 className="text-center my-4 road_map_text_colors">Q1 2024</h2>
             <h4 className="road_map_text_colors">Expansion</h4>
             <div>
               <div className="row mx-4">

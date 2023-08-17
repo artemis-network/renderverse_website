@@ -1,12 +1,9 @@
 import React from "react";
 import "./MaskButton.css";
-import { useHistory } from "react-router-dom";
 
 export default function MaskButton(props) {
-  const history = useHistory();
-
-  function goTo(route) {
-    history.push(route);
+  function goTo() {
+    window.open("https://whitepaper.renderverse.io/welcome/abstract", "_blank");
   }
 
   return (

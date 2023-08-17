@@ -16,7 +16,11 @@ const Navbar = () => {
   }
 
   return (
-    <header id="topnav" className="defaultscroll sticky tagline-height">
+    <header
+      style={{ paddingTop: 0 }}
+      id="topnav"
+      className="defaultscroll sticky tagline-height"
+    >
       <div className="container">
         <Linker.Link to="/" className="logo" style={{ display: "flex" }}>
           <img

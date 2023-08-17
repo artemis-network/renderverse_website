@@ -21,9 +21,7 @@ const Home = () => {
 
   return (
     <div>
-      <Suspense fallback={Loader}>
-        <Tagline />
-      </Suspense>
+      <Suspense fallback={Loader}>{/* <Tagline /> */}</Suspense>
       <Suspense fallback={Loader}>
         <Navbar />
       </Suspense>
